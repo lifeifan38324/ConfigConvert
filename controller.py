@@ -4,12 +4,17 @@ import json
 import os
 from parse_subscribe import Subscribe
 from parse_convert import ConvertConfig
+import parse_url
 
 
 class Controller:
-    def __init__(self, subscribe_url_list, config_url):
+    def __init__(self, subscribe_convert = "", subscribe_url_list = "", config_url = ""):
         self.subscribe_url_list = subscribe_url_list
         self.config_url = config_url
+        if subscribe_convert:
+            url_dict = parse_url.parse_url(subscribe_convert)
+            self.subscribe_url_list = url_dict["url"]
+            self.config_url = url_dict["config"]
 
     def load_template(self):
         cur_path = os.path.dirname(os.path.abspath(__file__))
@@ -42,12 +47,10 @@ class Controller:
 
 
 if __name__ == "__main__":
-    subscribe_url_list = [
-        "url1",
-        "url2",
-        "url3"
-    ]
-    config_url = "config_url"
+    subscribe_convert = ""
+    url_dict = parse_url.parse_url(subscribe_convert)
+    subscribe_url_list = url_dict["url"]
+    config_url = url_dict["config"]
     c = Controller(subscribe_url_list, config_url)
     c.output_file()
 

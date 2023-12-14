@@ -378,7 +378,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 剩余流量：195.87 GB
+  name: 剩余流量：200 GB
   network: ws
   port: '2052'
   server: cfcdn1.sanfencdn9.com
@@ -386,15 +386,15 @@ proxies:
   udp: true
   uuid: c45d23c0-3bdf-482d-a2e8-ab62041dfd58
   ws-headers:
-    Host: us12c2ebe9b.vjfvyzfhhf.xyz
+    Host: mwovaytrus1.nezfyiam.xyz
   ws-opts:
     headers:
-      Host: us12c2ebe9b.vjfvyzfhhf.xyz
-    path: /video/QKEYMfEw/
-  ws-path: /video/QKEYMfEw/
+      Host: mwovaytrus1.nezfyiam.xyz
+    path: /video/gpUdZnWn/
+  ws-path: /video/gpUdZnWn/
 - alterId: 0
   cipher: auto
-  name: 距离下次重置剩余：5 天
+  name: 距离下次重置剩余：26 天
   network: ws
   port: '2052'
   server: cfcdn1.sanfencdn9.com
@@ -402,12 +402,12 @@ proxies:
   udp: true
   uuid: c45d23c0-3bdf-482d-a2e8-ab62041dfd58
   ws-headers:
-    Host: us12c2ebe9b.vjfvyzfhhf.xyz
+    Host: mwovaytrus1.nezfyiam.xyz
   ws-opts:
     headers:
-      Host: us12c2ebe9b.vjfvyzfhhf.xyz
-    path: /video/QKEYMfEw/
-  ws-path: /video/QKEYMfEw/
+      Host: mwovaytrus1.nezfyiam.xyz
+    path: /video/gpUdZnWn/
+  ws-path: /video/gpUdZnWn/
 - alterId: 0
   cipher: auto
   name: 套餐到期：2024-04-09
@@ -418,12 +418,12 @@ proxies:
   udp: true
   uuid: c45d23c0-3bdf-482d-a2e8-ab62041dfd58
   ws-headers:
-    Host: us12c2ebe9b.vjfvyzfhhf.xyz
+    Host: mwovaytrus1.nezfyiam.xyz
   ws-opts:
     headers:
-      Host: us12c2ebe9b.vjfvyzfhhf.xyz
-    path: /video/QKEYMfEw/
-  ws-path: /video/QKEYMfEw/
+      Host: mwovaytrus1.nezfyiam.xyz
+    path: /video/gpUdZnWn/
+  ws-path: /video/gpUdZnWn/
 - alterId: 0
   cipher: auto
   name: shop.sanfen.co 站内返利65%
@@ -434,12 +434,12 @@ proxies:
   udp: true
   uuid: c45d23c0-3bdf-482d-a2e8-ab62041dfd58
   ws-headers:
-    Host: us12c2ebe9b.vjfvyzfhhf.xyz
+    Host: mwovaytrus1.nezfyiam.xyz
   ws-opts:
     headers:
-      Host: us12c2ebe9b.vjfvyzfhhf.xyz
-    path: /video/QKEYMfEw/
-  ws-path: /video/QKEYMfEw/
+      Host: mwovaytrus1.nezfyiam.xyz
+    path: /video/gpUdZnWn/
+  ws-path: /video/gpUdZnWn/
 - alterId: 0
   cipher: auto
   name: 🇺🇸美国高速接入点-01
@@ -450,12 +450,12 @@ proxies:
   udp: true
   uuid: c45d23c0-3bdf-482d-a2e8-ab62041dfd58
   ws-headers:
-    Host: us12c2ebe9b.vjfvyzfhhf.xyz
+    Host: mwovaytrus1.nezfyiam.xyz
   ws-opts:
     headers:
-      Host: us12c2ebe9b.vjfvyzfhhf.xyz
-    path: /video/QKEYMfEw/
-  ws-path: /video/QKEYMfEw/
+      Host: mwovaytrus1.nezfyiam.xyz
+    path: /video/gpUdZnWn/
+  ws-path: /video/gpUdZnWn/
 - alterId: 0
   cipher: auto
   name: 🇺🇸美国高速接入点-02
@@ -466,12 +466,12 @@ proxies:
   udp: true
   uuid: c45d23c0-3bdf-482d-a2e8-ab62041dfd58
   ws-headers:
-    Host: us2594abda1.vjfvyzfhhf.xyz
+    Host: hemkzqzcus2.nezfyiam.xyz
   ws-opts:
     headers:
-      Host: us2594abda1.vjfvyzfhhf.xyz
-    path: /video/BxDuFZCu/
-  ws-path: /video/BxDuFZCu/
+      Host: hemkzqzcus2.nezfyiam.xyz
+    path: /video/zYPdRDJM/
+  ws-path: /video/zYPdRDJM/
 - alterId: 0
   cipher: auto
   name: 🇺🇸美国高速接入点-03
@@ -482,12 +482,12 @@ proxies:
   udp: true
   uuid: c45d23c0-3bdf-482d-a2e8-ab62041dfd58
   ws-headers:
-    Host: us36821f246.vjfvyzfhhf.xyz
+    Host: jqjvgtapus3.nezfyiam.xyz
   ws-opts:
     headers:
-      Host: us36821f246.vjfvyzfhhf.xyz
-    path: /video/efNfrvVc
-  ws-path: /video/efNfrvVc
+      Host: jqjvgtapus3.nezfyiam.xyz
+    path: /video/THXLPVwn
+  ws-path: /video/THXLPVwn
 - alterId: 0
   cipher: auto
   name: 🇺🇸美国高速接入点-04
@@ -498,12 +498,12 @@ proxies:
   udp: true
   uuid: c45d23c0-3bdf-482d-a2e8-ab62041dfd58
   ws-headers:
-    Host: us479b4f958.vjfvyzfhhf.xyz
+    Host: agmkvnyus4.nezfyiam.xyz
   ws-opts:
     headers:
-      Host: us479b4f958.vjfvyzfhhf.xyz
-    path: /video/PHdBAhCd
-  ws-path: /video/PHdBAhCd
+      Host: agmkvnyus4.nezfyiam.xyz
+    path: /video/NWfKLBuo
+  ws-path: /video/NWfKLBuo
 - alterId: 0
   cipher: auto
   name: 🇺🇸美国高速接入点-05
@@ -514,12 +514,12 @@ proxies:
   udp: true
   uuid: c45d23c0-3bdf-482d-a2e8-ab62041dfd58
   ws-headers:
-    Host: us5a3a71b5c.pkmkwvxqnn.xyz
+    Host: kjbbpiwnus5.nezfyiam.xyz
   ws-opts:
     headers:
-      Host: us5a3a71b5c.pkmkwvxqnn.xyz
-    path: /video/nYAwpBbW
-  ws-path: /video/nYAwpBbW
+      Host: kjbbpiwnus5.nezfyiam.xyz
+    path: /video/jjPZccUK
+  ws-path: /video/jjPZccUK
 - alterId: 0
   cipher: auto
   name: 🇺🇸美国高速接入点-06
@@ -530,12 +530,12 @@ proxies:
   udp: true
   uuid: c45d23c0-3bdf-482d-a2e8-ab62041dfd58
   ws-headers:
-    Host: us633c9a83c.pkmkwvxqnn.xyz
+    Host: agksfudxus6.nezfyiam.xyz
   ws-opts:
     headers:
-      Host: us633c9a83c.pkmkwvxqnn.xyz
-    path: /video/YtVesyxo
-  ws-path: /video/YtVesyxo
+      Host: agksfudxus6.nezfyiam.xyz
+    path: /video/agRtrdnG
+  ws-path: /video/agRtrdnG
 - alterId: 0
   cipher: auto
   name: 🇺🇸美国高速接入点-07
@@ -546,12 +546,12 @@ proxies:
   udp: true
   uuid: c45d23c0-3bdf-482d-a2e8-ab62041dfd58
   ws-headers:
-    Host: us7e6cb367b.pkmkwvxqnn.xyz
+    Host: mpuxucbhus7.nezfyiam.xyz
   ws-opts:
     headers:
-      Host: us7e6cb367b.pkmkwvxqnn.xyz
-    path: /video/YHhMUcPg
-  ws-path: /video/YHhMUcPg
+      Host: mpuxucbhus7.nezfyiam.xyz
+    path: /video/VVLGiYTU
+  ws-path: /video/VVLGiYTU
 - alterId: 0
   cipher: auto
   name: 🇺🇸美国高速接入点-08
@@ -562,12 +562,12 @@ proxies:
   udp: true
   uuid: c45d23c0-3bdf-482d-a2e8-ab62041dfd58
   ws-headers:
-    Host: us8cdf74064.pkmkwvxqnn.xyz
+    Host: ymiayhteus8.nezfyiam.xyz
   ws-opts:
     headers:
-      Host: us8cdf74064.pkmkwvxqnn.xyz
-    path: /video/xwjorKTk
-  ws-path: /video/xwjorKTk
+      Host: ymiayhteus8.nezfyiam.xyz
+    path: /video/FzAGiFgi
+  ws-path: /video/FzAGiFgi
 - alterId: 0
   cipher: auto
   name: 🇸🇬新加坡高速接入点-01
@@ -578,12 +578,12 @@ proxies:
   udp: true
   uuid: c45d23c0-3bdf-482d-a2e8-ab62041dfd58
   ws-headers:
-    Host: sg173528cef.qcryechvqw.xyz
+    Host: oeuczdrhsg1.yofnhkfc.xyz
   ws-opts:
     headers:
-      Host: sg173528cef.qcryechvqw.xyz
-    path: /video/xeXuHoHo
-  ws-path: /video/xeXuHoHo
+      Host: oeuczdrhsg1.yofnhkfc.xyz
+    path: /video/VuQqhmGu
+  ws-path: /video/VuQqhmGu
 - alterId: 0
   cipher: auto
   name: 🇸🇬新加坡高速接入点-02
@@ -594,12 +594,12 @@ proxies:
   udp: true
   uuid: c45d23c0-3bdf-482d-a2e8-ab62041dfd58
   ws-headers:
-    Host: sg20a4ad42b.qcryechvqw.xyz
+    Host: rpmlybgzsg2.yofnhkfc.xyz
   ws-opts:
     headers:
-      Host: sg20a4ad42b.qcryechvqw.xyz
-    path: /video/jebMFQkX
-  ws-path: /video/jebMFQkX
+      Host: rpmlybgzsg2.yofnhkfc.xyz
+    path: /video/EUgGPgvs
+  ws-path: /video/EUgGPgvs
 - alterId: 0
   cipher: auto
   name: 🇸🇬新加坡高速接入点-03
@@ -610,12 +610,12 @@ proxies:
   udp: true
   uuid: c45d23c0-3bdf-482d-a2e8-ab62041dfd58
   ws-headers:
-    Host: sg36c9974e4.qcryechvqw.xyz
+    Host: jpafzyhfsg3.yofnhkfc.xyz
   ws-opts:
     headers:
-      Host: sg36c9974e4.qcryechvqw.xyz
-    path: /video/bFVDnAyn
-  ws-path: /video/bFVDnAyn
+      Host: jpafzyhfsg3.yofnhkfc.xyz
+    path: /video/eRqFjoEp
+  ws-path: /video/eRqFjoEp
 - alterId: 0
   cipher: auto
   name: 🇭🇰香港高速接入点-01
@@ -626,12 +626,12 @@ proxies:
   udp: true
   uuid: c45d23c0-3bdf-482d-a2e8-ab62041dfd58
   ws-headers:
-    Host: hk1fc2f193e.qcryechvqw.xyz
+    Host: yvhnbevxhk1.yofnhkfc.xyz
   ws-opts:
     headers:
-      Host: hk1fc2f193e.qcryechvqw.xyz
-    path: /video/MqDyyhXV
-  ws-path: /video/MqDyyhXV
+      Host: yvhnbevxhk1.yofnhkfc.xyz
+    path: /video/tGksNzwK
+  ws-path: /video/tGksNzwK
 - alterId: 0
   cipher: auto
   name: 台湾高速接入点-01
@@ -642,12 +642,12 @@ proxies:
   udp: true
   uuid: c45d23c0-3bdf-482d-a2e8-ab62041dfd58
   ws-headers:
-    Host: tw135037538.pkmkwvxqnn.xyz
+    Host: ccadyzpstw1.nezfyiam.xyz
   ws-opts:
     headers:
-      Host: tw135037538.pkmkwvxqnn.xyz
-    path: /video/MNBrTghv
-  ws-path: /video/MNBrTghv
+      Host: ccadyzpstw1.nezfyiam.xyz
+    path: /video/oRgEfgDc
+  ws-path: /video/oRgEfgDc
 - alterId: 0
   cipher: auto
   name: 🇯🇵日本高速接入点-01
@@ -658,12 +658,12 @@ proxies:
   udp: true
   uuid: c45d23c0-3bdf-482d-a2e8-ab62041dfd58
   ws-headers:
-    Host: jp17aab72a7.chvsifetrj.xyz
+    Host: enjznnbajp1.yofnhkfc.xyz
   ws-opts:
     headers:
-      Host: jp17aab72a7.chvsifetrj.xyz
-    path: /video/uubCdJtK
-  ws-path: /video/uubCdJtK
+      Host: enjznnbajp1.yofnhkfc.xyz
+    path: /video/jkdeAxPb
+  ws-path: /video/jkdeAxPb
 - alterId: 0
   cipher: auto
   name: 🇯🇵日本高速接入点-02
@@ -674,12 +674,12 @@ proxies:
   udp: true
   uuid: c45d23c0-3bdf-482d-a2e8-ab62041dfd58
   ws-headers:
-    Host: jp29f261871.chvsifetrj.xyz
+    Host: hahgbrxyjp2.yofnhkfc.xyz
   ws-opts:
     headers:
-      Host: jp29f261871.chvsifetrj.xyz
-    path: /video/iMGdpGpR
-  ws-path: /video/iMGdpGpR
+      Host: hahgbrxyjp2.yofnhkfc.xyz
+    path: /video/ZECapGxR
+  ws-path: /video/ZECapGxR
 - alterId: 0
   cipher: auto
   name: 🇯🇵日本高速接入点-03
@@ -690,12 +690,12 @@ proxies:
   udp: true
   uuid: c45d23c0-3bdf-482d-a2e8-ab62041dfd58
   ws-headers:
-    Host: jp3ffe82816.chvsifetrj.xyz
+    Host: urmvnatzjp3.yofnhkfc.xyz
   ws-opts:
     headers:
-      Host: jp3ffe82816.chvsifetrj.xyz
-    path: /video/EUBRFrBA
-  ws-path: /video/EUBRFrBA
+      Host: urmvnatzjp3.yofnhkfc.xyz
+    path: /video/bzYxXTEW
+  ws-path: /video/bzYxXTEW
 - alterId: 0
   cipher: auto
   name: 🇯🇵日本高速接入点-04
@@ -706,12 +706,12 @@ proxies:
   udp: true
   uuid: c45d23c0-3bdf-482d-a2e8-ab62041dfd58
   ws-headers:
-    Host: jp441fd46a7.chvsifetrj.xyz
+    Host: agzbjszujp4.yofnhkfc.xyz
   ws-opts:
     headers:
-      Host: jp441fd46a7.chvsifetrj.xyz
-    path: /video/hJdpbDKj
-  ws-path: /video/hJdpbDKj
+      Host: agzbjszujp4.yofnhkfc.xyz
+    path: /video/ovYzoXfe
+  ws-path: /video/ovYzoXfe
 - alterId: 0
   cipher: auto
   name: 🇯🇵日本高速接入点-05
@@ -722,12 +722,12 @@ proxies:
   udp: true
   uuid: c45d23c0-3bdf-482d-a2e8-ab62041dfd58
   ws-headers:
-    Host: jp5accf5c6e.chvsifetrj.xyz
+    Host: wtywwcrzjp5.yofnhkfc.xyz
   ws-opts:
     headers:
-      Host: jp5accf5c6e.chvsifetrj.xyz
-    path: /video/bDRAqynF
-  ws-path: /video/bDRAqynF
+      Host: wtywwcrzjp5.yofnhkfc.xyz
+    path: /video/VawzGLxU
+  ws-path: /video/VawzGLxU
 - alterId: 0
   cipher: auto
   name: 🇯🇵日本高速接入点-06
@@ -738,12 +738,12 @@ proxies:
   udp: true
   uuid: c45d23c0-3bdf-482d-a2e8-ab62041dfd58
   ws-headers:
-    Host: jp6a4a8f236.chvsifetrj.xyz
+    Host: kvjqqknzjp6.yofnhkfc.xyz
   ws-opts:
     headers:
-      Host: jp6a4a8f236.chvsifetrj.xyz
-    path: /video/wmXBjoZA
-  ws-path: /video/wmXBjoZA
+      Host: kvjqqknzjp6.yofnhkfc.xyz
+    path: /video/VDQmoBUn
+  ws-path: /video/VDQmoBUn
 - name: 新加坡1-hy2 协议
   password: 0362d827-3977-462a-83ea-f3b2db03f6dd
   port: 4433
@@ -910,13 +910,6 @@ proxies:
   port: 4433
   ports: 22000-35000
   server: br1.xiaoliyu.cyou
-  skip-cert-verify: true
-  type: hysteria2
-- name: 加拿大1-hy2 协议
-  password: 0362d827-3977-462a-83ea-f3b2db03f6dd
-  port: 4433
-  ports: 22000-35000
-  server: ca1.xiaoliyu.cyou
   skip-cert-verify: true
   type: hysteria2
 - alpn:
@@ -1233,19 +1226,6 @@ proxies:
   server: br1.xiaoliyu.cyou
   type: hysteria
   up: 30
-- alpn:
-  - h3
-  auth_str: 0362d827-3977-462a-83ea-f3b2db03f6dd
-  disable_mtu_discovery: true
-  down: 70
-  fast-open: true
-  name: 加拿大1-三网优化
-  port: 18301
-  ports: 6000-21000
-  protocol: udp
-  server: ca1.xiaoliyu.cyou
-  type: hysteria
-  up: 30
 proxy-groups:
 - name: 🚀 节点选择
   proxies:
@@ -1289,8 +1269,8 @@ proxy-groups:
   - 🇺🇸美国 06 | 专线
   - 🇺🇸美国 07 | 专线
   - 🇺🇸美国 08 | 专线
-  - 剩余流量：195.87 GB
-  - 距离下次重置剩余：5 天
+  - 剩余流量：200 GB
+  - 距离下次重置剩余：26 天
   - 套餐到期：2024-04-09
   - shop.sanfen.co 站内返利65%
   - 🇺🇸美国高速接入点-01
@@ -1336,7 +1316,6 @@ proxy-groups:
   - 西班牙1-hy2 协议
   - 墨西哥1-hy2 协议
   - 巴西1-hy2 协议
-  - 加拿大1-hy2 协议
   - 新加坡1-ChatGPT
   - 新加坡2-ChatGPT
   - 新加坡3-ChatGPT
@@ -1361,9 +1340,8 @@ proxy-groups:
   - 西班牙1-ChatGPT
   - 墨西哥1-ChatGPT
   - 巴西1-ChatGPT
-  - 加拿大1-三网优化
   type: select
-- interval: '300'
+- interval: 300
   name: ♻️ 自动选择
   proxies:
   - （看这里）每月刷新订阅获取新节点
@@ -1398,8 +1376,8 @@ proxy-groups:
   - 🇺🇸美国 06 | 专线
   - 🇺🇸美国 07 | 专线
   - 🇺🇸美国 08 | 专线
-  - 剩余流量：195.87 GB
-  - 距离下次重置剩余：5 天
+  - 剩余流量：200 GB
+  - 距离下次重置剩余：26 天
   - 套餐到期：2024-04-09
   - shop.sanfen.co 站内返利65%
   - 🇺🇸美国高速接入点-01
@@ -1445,7 +1423,6 @@ proxy-groups:
   - 西班牙1-hy2 协议
   - 墨西哥1-hy2 协议
   - 巴西1-hy2 协议
-  - 加拿大1-hy2 协议
   - 新加坡1-ChatGPT
   - 新加坡2-ChatGPT
   - 新加坡3-ChatGPT
@@ -1470,8 +1447,7 @@ proxy-groups:
   - 西班牙1-ChatGPT
   - 墨西哥1-ChatGPT
   - 巴西1-ChatGPT
-  - 加拿大1-三网优化
-  tolerance: '40'
+  tolerance: 40
   type: url-test
   url: http://www.gstatic.com/generate_204
 - name: 🌍 国外媒体
@@ -1511,8 +1487,8 @@ proxy-groups:
   - 🇺🇸美国 06 | 专线
   - 🇺🇸美国 07 | 专线
   - 🇺🇸美国 08 | 专线
-  - 剩余流量：195.87 GB
-  - 距离下次重置剩余：5 天
+  - 剩余流量：200 GB
+  - 距离下次重置剩余：26 天
   - 套餐到期：2024-04-09
   - shop.sanfen.co 站内返利65%
   - 🇺🇸美国高速接入点-01
@@ -1558,7 +1534,6 @@ proxy-groups:
   - 西班牙1-hy2 协议
   - 墨西哥1-hy2 协议
   - 巴西1-hy2 协议
-  - 加拿大1-hy2 协议
   - 新加坡1-ChatGPT
   - 新加坡2-ChatGPT
   - 新加坡3-ChatGPT
@@ -1583,7 +1558,6 @@ proxy-groups:
   - 西班牙1-ChatGPT
   - 墨西哥1-ChatGPT
   - 巴西1-ChatGPT
-  - 加拿大1-三网优化
   type: select
 - name: 📲 电报信息
   proxies:
@@ -1621,8 +1595,8 @@ proxy-groups:
   - 🇺🇸美国 06 | 专线
   - 🇺🇸美国 07 | 专线
   - 🇺🇸美国 08 | 专线
-  - 剩余流量：195.87 GB
-  - 距离下次重置剩余：5 天
+  - 剩余流量：200 GB
+  - 距离下次重置剩余：26 天
   - 套餐到期：2024-04-09
   - shop.sanfen.co 站内返利65%
   - 🇺🇸美国高速接入点-01
@@ -1668,7 +1642,6 @@ proxy-groups:
   - 西班牙1-hy2 协议
   - 墨西哥1-hy2 协议
   - 巴西1-hy2 协议
-  - 加拿大1-hy2 协议
   - 新加坡1-ChatGPT
   - 新加坡2-ChatGPT
   - 新加坡3-ChatGPT
@@ -1693,7 +1666,6 @@ proxy-groups:
   - 西班牙1-ChatGPT
   - 墨西哥1-ChatGPT
   - 巴西1-ChatGPT
-  - 加拿大1-三网优化
   type: select
 - name: Ⓜ️ 微软服务
   proxies:
@@ -1731,8 +1703,8 @@ proxy-groups:
   - 🇺🇸美国 06 | 专线
   - 🇺🇸美国 07 | 专线
   - 🇺🇸美国 08 | 专线
-  - 剩余流量：195.87 GB
-  - 距离下次重置剩余：5 天
+  - 剩余流量：200 GB
+  - 距离下次重置剩余：26 天
   - 套餐到期：2024-04-09
   - shop.sanfen.co 站内返利65%
   - 🇺🇸美国高速接入点-01
@@ -1778,7 +1750,6 @@ proxy-groups:
   - 西班牙1-hy2 协议
   - 墨西哥1-hy2 协议
   - 巴西1-hy2 协议
-  - 加拿大1-hy2 协议
   - 新加坡1-ChatGPT
   - 新加坡2-ChatGPT
   - 新加坡3-ChatGPT
@@ -1803,7 +1774,6 @@ proxy-groups:
   - 西班牙1-ChatGPT
   - 墨西哥1-ChatGPT
   - 巴西1-ChatGPT
-  - 加拿大1-三网优化
   type: select
 - name: 🍎 苹果服务
   proxies:
@@ -1841,8 +1811,8 @@ proxy-groups:
   - 🇺🇸美国 06 | 专线
   - 🇺🇸美国 07 | 专线
   - 🇺🇸美国 08 | 专线
-  - 剩余流量：195.87 GB
-  - 距离下次重置剩余：5 天
+  - 剩余流量：200 GB
+  - 距离下次重置剩余：26 天
   - 套餐到期：2024-04-09
   - shop.sanfen.co 站内返利65%
   - 🇺🇸美国高速接入点-01
@@ -1888,7 +1858,6 @@ proxy-groups:
   - 西班牙1-hy2 协议
   - 墨西哥1-hy2 协议
   - 巴西1-hy2 协议
-  - 加拿大1-hy2 协议
   - 新加坡1-ChatGPT
   - 新加坡2-ChatGPT
   - 新加坡3-ChatGPT
@@ -1913,7 +1882,6 @@ proxy-groups:
   - 西班牙1-ChatGPT
   - 墨西哥1-ChatGPT
   - 巴西1-ChatGPT
-  - 加拿大1-三网优化
   type: select
 - name: 📢 谷歌FCM
   proxies:
@@ -1952,8 +1920,8 @@ proxy-groups:
   - 🇺🇸美国 06 | 专线
   - 🇺🇸美国 07 | 专线
   - 🇺🇸美国 08 | 专线
-  - 剩余流量：195.87 GB
-  - 距离下次重置剩余：5 天
+  - 剩余流量：200 GB
+  - 距离下次重置剩余：26 天
   - 套餐到期：2024-04-09
   - shop.sanfen.co 站内返利65%
   - 🇺🇸美国高速接入点-01
@@ -1999,7 +1967,6 @@ proxy-groups:
   - 西班牙1-hy2 协议
   - 墨西哥1-hy2 协议
   - 巴西1-hy2 协议
-  - 加拿大1-hy2 协议
   - 新加坡1-ChatGPT
   - 新加坡2-ChatGPT
   - 新加坡3-ChatGPT
@@ -2024,7 +1991,6 @@ proxy-groups:
   - 西班牙1-ChatGPT
   - 墨西哥1-ChatGPT
   - 巴西1-ChatGPT
-  - 加拿大1-三网优化
   type: select
 - name: 🎯 全球直连
   proxies:
@@ -2079,8 +2045,8 @@ proxy-groups:
   - 🇺🇸美国 06 | 专线
   - 🇺🇸美国 07 | 专线
   - 🇺🇸美国 08 | 专线
-  - 剩余流量：195.87 GB
-  - 距离下次重置剩余：5 天
+  - 剩余流量：200 GB
+  - 距离下次重置剩余：26 天
   - 套餐到期：2024-04-09
   - shop.sanfen.co 站内返利65%
   - 🇺🇸美国高速接入点-01
@@ -2126,7 +2092,6 @@ proxy-groups:
   - 西班牙1-hy2 协议
   - 墨西哥1-hy2 协议
   - 巴西1-hy2 协议
-  - 加拿大1-hy2 协议
   - 新加坡1-ChatGPT
   - 新加坡2-ChatGPT
   - 新加坡3-ChatGPT
@@ -2151,9 +2116,8 @@ proxy-groups:
   - 西班牙1-ChatGPT
   - 墨西哥1-ChatGPT
   - 巴西1-ChatGPT
-  - 加拿大1-三网优化
   type: select
-- interval: '300'
+- interval: 300
   name: 🇭🇰 香港节点
   proxies:
   - 🇭🇰香港 01 | 专线
@@ -2171,19 +2135,19 @@ proxy-groups:
   - 香港1-ChatGPT
   - 香港2-三网优化
   - 香港3-三网优化
-  tolerance: '40'
+  tolerance: 40
   type: url-test
   url: http://www.gstatic.com/generate_204
-- interval: '300'
+- interval: 300
   name: 🇨🇳 台湾节点
   proxies:
   - 台湾高速接入点-01
   - 台湾1-hy2   协议
   - 台湾1-ChatGPT
-  tolerance: '40'
+  tolerance: 40
   type: url-test
   url: http://www.gstatic.com/generate_204
-- interval: '300'
+- interval: 300
   name: 🇯🇵 日本节点
   proxies:
   - 🇯🇵日本 01 | 专线
@@ -2202,20 +2166,20 @@ proxy-groups:
   - 日本1-三网优化
   - 日本2-三网优化
   - 日本4-三网优化
-  tolerance: '40'
+  tolerance: 40
   type: url-test
   url: http://www.gstatic.com/generate_204
-- interval: '300'
+- interval: 300
   name: 🇰🇷 韩国节点
   proxies:
   - 韩国1-hy2  协议
   - 韩国2-hy2  协议
   - 韩国1-ChatGPT
   - 韩国2-ChatGPT
-  tolerance: '40'
+  tolerance: 40
   type: url-test
   url: http://www.gstatic.com/generate_204
-- interval: '300'
+- interval: 300
   name: 🇸🇬 新加坡节点
   proxies:
   - 🇸🇬新加坡 01 | 专线
@@ -2241,10 +2205,10 @@ proxy-groups:
   - 新加坡4-ChatGPT
   - 新加坡5-三网优化
   - 新加坡6-三网优化
-  tolerance: '40'
+  tolerance: 40
   type: url-test
   url: http://www.gstatic.com/generate_204
-- interval: '300'
+- interval: 300
   name: 🇺🇲 美国节点
   proxies:
   - 美国01| 专线
@@ -2267,20 +2231,23 @@ proxy-groups:
   - 🇺🇸美国高速接入点-08
   - 美国1-hy2  协议
   - 美国1-三网优化
-  tolerance: '40'
+  tolerance: 40
   type: url-test
   url: http://www.gstatic.com/generate_204
 rules:
 - DOMAIN-KEYWORD,1password,🎯 全球直连
+- DOMAIN-KEYWORD,agilebits,🎯 全球直连
+- DOMAIN-KEYWORD,onedrive,🎯 全球直连
 - IP-CIDR,43.138.144.37/32,🎯 全球直连,no-resolve
-- DOMAIN-SUFFIX,access.mypikpak.com,🚀 节点选择
-- DOMAIN-SUFFIX,access.pikpak.me,🚀 节点选择
-- DOMAIN-SUFFIX,access.mypikpak.me,🚀 节点选择
+- IP-CIDR,1.1.1.1/24,🎯 全球直连,no-resolve
+- DOMAIN-SUFFIX,vipfanhao.com,🇭🇰 香港节点
+- DOMAIN-SUFFIX,access.mypikpak.com,🇭🇰 香港节点
+- DOMAIN-SUFFIX,access.pikpak.me,🇭🇰 香港节点
+- DOMAIN-SUFFIX,access.mypikpak.me,🇭🇰 香港节点
+- DOMAIN,download.mypikpak.com,🇭🇰 香港节点
 - DOMAIN-KEYWORD,xiaobi,🚀 节点选择
-- DOMAIN,download.mypikpak.com,🚀 节点选择
 - DOMAIN-SUFFIX,bing.com,🚀 节点选择
 - DOMAIN-SUFFIX,x.com,🚀 节点选择
-- DOMAIN-SUFFIX,vipfanhao.com,🇭🇰 香港节点
 - DOMAIN-KEYWORD,pikpak,🎯 全球直连
 - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
 - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连

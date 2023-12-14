@@ -88,7 +88,7 @@ class ConvertConfig:
                     if not proxy_group_proxies:
                         proxy_group_proxies = ["DIRECT"]
                     proxy_group_item = {"name": proxy_group_name, "type": proxy_group_type, "url": test_url,
-                                        "interval": proxy_group_interval, "tolerance": proxy_group_tolerance,
+                                        "interval": int(proxy_group_interval), "tolerance": int(proxy_group_tolerance),
                                         "proxies": proxy_group_proxies}
                 proxy_group_item_list.append(proxy_group_item)
         return proxy_group_item_list

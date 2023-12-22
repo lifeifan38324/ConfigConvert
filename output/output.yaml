@@ -1,7 +1,10 @@
-allow-lan: false
+allow-lan: true
 dns:
   default-nameserver:
+  - 192.168.1.1
   - 223.5.5.5
+  - 221.130.33.60
+  - 211.136.17.107
   - 114.114.114.114
   enable: true
   enhanced-mode: fake-ip
@@ -102,8 +105,8 @@ dns:
     - 240.0.0.0/4
     - 0.0.0.0/32
     - 127.0.0.1/32
-  ipv6: true
-  listen: 127.0.0.1:35353
+  ipv6: false
+  listen: 0.0.0.0:7874
   nameserver:
   - 223.6.6.6
   - 180.76.76.76
@@ -111,9 +114,9 @@ dns:
   - https://dns.rubyfish.cn/dns-query
   - https://doh.pub/dns-query
   - https://dns.alidns.com/dns-query
-external-controller: 127.0.0.1:9097
+external-controller: 0.0.0.0:9090
 log-level: info
-mixed-port: 7896
+mixed-port: 7893
 mode: rule
 proxies:
 - name: （看这里）每月刷新订阅获取新节点
@@ -378,7 +381,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 剩余流量：200 GB
+  name: 剩余流量：199.79 GB
   network: ws
   port: '2052'
   server: cfcdn1.sanfencdn9.com
@@ -394,7 +397,7 @@ proxies:
   ws-path: /video/gpUdZnWn/
 - alterId: 0
   cipher: auto
-  name: 距离下次重置剩余：26 天
+  name: 距离下次重置剩余：18 天
   network: ws
   port: '2052'
   server: cfcdn1.sanfencdn9.com
@@ -746,169 +749,115 @@ proxies:
   ws-path: /video/VDQmoBUn
 - name: 新加坡1-hy2 协议
   password: 0362d827-3977-462a-83ea-f3b2db03f6dd
-  port: 4433
-  ports: 22000-35000
+  port: 32156
   server: sg1.xiaoliyu.cyou
   skip-cert-verify: true
   type: hysteria2
 - name: 新加坡2-hy2 协议
   password: 0362d827-3977-462a-83ea-f3b2db03f6dd
-  port: 4433
-  ports: 22000-35000
+  port: 32097
   server: sg2.xiaoliyu.cyou
   skip-cert-verify: true
   type: hysteria2
 - name: 新加坡3-hy2 协议
   password: 0362d827-3977-462a-83ea-f3b2db03f6dd
-  port: 4433
-  ports: 22000-35000
+  port: 34644
   server: sg3.xiaoliyu.cyou
   skip-cert-verify: true
   type: hysteria2
 - name: 新加坡4-hy2 协议
   password: 0362d827-3977-462a-83ea-f3b2db03f6dd
-  port: 4433
-  ports: 22000-35000
+  port: 33965
   server: sg4.xiaoliyu.cyou
   skip-cert-verify: true
   type: hysteria2
 - name: 新加坡5-hy2 协议
   password: 0362d827-3977-462a-83ea-f3b2db03f6dd
-  port: 4433
-  ports: 22000-35000
+  port: 34645
   server: sg5.xiaoliyu.cyou
   skip-cert-verify: true
   type: hysteria2
 - name: 新加坡6-hy2 协议
   password: 0362d827-3977-462a-83ea-f3b2db03f6dd
-  port: 4433
-  ports: 22000-35000
+  port: 28180
   server: sg6.xiaoliyu.cyou
   skip-cert-verify: true
   type: hysteria2
 - name: 韩国1-hy2  协议
   password: 0362d827-3977-462a-83ea-f3b2db03f6dd
-  port: 4433
-  ports: 22000-35000
+  port: 22938
   server: kr1.xiaoliyu.cyou
-  skip-cert-verify: true
-  type: hysteria2
-- name: 韩国2-hy2  协议
-  password: 0362d827-3977-462a-83ea-f3b2db03f6dd
-  port: 4433
-  ports: 22000-35000
-  server: kr2.xiaoliyu.cyou
   skip-cert-verify: true
   type: hysteria2
 - name: 日本1-hy2  协议
   password: 0362d827-3977-462a-83ea-f3b2db03f6dd
-  port: 4433
-  ports: 22000-35000
+  port: 30862
   server: jp1.xiaoliyu.cyou
-  skip-cert-verify: true
-  type: hysteria2
-- name: 日本2-hy2  协议
-  password: 0362d827-3977-462a-83ea-f3b2db03f6dd
-  port: 4433
-  ports: 22000-35000
-  server: jp2.xiaoliyu.cyou
-  skip-cert-verify: true
-  type: hysteria2
-- name: 日本4-hy2  协议
-  password: 0362d827-3977-462a-83ea-f3b2db03f6dd
-  port: 4433
-  ports: 22000-35000
-  server: jp4.xiaoliyu.cyou
   skip-cert-verify: true
   type: hysteria2
 - name: 澳大利亚1-hy2 协议
   password: 0362d827-3977-462a-83ea-f3b2db03f6dd
-  port: 4433
-  ports: 22000-35000
+  port: 32990
   server: au1.xiaoliyu.cyou
   skip-cert-verify: true
   type: hysteria2
 - name: 德国1-hy2  协议
   password: 0362d827-3977-462a-83ea-f3b2db03f6dd
-  port: 4433
-  ports: 22000-35000
+  port: 24544
   server: de1.xiaoliyu.cyou
   skip-cert-verify: true
   type: hysteria2
 - name: 英国1-hy2  协议
   password: 0362d827-3977-462a-83ea-f3b2db03f6dd
-  port: 4433
-  ports: 22000-35000
+  port: 32370
   server: gb1.xiaoliyu.cyou
   skip-cert-verify: true
   type: hysteria2
 - name: 香港1-hy2  协议
   password: 0362d827-3977-462a-83ea-f3b2db03f6dd
-  port: 4433
-  ports: 22000-35000
+  port: 26293
   server: hk1.xiaoliyu.cyou
-  skip-cert-verify: true
-  type: hysteria2
-- name: 香港2-hy2  协议
-  password: 0362d827-3977-462a-83ea-f3b2db03f6dd
-  port: 4433
-  ports: 22000-35000
-  server: hk2.xiaoliyu.cyou
-  skip-cert-verify: true
-  type: hysteria2
-- name: 香港3-hy2  协议
-  password: 0362d827-3977-462a-83ea-f3b2db03f6dd
-  port: 4433
-  ports: 22000-35000
-  server: hk3.xiaoliyu.cyou
   skip-cert-verify: true
   type: hysteria2
 - name: 台湾1-hy2   协议
   password: 0362d827-3977-462a-83ea-f3b2db03f6dd
-  port: 4433
-  ports: 22000-35000
+  port: 26165
   server: tw1.xiaoliyu.cyou
   skip-cert-verify: true
   type: hysteria2
 - name: 美国1-hy2  协议
   password: 0362d827-3977-462a-83ea-f3b2db03f6dd
-  port: 4433
-  ports: 22000-35000
+  port: 26995
   server: us1.xiaoliyu.cyou
   skip-cert-verify: true
   type: hysteria2
 - name: 印度1-hy2  协议
   password: 0362d827-3977-462a-83ea-f3b2db03f6dd
-  port: 4433
-  ports: 22000-35000
+  port: 24100
   server: ln1.xiaoliyu.cyou
   skip-cert-verify: true
   type: hysteria2
 - name: 法国1-hy2  协议
   password: 0362d827-3977-462a-83ea-f3b2db03f6dd
-  port: 4433
-  ports: 22000-35000
+  port: 34388
   server: fr1.xiaoliyu.cyou
   skip-cert-verify: true
   type: hysteria2
 - name: 西班牙1-hy2 协议
   password: 0362d827-3977-462a-83ea-f3b2db03f6dd
-  port: 4433
-  ports: 22000-35000
+  port: 33793
   server: es1.xiaoliyu.cyou
   skip-cert-verify: true
   type: hysteria2
 - name: 墨西哥1-hy2 协议
   password: 0362d827-3977-462a-83ea-f3b2db03f6dd
-  port: 4433
-  ports: 22000-35000
+  port: 25688
   server: mx1.xiaoliyu.cyou
   skip-cert-verify: true
   type: hysteria2
 - name: 巴西1-hy2 协议
   password: 0362d827-3977-462a-83ea-f3b2db03f6dd
-  port: 4433
-  ports: 22000-35000
+  port: 23662
   server: br1.xiaoliyu.cyou
   skip-cert-verify: true
   type: hysteria2
@@ -1010,50 +959,11 @@ proxies:
   disable_mtu_discovery: true
   down: 70
   fast-open: true
-  name: 韩国2-ChatGPT
-  port: 18301
-  ports: 6000-21000
-  protocol: udp
-  server: kr2.xiaoliyu.cyou
-  type: hysteria
-  up: 30
-- alpn:
-  - h3
-  auth_str: 0362d827-3977-462a-83ea-f3b2db03f6dd
-  disable_mtu_discovery: true
-  down: 70
-  fast-open: true
   name: 日本1-三网优化
   port: 18301
   ports: 6000-21000
   protocol: udp
   server: jp1.xiaoliyu.cyou
-  type: hysteria
-  up: 30
-- alpn:
-  - h3
-  auth_str: 0362d827-3977-462a-83ea-f3b2db03f6dd
-  disable_mtu_discovery: true
-  down: 70
-  fast-open: true
-  name: 日本2-三网优化
-  port: 18301
-  ports: 6000-21000
-  protocol: udp
-  server: jp2.xiaoliyu.cyou
-  type: hysteria
-  up: 30
-- alpn:
-  - h3
-  auth_str: 0362d827-3977-462a-83ea-f3b2db03f6dd
-  disable_mtu_discovery: true
-  down: 70
-  fast-open: true
-  name: 日本4-三网优化
-  port: 18301
-  ports: 6000-21000
-  protocol: udp
-  server: jp4.xiaoliyu.cyou
   type: hysteria
   up: 30
 - alpn:
@@ -1106,33 +1016,6 @@ proxies:
   ports: 6000-21000
   protocol: udp
   server: hk1.xiaoliyu.cyou
-  type: hysteria
-  up: 30
-- alpn:
-  - h3
-  auth_str: 0362d827-3977-462a-83ea-f3b2db03f6dd
-  disable_mtu_discovery: true
-  down: 70
-  fast-open: true
-  name: 香港2-三网优化
-  port: 18301
-  ports: 6000-21000
-  protocol: udp
-  server: hk2.xiaoliyu.cyou
-  type: hysteria
-  up: 30
-- alpn:
-  - h3
-  auth_str: 0362d827-3977-462a-83ea-f3b2db03f6dd
-  disable_mtu_discovery: true
-  down: 70
-  fast-open: true
-  name: 香港3-三网优化
-  port: 18301
-  ports: 6000-21000
-  protocol: udp
-  server: hk3.xiaoliyu.cyou
-  skip-cert-verify: true
   type: hysteria
   up: 30
 - alpn:
@@ -1269,8 +1152,8 @@ proxy-groups:
   - 🇺🇸美国 06 | 专线
   - 🇺🇸美国 07 | 专线
   - 🇺🇸美国 08 | 专线
-  - 剩余流量：200 GB
-  - 距离下次重置剩余：26 天
+  - 剩余流量：199.79 GB
+  - 距离下次重置剩余：18 天
   - 套餐到期：2024-04-09
   - shop.sanfen.co 站内返利65%
   - 🇺🇸美国高速接入点-01
@@ -1299,16 +1182,11 @@ proxy-groups:
   - 新加坡5-hy2 协议
   - 新加坡6-hy2 协议
   - 韩国1-hy2  协议
-  - 韩国2-hy2  协议
   - 日本1-hy2  协议
-  - 日本2-hy2  协议
-  - 日本4-hy2  协议
   - 澳大利亚1-hy2 协议
   - 德国1-hy2  协议
   - 英国1-hy2  协议
   - 香港1-hy2  协议
-  - 香港2-hy2  协议
-  - 香港3-hy2  协议
   - 台湾1-hy2   协议
   - 美国1-hy2  协议
   - 印度1-hy2  协议
@@ -1323,16 +1201,115 @@ proxy-groups:
   - 新加坡5-三网优化
   - 新加坡6-三网优化
   - 韩国1-ChatGPT
-  - 韩国2-ChatGPT
   - 日本1-三网优化
-  - 日本2-三网优化
-  - 日本4-三网优化
   - 澳大利亚1-ChatGPT
   - 德国1-ChatGPT
   - 英国1-ChatGPT
   - 香港1-ChatGPT
-  - 香港2-三网优化
-  - 香港3-三网优化
+  - 台湾1-ChatGPT
+  - 美国1-三网优化
+  - 印度1-三网优化
+  - 法国1-ChatGPT
+  - 西班牙1-ChatGPT
+  - 墨西哥1-ChatGPT
+  - 巴西1-ChatGPT
+  type: select
+- name: 声田声田
+  proxies:
+  - 🇸🇬 新加坡节点
+  - ♻️ 自动选择
+  - DIRECT
+  - 🇭🇰 香港节点
+  - 🇨🇳 台湾节点
+  - 🇯🇵 日本节点
+  - 🇰🇷 韩国节点
+  - 🇺🇲 美国节点
+  - （看这里）每月刷新订阅获取新节点
+  - 一元机场.com
+  - 🇭🇰香港 01 | 专线
+  - 🇭🇰香港 02 | 专线
+  - 🇭🇰香港 03 | 专线
+  - 🇭🇰香港 04 | 专线
+  - 🇭🇰香港 05 | 专线
+  - 🇭🇰香港 06 | 专线
+  - 🇭🇰香港 07 | 专线
+  - 🇭🇰香港 08 | 专线
+  - 🇯🇵日本 01 | 专线
+  - 🇯🇵日本 02 | 专线
+  - 🇯🇵日本 03 | 专线
+  - 🇯🇵日本 04 | 专线
+  - 🇸🇬新加坡 01 | 专线
+  - 🇸🇬新加坡 02 | 专线
+  - 🇸🇬新加坡 03 | 专线
+  - 🇸🇬新加坡 04 | 专线
+  - 🇸🇬新加坡 05 | 专线
+  - 🇸🇬新加坡 06 | 专线
+  - 🇸🇬新加坡 07 | 专线
+  - 🇸🇬新加坡 08 | 专线
+  - 美国01| 专线
+  - 美国02| 专线
+  - 🇺🇸美国 01 | 专线
+  - 🇺🇸美国 02 | 专线
+  - 🇺🇸美国 03 | 专线
+  - 🇺🇸美国 04 | 专线
+  - 🇺🇸美国 05 | 专线
+  - 🇺🇸美国 06 | 专线
+  - 🇺🇸美国 07 | 专线
+  - 🇺🇸美国 08 | 专线
+  - 剩余流量：199.79 GB
+  - 距离下次重置剩余：18 天
+  - 套餐到期：2024-04-09
+  - shop.sanfen.co 站内返利65%
+  - 🇺🇸美国高速接入点-01
+  - 🇺🇸美国高速接入点-02
+  - 🇺🇸美国高速接入点-03
+  - 🇺🇸美国高速接入点-04
+  - 🇺🇸美国高速接入点-05
+  - 🇺🇸美国高速接入点-06
+  - 🇺🇸美国高速接入点-07
+  - 🇺🇸美国高速接入点-08
+  - 🇸🇬新加坡高速接入点-01
+  - 🇸🇬新加坡高速接入点-02
+  - 🇸🇬新加坡高速接入点-03
+  - 🇭🇰香港高速接入点-01
+  - 台湾高速接入点-01
+  - 🇯🇵日本高速接入点-01
+  - 🇯🇵日本高速接入点-02
+  - 🇯🇵日本高速接入点-03
+  - 🇯🇵日本高速接入点-04
+  - 🇯🇵日本高速接入点-05
+  - 🇯🇵日本高速接入点-06
+  - 新加坡1-hy2 协议
+  - 新加坡2-hy2 协议
+  - 新加坡3-hy2 协议
+  - 新加坡4-hy2 协议
+  - 新加坡5-hy2 协议
+  - 新加坡6-hy2 协议
+  - 韩国1-hy2  协议
+  - 日本1-hy2  协议
+  - 澳大利亚1-hy2 协议
+  - 德国1-hy2  协议
+  - 英国1-hy2  协议
+  - 香港1-hy2  协议
+  - 台湾1-hy2   协议
+  - 美国1-hy2  协议
+  - 印度1-hy2  协议
+  - 法国1-hy2  协议
+  - 西班牙1-hy2 协议
+  - 墨西哥1-hy2 协议
+  - 巴西1-hy2 协议
+  - 新加坡1-ChatGPT
+  - 新加坡2-ChatGPT
+  - 新加坡3-ChatGPT
+  - 新加坡4-ChatGPT
+  - 新加坡5-三网优化
+  - 新加坡6-三网优化
+  - 韩国1-ChatGPT
+  - 日本1-三网优化
+  - 澳大利亚1-ChatGPT
+  - 德国1-ChatGPT
+  - 英国1-ChatGPT
+  - 香港1-ChatGPT
   - 台湾1-ChatGPT
   - 美国1-三网优化
   - 印度1-三网优化
@@ -1376,8 +1353,8 @@ proxy-groups:
   - 🇺🇸美国 06 | 专线
   - 🇺🇸美国 07 | 专线
   - 🇺🇸美国 08 | 专线
-  - 剩余流量：200 GB
-  - 距离下次重置剩余：26 天
+  - 剩余流量：199.79 GB
+  - 距离下次重置剩余：18 天
   - 套餐到期：2024-04-09
   - shop.sanfen.co 站内返利65%
   - 🇺🇸美国高速接入点-01
@@ -1406,16 +1383,11 @@ proxy-groups:
   - 新加坡5-hy2 协议
   - 新加坡6-hy2 协议
   - 韩国1-hy2  协议
-  - 韩国2-hy2  协议
   - 日本1-hy2  协议
-  - 日本2-hy2  协议
-  - 日本4-hy2  协议
   - 澳大利亚1-hy2 协议
   - 德国1-hy2  协议
   - 英国1-hy2  协议
   - 香港1-hy2  协议
-  - 香港2-hy2  协议
-  - 香港3-hy2  协议
   - 台湾1-hy2   协议
   - 美国1-hy2  协议
   - 印度1-hy2  协议
@@ -1430,16 +1402,11 @@ proxy-groups:
   - 新加坡5-三网优化
   - 新加坡6-三网优化
   - 韩国1-ChatGPT
-  - 韩国2-ChatGPT
   - 日本1-三网优化
-  - 日本2-三网优化
-  - 日本4-三网优化
   - 澳大利亚1-ChatGPT
   - 德国1-ChatGPT
   - 英国1-ChatGPT
   - 香港1-ChatGPT
-  - 香港2-三网优化
-  - 香港3-三网优化
   - 台湾1-ChatGPT
   - 美国1-三网优化
   - 印度1-三网优化
@@ -1487,8 +1454,8 @@ proxy-groups:
   - 🇺🇸美国 06 | 专线
   - 🇺🇸美国 07 | 专线
   - 🇺🇸美国 08 | 专线
-  - 剩余流量：200 GB
-  - 距离下次重置剩余：26 天
+  - 剩余流量：199.79 GB
+  - 距离下次重置剩余：18 天
   - 套餐到期：2024-04-09
   - shop.sanfen.co 站内返利65%
   - 🇺🇸美国高速接入点-01
@@ -1517,16 +1484,11 @@ proxy-groups:
   - 新加坡5-hy2 协议
   - 新加坡6-hy2 协议
   - 韩国1-hy2  协议
-  - 韩国2-hy2  协议
   - 日本1-hy2  协议
-  - 日本2-hy2  协议
-  - 日本4-hy2  协议
   - 澳大利亚1-hy2 协议
   - 德国1-hy2  协议
   - 英国1-hy2  协议
   - 香港1-hy2  协议
-  - 香港2-hy2  协议
-  - 香港3-hy2  协议
   - 台湾1-hy2   协议
   - 美国1-hy2  协议
   - 印度1-hy2  协议
@@ -1541,16 +1503,11 @@ proxy-groups:
   - 新加坡5-三网优化
   - 新加坡6-三网优化
   - 韩国1-ChatGPT
-  - 韩国2-ChatGPT
   - 日本1-三网优化
-  - 日本2-三网优化
-  - 日本4-三网优化
   - 澳大利亚1-ChatGPT
   - 德国1-ChatGPT
   - 英国1-ChatGPT
   - 香港1-ChatGPT
-  - 香港2-三网优化
-  - 香港3-三网优化
   - 台湾1-ChatGPT
   - 美国1-三网优化
   - 印度1-三网优化
@@ -1595,8 +1552,8 @@ proxy-groups:
   - 🇺🇸美国 06 | 专线
   - 🇺🇸美国 07 | 专线
   - 🇺🇸美国 08 | 专线
-  - 剩余流量：200 GB
-  - 距离下次重置剩余：26 天
+  - 剩余流量：199.79 GB
+  - 距离下次重置剩余：18 天
   - 套餐到期：2024-04-09
   - shop.sanfen.co 站内返利65%
   - 🇺🇸美国高速接入点-01
@@ -1625,16 +1582,11 @@ proxy-groups:
   - 新加坡5-hy2 协议
   - 新加坡6-hy2 协议
   - 韩国1-hy2  协议
-  - 韩国2-hy2  协议
   - 日本1-hy2  协议
-  - 日本2-hy2  协议
-  - 日本4-hy2  协议
   - 澳大利亚1-hy2 协议
   - 德国1-hy2  协议
   - 英国1-hy2  协议
   - 香港1-hy2  协议
-  - 香港2-hy2  协议
-  - 香港3-hy2  协议
   - 台湾1-hy2   协议
   - 美国1-hy2  协议
   - 印度1-hy2  协议
@@ -1649,16 +1601,11 @@ proxy-groups:
   - 新加坡5-三网优化
   - 新加坡6-三网优化
   - 韩国1-ChatGPT
-  - 韩国2-ChatGPT
   - 日本1-三网优化
-  - 日本2-三网优化
-  - 日本4-三网优化
   - 澳大利亚1-ChatGPT
   - 德国1-ChatGPT
   - 英国1-ChatGPT
   - 香港1-ChatGPT
-  - 香港2-三网优化
-  - 香港3-三网优化
   - 台湾1-ChatGPT
   - 美国1-三网优化
   - 印度1-三网优化
@@ -1703,8 +1650,8 @@ proxy-groups:
   - 🇺🇸美国 06 | 专线
   - 🇺🇸美国 07 | 专线
   - 🇺🇸美国 08 | 专线
-  - 剩余流量：200 GB
-  - 距离下次重置剩余：26 天
+  - 剩余流量：199.79 GB
+  - 距离下次重置剩余：18 天
   - 套餐到期：2024-04-09
   - shop.sanfen.co 站内返利65%
   - 🇺🇸美国高速接入点-01
@@ -1733,16 +1680,11 @@ proxy-groups:
   - 新加坡5-hy2 协议
   - 新加坡6-hy2 协议
   - 韩国1-hy2  协议
-  - 韩国2-hy2  协议
   - 日本1-hy2  协议
-  - 日本2-hy2  协议
-  - 日本4-hy2  协议
   - 澳大利亚1-hy2 协议
   - 德国1-hy2  协议
   - 英国1-hy2  协议
   - 香港1-hy2  协议
-  - 香港2-hy2  协议
-  - 香港3-hy2  协议
   - 台湾1-hy2   协议
   - 美国1-hy2  协议
   - 印度1-hy2  协议
@@ -1757,16 +1699,11 @@ proxy-groups:
   - 新加坡5-三网优化
   - 新加坡6-三网优化
   - 韩国1-ChatGPT
-  - 韩国2-ChatGPT
   - 日本1-三网优化
-  - 日本2-三网优化
-  - 日本4-三网优化
   - 澳大利亚1-ChatGPT
   - 德国1-ChatGPT
   - 英国1-ChatGPT
   - 香港1-ChatGPT
-  - 香港2-三网优化
-  - 香港3-三网优化
   - 台湾1-ChatGPT
   - 美国1-三网优化
   - 印度1-三网优化
@@ -1811,8 +1748,8 @@ proxy-groups:
   - 🇺🇸美国 06 | 专线
   - 🇺🇸美国 07 | 专线
   - 🇺🇸美国 08 | 专线
-  - 剩余流量：200 GB
-  - 距离下次重置剩余：26 天
+  - 剩余流量：199.79 GB
+  - 距离下次重置剩余：18 天
   - 套餐到期：2024-04-09
   - shop.sanfen.co 站内返利65%
   - 🇺🇸美国高速接入点-01
@@ -1841,16 +1778,11 @@ proxy-groups:
   - 新加坡5-hy2 协议
   - 新加坡6-hy2 协议
   - 韩国1-hy2  协议
-  - 韩国2-hy2  协议
   - 日本1-hy2  协议
-  - 日本2-hy2  协议
-  - 日本4-hy2  协议
   - 澳大利亚1-hy2 协议
   - 德国1-hy2  协议
   - 英国1-hy2  协议
   - 香港1-hy2  协议
-  - 香港2-hy2  协议
-  - 香港3-hy2  协议
   - 台湾1-hy2   协议
   - 美国1-hy2  协议
   - 印度1-hy2  协议
@@ -1865,16 +1797,11 @@ proxy-groups:
   - 新加坡5-三网优化
   - 新加坡6-三网优化
   - 韩国1-ChatGPT
-  - 韩国2-ChatGPT
   - 日本1-三网优化
-  - 日本2-三网优化
-  - 日本4-三网优化
   - 澳大利亚1-ChatGPT
   - 德国1-ChatGPT
   - 英国1-ChatGPT
   - 香港1-ChatGPT
-  - 香港2-三网优化
-  - 香港3-三网优化
   - 台湾1-ChatGPT
   - 美国1-三网优化
   - 印度1-三网优化
@@ -1920,8 +1847,8 @@ proxy-groups:
   - 🇺🇸美国 06 | 专线
   - 🇺🇸美国 07 | 专线
   - 🇺🇸美国 08 | 专线
-  - 剩余流量：200 GB
-  - 距离下次重置剩余：26 天
+  - 剩余流量：199.79 GB
+  - 距离下次重置剩余：18 天
   - 套餐到期：2024-04-09
   - shop.sanfen.co 站内返利65%
   - 🇺🇸美国高速接入点-01
@@ -1950,16 +1877,11 @@ proxy-groups:
   - 新加坡5-hy2 协议
   - 新加坡6-hy2 协议
   - 韩国1-hy2  协议
-  - 韩国2-hy2  协议
   - 日本1-hy2  协议
-  - 日本2-hy2  协议
-  - 日本4-hy2  协议
   - 澳大利亚1-hy2 协议
   - 德国1-hy2  协议
   - 英国1-hy2  协议
   - 香港1-hy2  协议
-  - 香港2-hy2  协议
-  - 香港3-hy2  协议
   - 台湾1-hy2   协议
   - 美国1-hy2  协议
   - 印度1-hy2  协议
@@ -1974,16 +1896,11 @@ proxy-groups:
   - 新加坡5-三网优化
   - 新加坡6-三网优化
   - 韩国1-ChatGPT
-  - 韩国2-ChatGPT
   - 日本1-三网优化
-  - 日本2-三网优化
-  - 日本4-三网优化
   - 澳大利亚1-ChatGPT
   - 德国1-ChatGPT
   - 英国1-ChatGPT
   - 香港1-ChatGPT
-  - 香港2-三网优化
-  - 香港3-三网优化
   - 台湾1-ChatGPT
   - 美国1-三网优化
   - 印度1-三网优化
@@ -2045,8 +1962,8 @@ proxy-groups:
   - 🇺🇸美国 06 | 专线
   - 🇺🇸美国 07 | 专线
   - 🇺🇸美国 08 | 专线
-  - 剩余流量：200 GB
-  - 距离下次重置剩余：26 天
+  - 剩余流量：199.79 GB
+  - 距离下次重置剩余：18 天
   - 套餐到期：2024-04-09
   - shop.sanfen.co 站内返利65%
   - 🇺🇸美国高速接入点-01
@@ -2075,16 +1992,11 @@ proxy-groups:
   - 新加坡5-hy2 协议
   - 新加坡6-hy2 协议
   - 韩国1-hy2  协议
-  - 韩国2-hy2  协议
   - 日本1-hy2  协议
-  - 日本2-hy2  协议
-  - 日本4-hy2  协议
   - 澳大利亚1-hy2 协议
   - 德国1-hy2  协议
   - 英国1-hy2  协议
   - 香港1-hy2  协议
-  - 香港2-hy2  协议
-  - 香港3-hy2  协议
   - 台湾1-hy2   协议
   - 美国1-hy2  协议
   - 印度1-hy2  协议
@@ -2099,16 +2011,11 @@ proxy-groups:
   - 新加坡5-三网优化
   - 新加坡6-三网优化
   - 韩国1-ChatGPT
-  - 韩国2-ChatGPT
   - 日本1-三网优化
-  - 日本2-三网优化
-  - 日本4-三网优化
   - 澳大利亚1-ChatGPT
   - 德国1-ChatGPT
   - 英国1-ChatGPT
   - 香港1-ChatGPT
-  - 香港2-三网优化
-  - 香港3-三网优化
   - 台湾1-ChatGPT
   - 美国1-三网优化
   - 印度1-三网优化
@@ -2130,11 +2037,7 @@ proxy-groups:
   - 🇭🇰香港 08 | 专线
   - 🇭🇰香港高速接入点-01
   - 香港1-hy2  协议
-  - 香港2-hy2  协议
-  - 香港3-hy2  协议
   - 香港1-ChatGPT
-  - 香港2-三网优化
-  - 香港3-三网优化
   tolerance: 40
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -2161,11 +2064,7 @@ proxy-groups:
   - 🇯🇵日本高速接入点-05
   - 🇯🇵日本高速接入点-06
   - 日本1-hy2  协议
-  - 日本2-hy2  协议
-  - 日本4-hy2  协议
   - 日本1-三网优化
-  - 日本2-三网优化
-  - 日本4-三网优化
   tolerance: 40
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -2173,9 +2072,7 @@ proxy-groups:
   name: 🇰🇷 韩国节点
   proxies:
   - 韩国1-hy2  协议
-  - 韩国2-hy2  协议
   - 韩国1-ChatGPT
-  - 韩国2-ChatGPT
   tolerance: 40
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -2235,73 +2132,6 @@ proxy-groups:
   type: url-test
   url: http://www.gstatic.com/generate_204
 rules:
-- DOMAIN-KEYWORD,1password,🎯 全球直连
-- DOMAIN-KEYWORD,agilebits,🎯 全球直连
-- DOMAIN-KEYWORD,onedrive,🎯 全球直连
-- IP-CIDR,43.138.144.37/32,🎯 全球直连,no-resolve
-- IP-CIDR,1.1.1.1/24,🎯 全球直连,no-resolve
-- DOMAIN-SUFFIX,vipfanhao.com,🇭🇰 香港节点
-- DOMAIN-SUFFIX,access.mypikpak.com,🇭🇰 香港节点
-- DOMAIN-SUFFIX,access.pikpak.me,🇭🇰 香港节点
-- DOMAIN-SUFFIX,access.mypikpak.me,🇭🇰 香港节点
-- DOMAIN,download.mypikpak.com,🇭🇰 香港节点
-- DOMAIN-KEYWORD,xiaobi,🚀 节点选择
-- DOMAIN-SUFFIX,bing.com,🚀 节点选择
-- DOMAIN-SUFFIX,x.com,🚀 节点选择
-- DOMAIN-KEYWORD,pikpak,🎯 全球直连
-- DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
-- DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
-- DOMAIN-SUFFIX,ip6-loopback,🎯 全球直连
-- DOMAIN-SUFFIX,lan,🎯 全球直连
-- DOMAIN-SUFFIX,local,🎯 全球直连
-- DOMAIN-SUFFIX,localhost,🎯 全球直连
-- IP-CIDR,0.0.0.0/8,🎯 全球直连,no-resolve
-- IP-CIDR,10.0.0.0/8,🎯 全球直连,no-resolve
-- IP-CIDR,100.64.0.0/10,🎯 全球直连,no-resolve
-- IP-CIDR,127.0.0.0/8,🎯 全球直连,no-resolve
-- IP-CIDR,172.16.0.0/12,🎯 全球直连,no-resolve
-- IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
-- IP-CIDR,198.18.0.0/16,🎯 全球直连,no-resolve
-- IP-CIDR,224.0.0.0/4,🎯 全球直连,no-resolve
-- IP-CIDR6,::1/128,🎯 全球直连,no-resolve
-- IP-CIDR6,fc00::/7,🎯 全球直连,no-resolve
-- IP-CIDR6,fe80::/10,🎯 全球直连,no-resolve
-- IP-CIDR6,fd00::/8,🎯 全球直连,no-resolve
-- DOMAIN,instant.arubanetworks.com,🎯 全球直连
-- DOMAIN,setmeup.arubanetworks.com,🎯 全球直连
-- DOMAIN,router.asus.com,🎯 全球直连
-- DOMAIN,www.asusrouter.com,🎯 全球直连
-- DOMAIN-SUFFIX,hiwifi.com,🎯 全球直连
-- DOMAIN-SUFFIX,leike.cc,🎯 全球直连
-- DOMAIN-SUFFIX,miwifi.com,🎯 全球直连
-- DOMAIN-SUFFIX,my.router,🎯 全球直连
-- DOMAIN-SUFFIX,p.to,🎯 全球直连
-- DOMAIN-SUFFIX,peiluyou.com,🎯 全球直连
-- DOMAIN-SUFFIX,phicomm.me,🎯 全球直连
-- DOMAIN-SUFFIX,router.ctc,🎯 全球直连
-- DOMAIN-SUFFIX,routerlogin.com,🎯 全球直连
-- DOMAIN-SUFFIX,tendawifi.com,🎯 全球直连
-- DOMAIN-SUFFIX,zte.home,🎯 全球直连
-- DOMAIN-SUFFIX,tplogin.cn,🎯 全球直连
-- DOMAIN-SUFFIX,wifi.cmcc,🎯 全球直连
-- DOMAIN-SUFFIX,ol.epicgames.com,🎯 全球直连
-- DOMAIN-SUFFIX,dizhensubao.getui.com,🎯 全球直连
-- DOMAIN,dl.google.com,🎯 全球直连
-- DOMAIN-SUFFIX,googletraveladservices.com,🎯 全球直连
-- DOMAIN-SUFFIX,tracking-protection.cdn.mozilla.net,🎯 全球直连
-- DOMAIN,origin-a.akamaihd.net,🎯 全球直连
-- DOMAIN,fairplay.l.qq.com,🎯 全球直连
-- DOMAIN,livew.l.qq.com,🎯 全球直连
-- DOMAIN,vd.l.qq.com,🎯 全球直连
-- DOMAIN,errlog.umeng.com,🎯 全球直连
-- DOMAIN,msg.umeng.com,🎯 全球直连
-- DOMAIN,msg.umengcloud.com,🎯 全球直连
-- DOMAIN,tracking.miui.com,🎯 全球直连
-- DOMAIN,app.adjust.com,🎯 全球直连
-- DOMAIN,bdtj.tagtic.cn,🎯 全球直连
-- DOMAIN,rewards.hypixel.net,🎯 全球直连
-- DOMAIN-SUFFIX,koodomobile.com,🎯 全球直连
-- DOMAIN-SUFFIX,koodomobile.ca,🎯 全球直连
 - DOMAIN-KEYWORD,admarvel,🛑 全球拦截
 - DOMAIN-KEYWORD,admaster,🛑 全球拦截
 - DOMAIN-KEYWORD,adsage,🛑 全球拦截
@@ -2720,6 +2550,7 @@ rules:
 - DOMAIN-SUFFIX,zhjfad.com,🛑 全球拦截
 - DOMAIN-SUFFIX,zqzxz.com,🛑 全球拦截
 - DOMAIN-SUFFIX,zzsx8.com,🛑 全球拦截
+- DOMAIN-SUFFIX,wwads.cn,🛑 全球拦截
 - DOMAIN-SUFFIX,acuityplatform.com,🛑 全球拦截
 - DOMAIN-SUFFIX,ad-stir.com,🛑 全球拦截
 - DOMAIN-SUFFIX,ad-survey.com,🛑 全球拦截
@@ -3916,6 +3747,126 @@ rules:
 - DOMAIN-SUFFIX,tralog.ganji.com,🍃 应用净化
 - DOMAIN-SUFFIX,up.qingdaonews.com,🍃 应用净化
 - DOMAIN-SUFFIX,vaserviece.10jqka.com.cn,🍃 应用净化
+- DOMAIN-KEYWORD,1password,🎯 全球直连
+- DOMAIN-KEYWORD,agilebits,🎯 全球直连
+- DOMAIN-KEYWORD,onedrive,🎯 全球直连
+- IP-CIDR,43.138.144.37/32,🎯 全球直连,no-resolve
+- IP-CIDR,1.1.1.1/24,🎯 全球直连,no-resolve
+- DOMAIN-SUFFIX,vipfanhao.com,🇭🇰 香港节点
+- DOMAIN-SUFFIX,access.mypikpak.com,🇭🇰 香港节点
+- DOMAIN-SUFFIX,access.pikpak.me,🇭🇰 香港节点
+- DOMAIN-SUFFIX,access.mypikpak.me,🇭🇰 香港节点
+- DOMAIN,download.mypikpak.com,🇭🇰 香港节点
+- DOMAIN-KEYWORD,xiaobi,🚀 节点选择
+- DOMAIN-SUFFIX,bing.com,🚀 节点选择
+- DOMAIN-SUFFIX,x.com,🚀 节点选择
+- DOMAIN-KEYWORD,pikpak,🎯 全球直连
+- DOMAIN-SUFFIX,1drv.com,Ⓜ️ 微软服务
+- DOMAIN-SUFFIX,1drv.ms,Ⓜ️ 微软服务
+- DOMAIN-SUFFIX,livefilestore.com,Ⓜ️ 微软服务
+- DOMAIN-SUFFIX,oneclient.sfx.ms,Ⓜ️ 微软服务
+- DOMAIN-SUFFIX,onedrive.co,Ⓜ️ 微软服务
+- DOMAIN-SUFFIX,onedrive.co.uk,Ⓜ️ 微软服务
+- DOMAIN-SUFFIX,onedrive.com,Ⓜ️ 微软服务
+- DOMAIN-SUFFIX,onedrive.eu,Ⓜ️ 微软服务
+- DOMAIN-SUFFIX,onedrive.live.com,Ⓜ️ 微软服务
+- DOMAIN-SUFFIX,onedrive.net,Ⓜ️ 微软服务
+- DOMAIN-SUFFIX,onedrive.org,Ⓜ️ 微软服务
+- DOMAIN-SUFFIX,photos.live.com,Ⓜ️ 微软服务
+- DOMAIN-SUFFIX,sharepoint.com,Ⓜ️ 微软服务
+- DOMAIN-SUFFIX,sharepointonline.com,Ⓜ️ 微软服务
+- DOMAIN-SUFFIX,skydrive.wns.windows.com,Ⓜ️ 微软服务
+- DOMAIN-SUFFIX,spoprod-a.akamaihd.net,Ⓜ️ 微软服务
+- DOMAIN-SUFFIX,storage.live.com,Ⓜ️ 微软服务
+- DOMAIN-SUFFIX,storage.msn.com,Ⓜ️ 微软服务
+- DOMAIN-KEYWORD,1drv,Ⓜ️ 微软服务
+- DOMAIN-KEYWORD,onedrive,Ⓜ️ 微软服务
+- DOMAIN-KEYWORD,skydrive,Ⓜ️ 微软服务
+- PROCESS-NAME,OneDrive,Ⓜ️ 微软服务
+- PROCESS-NAME,OneDriveUpdater,Ⓜ️ 微软服务
+- DOMAIN,audio4-ak-spotify-com.akamaized.net,声田声田
+- DOMAIN,cdn-spotify-experiments.conductrics.com,声田声田
+- DOMAIN,heads-ak-spotify-com.akamaized.net,声田声田
+- DOMAIN,spotify.com.edgesuite.net,声田声田
+- DOMAIN,spotify.map.fastly.net,声田声田
+- DOMAIN,spotify.map.fastlylb.net,声田声田
+- DOMAIN-SUFFIX,audio-ak-spotify-com.akamaized.net,声田声田
+- DOMAIN-SUFFIX,byspotify.com,声田声田
+- DOMAIN-SUFFIX,heads4-ak-spotify-com.akamaized.net,声田声田
+- DOMAIN-SUFFIX,pscdn.co,声田声田
+- DOMAIN-SUFFIX,scdn.co,声田声田
+- DOMAIN-SUFFIX,spoti.fi,声田声田
+- DOMAIN-SUFFIX,spotify-com.akamaized.net,声田声田
+- DOMAIN-SUFFIX,spotify-everywhere.com,声田声田
+- DOMAIN-SUFFIX,spotify.com,声田声田
+- DOMAIN-SUFFIX,spotify.design,声田声田
+- DOMAIN-SUFFIX,spotifycdn.com,声田声田
+- DOMAIN-SUFFIX,spotifycdn.net,声田声田
+- DOMAIN-SUFFIX,spotifycharts.com,声田声田
+- DOMAIN-SUFFIX,spotifycodes.com,声田声田
+- DOMAIN-SUFFIX,spotifyforbrands.com,声田声田
+- DOMAIN-SUFFIX,spotifyjobs.com,声田声田
+- DOMAIN-SUFFIX,spotifynewsroom.jp,声田声田
+- DOMAIN-SUFFIX,spotilocal.com,声田声田
+- DOMAIN-SUFFIX,tospotify.com,声田声田
+- DOMAIN-KEYWORD,-spotify-,声田声田
+- DOMAIN-KEYWORD,spotify.com,声田声田
+- IP-CIDR,104.154.127.126/32,声田声田,no-resolve
+- IP-CIDR,35.186.224.47/32,声田声田,no-resolve
+- PROCESS-NAME,com.spotify.music,声田声田
+- DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
+- DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
+- DOMAIN-SUFFIX,ip6-loopback,🎯 全球直连
+- DOMAIN-SUFFIX,lan,🎯 全球直连
+- DOMAIN-SUFFIX,local,🎯 全球直连
+- DOMAIN-SUFFIX,localhost,🎯 全球直连
+- IP-CIDR,0.0.0.0/8,🎯 全球直连,no-resolve
+- IP-CIDR,10.0.0.0/8,🎯 全球直连,no-resolve
+- IP-CIDR,100.64.0.0/10,🎯 全球直连,no-resolve
+- IP-CIDR,127.0.0.0/8,🎯 全球直连,no-resolve
+- IP-CIDR,172.16.0.0/12,🎯 全球直连,no-resolve
+- IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
+- IP-CIDR,198.18.0.0/16,🎯 全球直连,no-resolve
+- IP-CIDR,224.0.0.0/4,🎯 全球直连,no-resolve
+- IP-CIDR6,::1/128,🎯 全球直连,no-resolve
+- IP-CIDR6,fc00::/7,🎯 全球直连,no-resolve
+- IP-CIDR6,fe80::/10,🎯 全球直连,no-resolve
+- IP-CIDR6,fd00::/8,🎯 全球直连,no-resolve
+- DOMAIN,instant.arubanetworks.com,🎯 全球直连
+- DOMAIN,setmeup.arubanetworks.com,🎯 全球直连
+- DOMAIN,router.asus.com,🎯 全球直连
+- DOMAIN,www.asusrouter.com,🎯 全球直连
+- DOMAIN-SUFFIX,hiwifi.com,🎯 全球直连
+- DOMAIN-SUFFIX,leike.cc,🎯 全球直连
+- DOMAIN-SUFFIX,miwifi.com,🎯 全球直连
+- DOMAIN-SUFFIX,my.router,🎯 全球直连
+- DOMAIN-SUFFIX,p.to,🎯 全球直连
+- DOMAIN-SUFFIX,peiluyou.com,🎯 全球直连
+- DOMAIN-SUFFIX,phicomm.me,🎯 全球直连
+- DOMAIN-SUFFIX,router.ctc,🎯 全球直连
+- DOMAIN-SUFFIX,routerlogin.com,🎯 全球直连
+- DOMAIN-SUFFIX,tendawifi.com,🎯 全球直连
+- DOMAIN-SUFFIX,zte.home,🎯 全球直连
+- DOMAIN-SUFFIX,tplogin.cn,🎯 全球直连
+- DOMAIN-SUFFIX,wifi.cmcc,🎯 全球直连
+- DOMAIN-SUFFIX,ol.epicgames.com,🎯 全球直连
+- DOMAIN-SUFFIX,dizhensubao.getui.com,🎯 全球直连
+- DOMAIN,dl.google.com,🎯 全球直连
+- DOMAIN-SUFFIX,googletraveladservices.com,🎯 全球直连
+- DOMAIN-SUFFIX,tracking-protection.cdn.mozilla.net,🎯 全球直连
+- DOMAIN,origin-a.akamaihd.net,🎯 全球直连
+- DOMAIN,fairplay.l.qq.com,🎯 全球直连
+- DOMAIN,livew.l.qq.com,🎯 全球直连
+- DOMAIN,vd.l.qq.com,🎯 全球直连
+- DOMAIN,errlog.umeng.com,🎯 全球直连
+- DOMAIN,msg.umeng.com,🎯 全球直连
+- DOMAIN,msg.umengcloud.com,🎯 全球直连
+- DOMAIN,tracking.miui.com,🎯 全球直连
+- DOMAIN,app.adjust.com,🎯 全球直连
+- DOMAIN,bdtj.tagtic.cn,🎯 全球直连
+- DOMAIN,rewards.hypixel.net,🎯 全球直连
+- DOMAIN-SUFFIX,koodomobile.com,🎯 全球直连
+- DOMAIN-SUFFIX,koodomobile.ca,🎯 全球直连
 - DOMAIN,alt1-mtalk.google.com,📢 谷歌FCM
 - DOMAIN,alt2-mtalk.google.com,📢 谷歌FCM
 - DOMAIN,alt3-mtalk.google.com,📢 谷歌FCM
@@ -4366,6 +4317,8 @@ rules:
 - DOMAIN-SUFFIX,identrust.com,🌍 国外媒体
 - DOMAIN-SUFFIX,intercom.io,🌍 国外媒体
 - DOMAIN-SUFFIX,intercomcdn.com,🌍 国外媒体
+- DOMAIN-SUFFIX,oaistatic.com,🌍 国外媒体
+- DOMAIN-SUFFIX,oaiusercontent.com,🌍 国外媒体
 - DOMAIN-SUFFIX,openai.com,🌍 国外媒体
 - DOMAIN-SUFFIX,openaiapi-site.azureedge.net,🌍 国外媒体
 - DOMAIN-SUFFIX,sentry.io,🌍 国外媒体
@@ -4460,6 +4413,7 @@ rules:
 - DOMAIN-SUFFIX,tumbex.com,🚀 节点选择
 - DOMAIN-SUFFIX,twdvd.com,🚀 节点选择
 - DOMAIN-SUFFIX,unsplash.com,🚀 节点选择
+- DOMAIN-SUFFIX,buzzsprout.com,🚀 节点选择
 - DOMAIN-SUFFIX,eu,🚀 节点选择
 - DOMAIN-SUFFIX,hk,🚀 节点选择
 - DOMAIN-SUFFIX,jp,🚀 节点选择
@@ -4617,6 +4571,8 @@ rules:
 - DOMAIN-KEYWORD,uk-live,🚀 节点选择
 - DOMAIN-SUFFIX,bbc.co,🚀 节点选择
 - DOMAIN-SUFFIX,bbc.com,🚀 节点选择
+- DOMAIN-SUFFIX,claude.ai,🚀 节点选择
+- DOMAIN-SUFFIX,anthropic.com,🚀 节点选择
 - DOMAIN-SUFFIX,apache.org,🚀 节点选择
 - DOMAIN-SUFFIX,docker.com,🚀 节点选择
 - DOMAIN-SUFFIX,elastic.co,🚀 节点选择
@@ -4772,6 +4728,7 @@ rules:
 - DOMAIN-SUFFIX,ypncdn.com,🚀 节点选择
 - DOMAIN-SUFFIX,pixiv.net,🚀 节点选择
 - DOMAIN-SUFFIX,pximg.net,🚀 节点选择
+- DOMAIN-SUFFIX,fanbox.cc,🚀 节点选择
 - DOMAIN-SUFFIX,amplitude.com,🚀 节点选择
 - DOMAIN-SUFFIX,firebaseio.com,🚀 节点选择
 - DOMAIN-SUFFIX,hockeyapp.net,🚀 节点选择
@@ -4846,6 +4803,8 @@ rules:
 - DOMAIN-SUFFIX,wikiversity.org,🚀 节点选择
 - DOMAIN-SUFFIX,wikivoyage.org,🚀 节点选择
 - DOMAIN-SUFFIX,wiktionary.org,🚀 节点选择
+- DOMAIN-SUFFIX,zoom.us,🚀 节点选择
+- DOMAIN-SUFFIX,zoomgov.com,🚀 节点选择
 - DOMAIN-SUFFIX,neulion.com,🚀 节点选择
 - DOMAIN-SUFFIX,icntv.xyz,🚀 节点选择
 - DOMAIN-SUFFIX,flzbcdn.xyz,🚀 节点选择
@@ -4868,6 +4827,7 @@ rules:
 - DOMAIN-SUFFIX,zhenguanyu.biz,🎯 全球直连
 - DOMAIN-SUFFIX,zhenguanyu.com,🎯 全球直连
 - DOMAIN-SUFFIX,snapdrop.net,🎯 全球直连
+- DOMAIN-SUFFIX,tebex.io,🎯 全球直连
 - DOMAIN-SUFFIX,cn,🎯 全球直连
 - DOMAIN-SUFFIX,xn--fiqs8s,🎯 全球直连
 - DOMAIN-SUFFIX,xn--55qx5d,🎯 全球直连
@@ -4918,6 +4878,7 @@ rules:
 - DOMAIN-SUFFIX,aliyuncdn.com,🎯 全球直连
 - DOMAIN-SUFFIX,aliyuncs.com,🎯 全球直连
 - DOMAIN-SUFFIX,aliyundrive.com,🎯 全球直连
+- DOMAIN-SUFFIX,aliyundrive.net,🎯 全球直连
 - DOMAIN-SUFFIX,amap.com,🎯 全球直连
 - DOMAIN-SUFFIX,autonavi.com,🎯 全球直连
 - DOMAIN-SUFFIX,dingtalk.com,🎯 全球直连
@@ -5244,6 +5205,7 @@ rules:
 - DOMAIN-SUFFIX,biqudu.com,🎯 全球直连
 - DOMAIN-SUFFIX,biquge.com,🎯 全球直连
 - DOMAIN-SUFFIX,bitauto.com,🎯 全球直连
+- DOMAIN-SUFFIX,bosszhipin.com,🎯 全球直连
 - DOMAIN-SUFFIX,c-ctrip.com,🎯 全球直连
 - DOMAIN-SUFFIX,camera360.com,🎯 全球直连
 - DOMAIN-SUFFIX,cdnmama.com,🎯 全球直连
@@ -5452,6 +5414,7 @@ rules:
 - DOMAIN-SUFFIX,zhaopin.com,🎯 全球直连
 - DOMAIN-SUFFIX,zhihu.com,🎯 全球直连
 - DOMAIN-SUFFIX,zhimg.com,🎯 全球直连
+- DOMAIN-SUFFIX,zhipin.com,🎯 全球直连
 - DOMAIN-SUFFIX,zhongsou.com,🎯 全球直连
 - DOMAIN-SUFFIX,zhuihd.com,🎯 全球直连
 - IP-CIDR,8.128.0.0/10,🎯 全球直连,no-resolve
@@ -5677,4 +5640,3 @@ rules:
 - IP-CIDR,101.199.196.0/22,🎯 全球直连,no-resolve
 - GEOIP,CN, 🎯 全球直连
 - MATCH, 🐟 漏网之鱼
-unified-delay: true

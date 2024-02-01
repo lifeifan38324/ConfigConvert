@@ -165,4 +165,5 @@ cython_debug/
 
 # lff
 config/
+output/
 

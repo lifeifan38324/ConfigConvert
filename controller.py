@@ -1,20 +1,31 @@
 # coding:utf-8
+import json5
 import yaml
 import json
 import os
 from parse_subscribe import Subscribe
 from parse_convert import ConvertConfig
 import parse_url
+import configparser
 
 
 class Controller:
-    def __init__(self, subscribe_convert = "", subscribe_url_list = "", config_url = ""):
-        self.subscribe_url_list = subscribe_url_list
-        self.config_url = config_url
-        if subscribe_convert:
+    def __init__(self, subscribe_config_path=""):
+        self.load_subscribe_config(subscribe_config_path)
+        if self.use_subscribe_convert:
             url_dict = parse_url.parse_url(subscribe_convert)
             self.subscribe_url_list = url_dict["url"]
             self.config_url = url_dict["config"]
+
+    def load_subscribe_config(self, subscribe_config_path):
+        # 创建配置解析器对象
+        with open(subscribe_config_path, "r", encoding="utf-8") as f:
+            config = json5.load(f)
+        # 获取字段值
+        self.use_subscribe_convert = config["use_subscribe_convert"]
+        self.subscribe_convert = config["subscribe_convert"]
+        self.subscribe_url_list = config["subscribe_url_list"]
+        self.config_url = config["config_url"]
 
     def load_template(self):
         cur_path = os.path.dirname(os.path.abspath(__file__))
@@ -53,6 +64,3 @@ if __name__ == "__main__":
     config_url = url_dict["config"]
     c = Controller(subscribe_url_list, config_url)
     c.output_file()
-
-
-

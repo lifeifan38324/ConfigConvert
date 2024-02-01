@@ -13,6 +13,8 @@ class Subscribe:
     def __pre_process_url_list(self, subscribe_url_list):
         """ 预处理订阅地址，在尾部加‘&flag=clash’ """
         for i, subscribe_url in enumerate(subscribe_url_list):
+            if not subscribe_url:
+                continue
             if "flag=" not in subscribe_url:
                 subscribe_url_list[i] = subscribe_url + "&flag=clash"
 
@@ -20,6 +22,7 @@ class Subscribe:
         """ 处理单个订阅链接 """
         cfg = requests.get(url=subscribe_url).text
         yaml_class = yaml.load(cfg, Loader=yaml.FullLoader)
+        print(yaml_class)
         proxies_list = yaml_class["proxies"]
         proxies_name_list = [i["name"] for i in proxies_list]
         return {"proxies_name_list": proxies_name_list, "proxies": proxies_list}
@@ -29,6 +32,8 @@ class Subscribe:
         all_proxies_name_list = []
         all_proxies_list = []
         for subscribe_url in subscribe_url_list:
+            if not subscribe_url:
+                continue
             proxies_dict = self.__get_node_list_from_subscribe(subscribe_url)
             all_proxies_name_list.extend(proxies_dict["proxies_name_list"])
             all_proxies_list.extend(proxies_dict["proxies"])

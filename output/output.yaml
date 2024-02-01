@@ -381,36 +381,36 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 剩余流量：199.79 GB
+  name: 剩余流量：199.91 GB
   network: ws
   port: '2052'
   server: cfcdn1.sanfencdn9.com
   type: vmess
   udp: true
-  uuid: c45d23c0-3bdf-482d-a2e8-ab62041dfd58
+  uuid: de9424a1-7f9b-44a7-9e70-f0169bf50dc4
   ws-headers:
-    Host: mwovaytrus1.nezfyiam.xyz
+    Host: us1cPZiz8nb.fzbqfrse.xyz
   ws-opts:
     headers:
-      Host: mwovaytrus1.nezfyiam.xyz
-    path: /video/gpUdZnWn/
-  ws-path: /video/gpUdZnWn/
+      Host: us1cPZiz8nb.fzbqfrse.xyz
+    path: /video/6VBhAkCtV4/
+  ws-path: /video/6VBhAkCtV4/
 - alterId: 0
   cipher: auto
-  name: 距离下次重置剩余：18 天
+  name: 距离下次重置剩余：8 天
   network: ws
   port: '2052'
   server: cfcdn1.sanfencdn9.com
   type: vmess
   udp: true
-  uuid: c45d23c0-3bdf-482d-a2e8-ab62041dfd58
+  uuid: de9424a1-7f9b-44a7-9e70-f0169bf50dc4
   ws-headers:
-    Host: mwovaytrus1.nezfyiam.xyz
+    Host: us1cPZiz8nb.fzbqfrse.xyz
   ws-opts:
     headers:
-      Host: mwovaytrus1.nezfyiam.xyz
-    path: /video/gpUdZnWn/
-  ws-path: /video/gpUdZnWn/
+      Host: us1cPZiz8nb.fzbqfrse.xyz
+    path: /video/6VBhAkCtV4/
+  ws-path: /video/6VBhAkCtV4/
 - alterId: 0
   cipher: auto
   name: 套餐到期：2024-04-09
@@ -419,30 +419,30 @@ proxies:
   server: cfcdn1.sanfencdn9.com
   type: vmess
   udp: true
-  uuid: c45d23c0-3bdf-482d-a2e8-ab62041dfd58
+  uuid: de9424a1-7f9b-44a7-9e70-f0169bf50dc4
   ws-headers:
-    Host: mwovaytrus1.nezfyiam.xyz
+    Host: us1cPZiz8nb.fzbqfrse.xyz
   ws-opts:
     headers:
-      Host: mwovaytrus1.nezfyiam.xyz
-    path: /video/gpUdZnWn/
-  ws-path: /video/gpUdZnWn/
+      Host: us1cPZiz8nb.fzbqfrse.xyz
+    path: /video/6VBhAkCtV4/
+  ws-path: /video/6VBhAkCtV4/
 - alterId: 0
   cipher: auto
-  name: shop.sanfen.co 站内返利65%
+  name: uk.sanfen.me 站内返利65%
   network: ws
   port: '2052'
   server: cfcdn1.sanfencdn9.com
   type: vmess
   udp: true
-  uuid: c45d23c0-3bdf-482d-a2e8-ab62041dfd58
+  uuid: de9424a1-7f9b-44a7-9e70-f0169bf50dc4
   ws-headers:
-    Host: mwovaytrus1.nezfyiam.xyz
+    Host: us1cPZiz8nb.fzbqfrse.xyz
   ws-opts:
     headers:
-      Host: mwovaytrus1.nezfyiam.xyz
-    path: /video/gpUdZnWn/
-  ws-path: /video/gpUdZnWn/
+      Host: us1cPZiz8nb.fzbqfrse.xyz
+    path: /video/6VBhAkCtV4/
+  ws-path: /video/6VBhAkCtV4/
 - alterId: 0
   cipher: auto
   name: 🇺🇸美国高速接入点-01
@@ -451,14 +451,14 @@ proxies:
   server: cfcdn1.sanfencdn9.com
   type: vmess
   udp: true
-  uuid: c45d23c0-3bdf-482d-a2e8-ab62041dfd58
+  uuid: de9424a1-7f9b-44a7-9e70-f0169bf50dc4
   ws-headers:
-    Host: mwovaytrus1.nezfyiam.xyz
+    Host: us1cPZiz8nb.fzbqfrse.xyz
   ws-opts:
     headers:
-      Host: mwovaytrus1.nezfyiam.xyz
-    path: /video/gpUdZnWn/
-  ws-path: /video/gpUdZnWn/
+      Host: us1cPZiz8nb.fzbqfrse.xyz
+    path: /video/6VBhAkCtV4/
+  ws-path: /video/6VBhAkCtV4/
 - alterId: 0
   cipher: auto
   name: 🇺🇸美国高速接入点-02
@@ -467,14 +467,14 @@ proxies:
   server: cfcdn1.sanfencdn9.com
   type: vmess
   udp: true
-  uuid: c45d23c0-3bdf-482d-a2e8-ab62041dfd58
+  uuid: de9424a1-7f9b-44a7-9e70-f0169bf50dc4
   ws-headers:
-    Host: hemkzqzcus2.nezfyiam.xyz
+    Host: us2jdgv5GC7.fzbqfrse.xyz
   ws-opts:
     headers:
-      Host: hemkzqzcus2.nezfyiam.xyz
-    path: /video/zYPdRDJM/
-  ws-path: /video/zYPdRDJM/
+      Host: us2jdgv5GC7.fzbqfrse.xyz
+    path: /video/DDC4btA8wc/
+  ws-path: /video/DDC4btA8wc/
 - alterId: 0
   cipher: auto
   name: 🇺🇸美国高速接入点-03
@@ -483,94 +483,94 @@ proxies:
   server: cfcdn1.sanfencdn9.com
   type: vmess
   udp: true
-  uuid: c45d23c0-3bdf-482d-a2e8-ab62041dfd58
+  uuid: de9424a1-7f9b-44a7-9e70-f0169bf50dc4
   ws-headers:
-    Host: jqjvgtapus3.nezfyiam.xyz
+    Host: us3AJ8biuQx.fzbqfrse.xyz
   ws-opts:
     headers:
-      Host: jqjvgtapus3.nezfyiam.xyz
-    path: /video/THXLPVwn
-  ws-path: /video/THXLPVwn
+      Host: us3AJ8biuQx.fzbqfrse.xyz
+    path: /video/QXjZG5u4F2
+  ws-path: /video/QXjZG5u4F2
 - alterId: 0
   cipher: auto
   name: 🇺🇸美国高速接入点-04
   network: ws
-  port: '2052'
+  port: '2082'
   server: cfcdn1.sanfencdn9.com
   type: vmess
   udp: true
-  uuid: c45d23c0-3bdf-482d-a2e8-ab62041dfd58
+  uuid: de9424a1-7f9b-44a7-9e70-f0169bf50dc4
   ws-headers:
-    Host: agmkvnyus4.nezfyiam.xyz
+    Host: us4Bb5oSgJA.fzbqfrse.xyz
   ws-opts:
     headers:
-      Host: agmkvnyus4.nezfyiam.xyz
-    path: /video/NWfKLBuo
-  ws-path: /video/NWfKLBuo
+      Host: us4Bb5oSgJA.fzbqfrse.xyz
+    path: /video/CuTy87zAzV/
+  ws-path: /video/CuTy87zAzV/
 - alterId: 0
   cipher: auto
   name: 🇺🇸美国高速接入点-05
   network: ws
-  port: '2052'
+  port: '8080'
   server: cfcdn1.sanfencdn9.com
   type: vmess
   udp: true
-  uuid: c45d23c0-3bdf-482d-a2e8-ab62041dfd58
+  uuid: de9424a1-7f9b-44a7-9e70-f0169bf50dc4
   ws-headers:
-    Host: kjbbpiwnus5.nezfyiam.xyz
+    Host: us5PhAx6xsj.fzbqfrse.xyz
   ws-opts:
     headers:
-      Host: kjbbpiwnus5.nezfyiam.xyz
-    path: /video/jjPZccUK
-  ws-path: /video/jjPZccUK
+      Host: us5PhAx6xsj.fzbqfrse.xyz
+    path: /video/f8ZKTGaGoC/
+  ws-path: /video/f8ZKTGaGoC/
 - alterId: 0
   cipher: auto
   name: 🇺🇸美国高速接入点-06
   network: ws
-  port: '2052'
+  port: '8880'
   server: cfcdn1.sanfencdn9.com
   type: vmess
   udp: true
-  uuid: c45d23c0-3bdf-482d-a2e8-ab62041dfd58
+  uuid: de9424a1-7f9b-44a7-9e70-f0169bf50dc4
   ws-headers:
-    Host: agksfudxus6.nezfyiam.xyz
+    Host: us6gzxQRrE4.fzbqfrse.xyz
   ws-opts:
     headers:
-      Host: agksfudxus6.nezfyiam.xyz
-    path: /video/agRtrdnG
-  ws-path: /video/agRtrdnG
+      Host: us6gzxQRrE4.fzbqfrse.xyz
+    path: /video/bYdJ7Vc2We
+  ws-path: /video/bYdJ7Vc2We
 - alterId: 0
   cipher: auto
   name: 🇺🇸美国高速接入点-07
   network: ws
-  port: '2052'
+  port: '2086'
   server: cfcdn1.sanfencdn9.com
   type: vmess
   udp: true
-  uuid: c45d23c0-3bdf-482d-a2e8-ab62041dfd58
+  uuid: de9424a1-7f9b-44a7-9e70-f0169bf50dc4
   ws-headers:
-    Host: mpuxucbhus7.nezfyiam.xyz
+    Host: us77SmSk86j.fzbqfrse.xyz
   ws-opts:
     headers:
-      Host: mpuxucbhus7.nezfyiam.xyz
-    path: /video/VVLGiYTU
-  ws-path: /video/VVLGiYTU
+      Host: us77SmSk86j.fzbqfrse.xyz
+    path: /video/Z7qdcrAGRw
+  ws-path: /video/Z7qdcrAGRw
 - alterId: 0
   cipher: auto
   name: 🇺🇸美国高速接入点-08
   network: ws
-  port: '2052'
+  port: '2095'
   server: cfcdn1.sanfencdn9.com
   type: vmess
   udp: true
-  uuid: c45d23c0-3bdf-482d-a2e8-ab62041dfd58
+  uuid: de9424a1-7f9b-44a7-9e70-f0169bf50dc4
   ws-headers:
-    Host: ymiayhteus8.nezfyiam.xyz
+    Host: us82pRzxDMb.fzbqfrse.xyz
   ws-opts:
     headers:
-      Host: ymiayhteus8.nezfyiam.xyz
-    path: /video/FzAGiFgi
-  ws-path: /video/FzAGiFgi
+      Host: us82pRzxDMb.fzbqfrse.xyz
+    path: /video/qYZue4zaWS
+  ws-path: /video/qYZue4zaWS
 - alterId: 0
   cipher: auto
   name: 🇸🇬新加坡高速接入点-01
@@ -579,14 +579,14 @@ proxies:
   server: cfcdn2.sanfencdn9.com
   type: vmess
   udp: true
-  uuid: c45d23c0-3bdf-482d-a2e8-ab62041dfd58
+  uuid: de9424a1-7f9b-44a7-9e70-f0169bf50dc4
   ws-headers:
-    Host: oeuczdrhsg1.yofnhkfc.xyz
+    Host: 7nAi74jJsg1.yofnhkfc.xyz
   ws-opts:
     headers:
-      Host: oeuczdrhsg1.yofnhkfc.xyz
-    path: /video/VuQqhmGu
-  ws-path: /video/VuQqhmGu
+      Host: 7nAi74jJsg1.yofnhkfc.xyz
+    path: /video/c9efxRCi
+  ws-path: /video/c9efxRCi
 - alterId: 0
   cipher: auto
   name: 🇸🇬新加坡高速接入点-02
@@ -595,14 +595,14 @@ proxies:
   server: cfcdn2.sanfencdn9.com
   type: vmess
   udp: true
-  uuid: c45d23c0-3bdf-482d-a2e8-ab62041dfd58
+  uuid: de9424a1-7f9b-44a7-9e70-f0169bf50dc4
   ws-headers:
     Host: rpmlybgzsg2.yofnhkfc.xyz
   ws-opts:
     headers:
       Host: rpmlybgzsg2.yofnhkfc.xyz
-    path: /video/EUgGPgvs
-  ws-path: /video/EUgGPgvs
+    path: /video/3YKfzGw4
+  ws-path: /video/3YKfzGw4
 - alterId: 0
   cipher: auto
   name: 🇸🇬新加坡高速接入点-03
@@ -611,14 +611,14 @@ proxies:
   server: cfcdn2.sanfencdn9.com
   type: vmess
   udp: true
-  uuid: c45d23c0-3bdf-482d-a2e8-ab62041dfd58
+  uuid: de9424a1-7f9b-44a7-9e70-f0169bf50dc4
   ws-headers:
     Host: jpafzyhfsg3.yofnhkfc.xyz
   ws-opts:
     headers:
       Host: jpafzyhfsg3.yofnhkfc.xyz
-    path: /video/eRqFjoEp
-  ws-path: /video/eRqFjoEp
+    path: /video/u4eCZTxW
+  ws-path: /video/u4eCZTxW
 - alterId: 0
   cipher: auto
   name: 🇭🇰香港高速接入点-01
@@ -627,14 +627,14 @@ proxies:
   server: cfcdn2.sanfencdn9.com
   type: vmess
   udp: true
-  uuid: c45d23c0-3bdf-482d-a2e8-ab62041dfd58
+  uuid: de9424a1-7f9b-44a7-9e70-f0169bf50dc4
   ws-headers:
     Host: yvhnbevxhk1.yofnhkfc.xyz
   ws-opts:
     headers:
       Host: yvhnbevxhk1.yofnhkfc.xyz
-    path: /video/tGksNzwK
-  ws-path: /video/tGksNzwK
+    path: /video/34kKXbLM
+  ws-path: /video/34kKXbLM
 - alterId: 0
   cipher: auto
   name: 台湾高速接入点-01
@@ -643,14 +643,14 @@ proxies:
   server: cfcdn1.sanfencdn9.com
   type: vmess
   udp: true
-  uuid: c45d23c0-3bdf-482d-a2e8-ab62041dfd58
+  uuid: de9424a1-7f9b-44a7-9e70-f0169bf50dc4
   ws-headers:
-    Host: ccadyzpstw1.nezfyiam.xyz
+    Host: tw1bQiWSE4x.fzbqfrse.xyz
   ws-opts:
     headers:
-      Host: ccadyzpstw1.nezfyiam.xyz
-    path: /video/oRgEfgDc
-  ws-path: /video/oRgEfgDc
+      Host: tw1bQiWSE4x.fzbqfrse.xyz
+    path: /video/GQ2qE5Us9g
+  ws-path: /video/GQ2qE5Us9g
 - alterId: 0
   cipher: auto
   name: 🇯🇵日本高速接入点-01
@@ -659,14 +659,14 @@ proxies:
   server: cfcdn3.sanfencdn9.com
   type: vmess
   udp: true
-  uuid: c45d23c0-3bdf-482d-a2e8-ab62041dfd58
+  uuid: de9424a1-7f9b-44a7-9e70-f0169bf50dc4
   ws-headers:
-    Host: enjznnbajp1.yofnhkfc.xyz
+    Host: oA5FSz9Tjp1.yofnhkfc.xyz
   ws-opts:
     headers:
-      Host: enjznnbajp1.yofnhkfc.xyz
-    path: /video/jkdeAxPb
-  ws-path: /video/jkdeAxPb
+      Host: oA5FSz9Tjp1.yofnhkfc.xyz
+    path: /video/P7EExoE2
+  ws-path: /video/P7EExoE2
 - alterId: 0
   cipher: auto
   name: 🇯🇵日本高速接入点-02
@@ -675,14 +675,14 @@ proxies:
   server: cfcdn3.sanfencdn9.com
   type: vmess
   udp: true
-  uuid: c45d23c0-3bdf-482d-a2e8-ab62041dfd58
+  uuid: de9424a1-7f9b-44a7-9e70-f0169bf50dc4
   ws-headers:
-    Host: hahgbrxyjp2.yofnhkfc.xyz
+    Host: GWYp69Yujp2.yofnhkfc.xyz
   ws-opts:
     headers:
-      Host: hahgbrxyjp2.yofnhkfc.xyz
-    path: /video/ZECapGxR
-  ws-path: /video/ZECapGxR
+      Host: GWYp69Yujp2.yofnhkfc.xyz
+    path: /video/VDXcaM7r
+  ws-path: /video/VDXcaM7r
 - alterId: 0
   cipher: auto
   name: 🇯🇵日本高速接入点-03
@@ -691,14 +691,14 @@ proxies:
   server: cfcdn3.sanfencdn9.com
   type: vmess
   udp: true
-  uuid: c45d23c0-3bdf-482d-a2e8-ab62041dfd58
+  uuid: de9424a1-7f9b-44a7-9e70-f0169bf50dc4
   ws-headers:
-    Host: urmvnatzjp3.yofnhkfc.xyz
+    Host: 6Sn8mFtTjp3.yofnhkfc.xyz
   ws-opts:
     headers:
-      Host: urmvnatzjp3.yofnhkfc.xyz
-    path: /video/bzYxXTEW
-  ws-path: /video/bzYxXTEW
+      Host: 6Sn8mFtTjp3.yofnhkfc.xyz
+    path: /video/X37qXHip
+  ws-path: /video/X37qXHip
 - alterId: 0
   cipher: auto
   name: 🇯🇵日本高速接入点-04
@@ -707,14 +707,14 @@ proxies:
   server: cfcdn3.sanfencdn9.com
   type: vmess
   udp: true
-  uuid: c45d23c0-3bdf-482d-a2e8-ab62041dfd58
+  uuid: de9424a1-7f9b-44a7-9e70-f0169bf50dc4
   ws-headers:
     Host: agzbjszujp4.yofnhkfc.xyz
   ws-opts:
     headers:
       Host: agzbjszujp4.yofnhkfc.xyz
-    path: /video/ovYzoXfe
-  ws-path: /video/ovYzoXfe
+    path: /video/ibCT6z55
+  ws-path: /video/ibCT6z55
 - alterId: 0
   cipher: auto
   name: 🇯🇵日本高速接入点-05
@@ -723,14 +723,14 @@ proxies:
   server: cfcdn3.sanfencdn9.com
   type: vmess
   udp: true
-  uuid: c45d23c0-3bdf-482d-a2e8-ab62041dfd58
+  uuid: de9424a1-7f9b-44a7-9e70-f0169bf50dc4
   ws-headers:
     Host: wtywwcrzjp5.yofnhkfc.xyz
   ws-opts:
     headers:
       Host: wtywwcrzjp5.yofnhkfc.xyz
-    path: /video/VawzGLxU
-  ws-path: /video/VawzGLxU
+    path: /video/9TfVEyku
+  ws-path: /video/9TfVEyku
 - alterId: 0
   cipher: auto
   name: 🇯🇵日本高速接入点-06
@@ -739,376 +739,14 @@ proxies:
   server: cfcdn3.sanfencdn9.com
   type: vmess
   udp: true
-  uuid: c45d23c0-3bdf-482d-a2e8-ab62041dfd58
+  uuid: de9424a1-7f9b-44a7-9e70-f0169bf50dc4
   ws-headers:
     Host: kvjqqknzjp6.yofnhkfc.xyz
   ws-opts:
     headers:
       Host: kvjqqknzjp6.yofnhkfc.xyz
-    path: /video/VDQmoBUn
-  ws-path: /video/VDQmoBUn
-- name: 新加坡1-hy2 协议
-  password: 0362d827-3977-462a-83ea-f3b2db03f6dd
-  port: 32156
-  server: sg1.xiaoliyu.cyou
-  skip-cert-verify: true
-  type: hysteria2
-- name: 新加坡2-hy2 协议
-  password: 0362d827-3977-462a-83ea-f3b2db03f6dd
-  port: 32097
-  server: sg2.xiaoliyu.cyou
-  skip-cert-verify: true
-  type: hysteria2
-- name: 新加坡3-hy2 协议
-  password: 0362d827-3977-462a-83ea-f3b2db03f6dd
-  port: 34644
-  server: sg3.xiaoliyu.cyou
-  skip-cert-verify: true
-  type: hysteria2
-- name: 新加坡4-hy2 协议
-  password: 0362d827-3977-462a-83ea-f3b2db03f6dd
-  port: 33965
-  server: sg4.xiaoliyu.cyou
-  skip-cert-verify: true
-  type: hysteria2
-- name: 新加坡5-hy2 协议
-  password: 0362d827-3977-462a-83ea-f3b2db03f6dd
-  port: 34645
-  server: sg5.xiaoliyu.cyou
-  skip-cert-verify: true
-  type: hysteria2
-- name: 新加坡6-hy2 协议
-  password: 0362d827-3977-462a-83ea-f3b2db03f6dd
-  port: 28180
-  server: sg6.xiaoliyu.cyou
-  skip-cert-verify: true
-  type: hysteria2
-- name: 韩国1-hy2  协议
-  password: 0362d827-3977-462a-83ea-f3b2db03f6dd
-  port: 22938
-  server: kr1.xiaoliyu.cyou
-  skip-cert-verify: true
-  type: hysteria2
-- name: 日本1-hy2  协议
-  password: 0362d827-3977-462a-83ea-f3b2db03f6dd
-  port: 30862
-  server: jp1.xiaoliyu.cyou
-  skip-cert-verify: true
-  type: hysteria2
-- name: 澳大利亚1-hy2 协议
-  password: 0362d827-3977-462a-83ea-f3b2db03f6dd
-  port: 32990
-  server: au1.xiaoliyu.cyou
-  skip-cert-verify: true
-  type: hysteria2
-- name: 德国1-hy2  协议
-  password: 0362d827-3977-462a-83ea-f3b2db03f6dd
-  port: 24544
-  server: de1.xiaoliyu.cyou
-  skip-cert-verify: true
-  type: hysteria2
-- name: 英国1-hy2  协议
-  password: 0362d827-3977-462a-83ea-f3b2db03f6dd
-  port: 32370
-  server: gb1.xiaoliyu.cyou
-  skip-cert-verify: true
-  type: hysteria2
-- name: 香港1-hy2  协议
-  password: 0362d827-3977-462a-83ea-f3b2db03f6dd
-  port: 26293
-  server: hk1.xiaoliyu.cyou
-  skip-cert-verify: true
-  type: hysteria2
-- name: 台湾1-hy2   协议
-  password: 0362d827-3977-462a-83ea-f3b2db03f6dd
-  port: 26165
-  server: tw1.xiaoliyu.cyou
-  skip-cert-verify: true
-  type: hysteria2
-- name: 美国1-hy2  协议
-  password: 0362d827-3977-462a-83ea-f3b2db03f6dd
-  port: 26995
-  server: us1.xiaoliyu.cyou
-  skip-cert-verify: true
-  type: hysteria2
-- name: 印度1-hy2  协议
-  password: 0362d827-3977-462a-83ea-f3b2db03f6dd
-  port: 24100
-  server: ln1.xiaoliyu.cyou
-  skip-cert-verify: true
-  type: hysteria2
-- name: 法国1-hy2  协议
-  password: 0362d827-3977-462a-83ea-f3b2db03f6dd
-  port: 34388
-  server: fr1.xiaoliyu.cyou
-  skip-cert-verify: true
-  type: hysteria2
-- name: 西班牙1-hy2 协议
-  password: 0362d827-3977-462a-83ea-f3b2db03f6dd
-  port: 33793
-  server: es1.xiaoliyu.cyou
-  skip-cert-verify: true
-  type: hysteria2
-- name: 墨西哥1-hy2 协议
-  password: 0362d827-3977-462a-83ea-f3b2db03f6dd
-  port: 25688
-  server: mx1.xiaoliyu.cyou
-  skip-cert-verify: true
-  type: hysteria2
-- name: 巴西1-hy2 协议
-  password: 0362d827-3977-462a-83ea-f3b2db03f6dd
-  port: 23662
-  server: br1.xiaoliyu.cyou
-  skip-cert-verify: true
-  type: hysteria2
-- alpn:
-  - h3
-  auth_str: 0362d827-3977-462a-83ea-f3b2db03f6dd
-  disable_mtu_discovery: true
-  down: 70
-  fast-open: true
-  name: 新加坡1-ChatGPT
-  port: 18301
-  ports: 6000-21000
-  protocol: udp
-  server: sg1.xiaoliyu.cyou
-  skip-cert-verify: true
-  type: hysteria
-  up: 30
-- alpn:
-  - h3
-  auth_str: 0362d827-3977-462a-83ea-f3b2db03f6dd
-  disable_mtu_discovery: true
-  down: 70
-  fast-open: true
-  name: 新加坡2-ChatGPT
-  port: 18301
-  ports: 6000-21000
-  protocol: udp
-  server: sg2.xiaoliyu.cyou
-  type: hysteria
-  up: 30
-- alpn:
-  - h3
-  auth_str: 0362d827-3977-462a-83ea-f3b2db03f6dd
-  disable_mtu_discovery: true
-  down: 70
-  fast-open: true
-  name: 新加坡3-ChatGPT
-  port: 18301
-  ports: 6000-21000
-  protocol: udp
-  server: sg3.xiaoliyu.cyou
-  type: hysteria
-  up: 30
-- alpn:
-  - h3
-  auth_str: 0362d827-3977-462a-83ea-f3b2db03f6dd
-  disable_mtu_discovery: true
-  down: 70
-  fast-open: true
-  name: 新加坡4-ChatGPT
-  port: 18301
-  ports: 6000-21000
-  protocol: udp
-  server: sg4.xiaoliyu.cyou
-  type: hysteria
-  up: 30
-- alpn:
-  - h3
-  auth_str: 0362d827-3977-462a-83ea-f3b2db03f6dd
-  disable_mtu_discovery: true
-  down: 70
-  fast-open: true
-  name: 新加坡5-三网优化
-  port: 18301
-  ports: 6000-21000
-  protocol: udp
-  server: sg5.xiaoliyu.cyou
-  type: hysteria
-  up: 30
-- alpn:
-  - h3
-  auth_str: 0362d827-3977-462a-83ea-f3b2db03f6dd
-  disable_mtu_discovery: true
-  down: 70
-  fast-open: true
-  name: 新加坡6-三网优化
-  port: 18301
-  ports: 6000-21000
-  protocol: udp
-  server: sg6.xiaoliyu.cyou
-  type: hysteria
-  up: 30
-- alpn:
-  - h3
-  auth_str: 0362d827-3977-462a-83ea-f3b2db03f6dd
-  disable_mtu_discovery: true
-  down: 70
-  fast-open: true
-  name: 韩国1-ChatGPT
-  port: 18301
-  ports: 6000-21000
-  protocol: udp
-  server: kr1.xiaoliyu.cyou
-  type: hysteria
-  up: 30
-- alpn:
-  - h3
-  auth_str: 0362d827-3977-462a-83ea-f3b2db03f6dd
-  disable_mtu_discovery: true
-  down: 70
-  fast-open: true
-  name: 日本1-三网优化
-  port: 18301
-  ports: 6000-21000
-  protocol: udp
-  server: jp1.xiaoliyu.cyou
-  type: hysteria
-  up: 30
-- alpn:
-  - h3
-  auth_str: 0362d827-3977-462a-83ea-f3b2db03f6dd
-  disable_mtu_discovery: true
-  down: 70
-  fast-open: true
-  name: 澳大利亚1-ChatGPT
-  port: 18301
-  ports: 6000-21000
-  protocol: udp
-  server: au1.xiaoliyu.cyou
-  type: hysteria
-  up: 30
-- alpn:
-  - h3
-  auth_str: 0362d827-3977-462a-83ea-f3b2db03f6dd
-  disable_mtu_discovery: true
-  down: 70
-  fast-open: true
-  name: 德国1-ChatGPT
-  port: 18301
-  ports: 6000-21000
-  protocol: udp
-  server: de1.xiaoliyu.cyou
-  type: hysteria
-  up: 30
-- alpn:
-  - h3
-  auth_str: 0362d827-3977-462a-83ea-f3b2db03f6dd
-  disable_mtu_discovery: true
-  down: 70
-  fast-open: true
-  name: 英国1-ChatGPT
-  port: 18301
-  ports: 6000-21000
-  protocol: udp
-  server: gb1.xiaoliyu.cyou
-  type: hysteria
-  up: 30
-- alpn:
-  - h3
-  auth_str: 0362d827-3977-462a-83ea-f3b2db03f6dd
-  disable_mtu_discovery: true
-  down: 70
-  fast-open: true
-  name: 香港1-ChatGPT
-  port: 18301
-  ports: 6000-21000
-  protocol: udp
-  server: hk1.xiaoliyu.cyou
-  type: hysteria
-  up: 30
-- alpn:
-  - h3
-  auth_str: 0362d827-3977-462a-83ea-f3b2db03f6dd
-  disable_mtu_discovery: true
-  down: 70
-  fast-open: true
-  name: 台湾1-ChatGPT
-  port: 18301
-  ports: 6000-21000
-  protocol: udp
-  server: tw1.xiaoliyu.cyou
-  type: hysteria
-  up: 30
-- alpn:
-  - h3
-  auth_str: 0362d827-3977-462a-83ea-f3b2db03f6dd
-  disable_mtu_discovery: true
-  down: 70
-  fast-open: true
-  name: 美国1-三网优化
-  port: 18301
-  ports: 6000-21000
-  protocol: udp
-  server: us1.xiaoliyu.cyou
-  type: hysteria
-  up: 30
-- alpn:
-  - h3
-  auth_str: 0362d827-3977-462a-83ea-f3b2db03f6dd
-  disable_mtu_discovery: true
-  down: 70
-  fast-open: true
-  name: 印度1-三网优化
-  port: 18301
-  ports: 6000-21000
-  protocol: udp
-  server: ln1.xiaoliyu.cyou
-  type: hysteria
-  up: 30
-- alpn:
-  - h3
-  auth_str: 0362d827-3977-462a-83ea-f3b2db03f6dd
-  disable_mtu_discovery: true
-  down: 70
-  fast-open: true
-  name: 法国1-ChatGPT
-  port: 18301
-  ports: 6000-21000
-  protocol: udp
-  server: fr1.xiaoliyu.cyou
-  type: hysteria
-  up: 30
-- alpn:
-  - h3
-  auth_str: 0362d827-3977-462a-83ea-f3b2db03f6dd
-  disable_mtu_discovery: true
-  down: 70
-  fast-open: true
-  name: 西班牙1-ChatGPT
-  port: 18301
-  ports: 6000-21000
-  protocol: udp
-  server: es1.xiaoliyu.cyou
-  type: hysteria
-  up: 30
-- alpn:
-  - h3
-  auth_str: 0362d827-3977-462a-83ea-f3b2db03f6dd
-  disable_mtu_discovery: true
-  down: 70
-  fast-open: true
-  name: 墨西哥1-ChatGPT
-  port: 18301
-  ports: 6000-21000
-  protocol: udp
-  server: mx1.xiaoliyu.cyou
-  type: hysteria
-  up: 30
-- alpn:
-  - h3
-  auth_str: 0362d827-3977-462a-83ea-f3b2db03f6dd
-  disable_mtu_discovery: true
-  down: 70
-  fast-open: true
-  name: 巴西1-ChatGPT
-  port: 18301
-  ports: 6000-21000
-  protocol: udp
-  server: br1.xiaoliyu.cyou
-  type: hysteria
-  up: 30
+    path: /video/Zo98PYfE
+  ws-path: /video/Zo98PYfE
 proxy-groups:
 - name: 🚀 节点选择
   proxies:
@@ -1152,10 +790,10 @@ proxy-groups:
   - 🇺🇸美国 06 | 专线
   - 🇺🇸美国 07 | 专线
   - 🇺🇸美国 08 | 专线
-  - 剩余流量：199.79 GB
-  - 距离下次重置剩余：18 天
+  - 剩余流量：199.91 GB
+  - 距离下次重置剩余：8 天
   - 套餐到期：2024-04-09
-  - shop.sanfen.co 站内返利65%
+  - uk.sanfen.me 站内返利65%
   - 🇺🇸美国高速接入点-01
   - 🇺🇸美国高速接入点-02
   - 🇺🇸美国高速接入点-03
@@ -1175,148 +813,6 @@ proxy-groups:
   - 🇯🇵日本高速接入点-04
   - 🇯🇵日本高速接入点-05
   - 🇯🇵日本高速接入点-06
-  - 新加坡1-hy2 协议
-  - 新加坡2-hy2 协议
-  - 新加坡3-hy2 协议
-  - 新加坡4-hy2 协议
-  - 新加坡5-hy2 协议
-  - 新加坡6-hy2 协议
-  - 韩国1-hy2  协议
-  - 日本1-hy2  协议
-  - 澳大利亚1-hy2 协议
-  - 德国1-hy2  协议
-  - 英国1-hy2  协议
-  - 香港1-hy2  协议
-  - 台湾1-hy2   协议
-  - 美国1-hy2  协议
-  - 印度1-hy2  协议
-  - 法国1-hy2  协议
-  - 西班牙1-hy2 协议
-  - 墨西哥1-hy2 协议
-  - 巴西1-hy2 协议
-  - 新加坡1-ChatGPT
-  - 新加坡2-ChatGPT
-  - 新加坡3-ChatGPT
-  - 新加坡4-ChatGPT
-  - 新加坡5-三网优化
-  - 新加坡6-三网优化
-  - 韩国1-ChatGPT
-  - 日本1-三网优化
-  - 澳大利亚1-ChatGPT
-  - 德国1-ChatGPT
-  - 英国1-ChatGPT
-  - 香港1-ChatGPT
-  - 台湾1-ChatGPT
-  - 美国1-三网优化
-  - 印度1-三网优化
-  - 法国1-ChatGPT
-  - 西班牙1-ChatGPT
-  - 墨西哥1-ChatGPT
-  - 巴西1-ChatGPT
-  type: select
-- name: 声田声田
-  proxies:
-  - 🇸🇬 新加坡节点
-  - ♻️ 自动选择
-  - DIRECT
-  - 🇭🇰 香港节点
-  - 🇨🇳 台湾节点
-  - 🇯🇵 日本节点
-  - 🇰🇷 韩国节点
-  - 🇺🇲 美国节点
-  - （看这里）每月刷新订阅获取新节点
-  - 一元机场.com
-  - 🇭🇰香港 01 | 专线
-  - 🇭🇰香港 02 | 专线
-  - 🇭🇰香港 03 | 专线
-  - 🇭🇰香港 04 | 专线
-  - 🇭🇰香港 05 | 专线
-  - 🇭🇰香港 06 | 专线
-  - 🇭🇰香港 07 | 专线
-  - 🇭🇰香港 08 | 专线
-  - 🇯🇵日本 01 | 专线
-  - 🇯🇵日本 02 | 专线
-  - 🇯🇵日本 03 | 专线
-  - 🇯🇵日本 04 | 专线
-  - 🇸🇬新加坡 01 | 专线
-  - 🇸🇬新加坡 02 | 专线
-  - 🇸🇬新加坡 03 | 专线
-  - 🇸🇬新加坡 04 | 专线
-  - 🇸🇬新加坡 05 | 专线
-  - 🇸🇬新加坡 06 | 专线
-  - 🇸🇬新加坡 07 | 专线
-  - 🇸🇬新加坡 08 | 专线
-  - 美国01| 专线
-  - 美国02| 专线
-  - 🇺🇸美国 01 | 专线
-  - 🇺🇸美国 02 | 专线
-  - 🇺🇸美国 03 | 专线
-  - 🇺🇸美国 04 | 专线
-  - 🇺🇸美国 05 | 专线
-  - 🇺🇸美国 06 | 专线
-  - 🇺🇸美国 07 | 专线
-  - 🇺🇸美国 08 | 专线
-  - 剩余流量：199.79 GB
-  - 距离下次重置剩余：18 天
-  - 套餐到期：2024-04-09
-  - shop.sanfen.co 站内返利65%
-  - 🇺🇸美国高速接入点-01
-  - 🇺🇸美国高速接入点-02
-  - 🇺🇸美国高速接入点-03
-  - 🇺🇸美国高速接入点-04
-  - 🇺🇸美国高速接入点-05
-  - 🇺🇸美国高速接入点-06
-  - 🇺🇸美国高速接入点-07
-  - 🇺🇸美国高速接入点-08
-  - 🇸🇬新加坡高速接入点-01
-  - 🇸🇬新加坡高速接入点-02
-  - 🇸🇬新加坡高速接入点-03
-  - 🇭🇰香港高速接入点-01
-  - 台湾高速接入点-01
-  - 🇯🇵日本高速接入点-01
-  - 🇯🇵日本高速接入点-02
-  - 🇯🇵日本高速接入点-03
-  - 🇯🇵日本高速接入点-04
-  - 🇯🇵日本高速接入点-05
-  - 🇯🇵日本高速接入点-06
-  - 新加坡1-hy2 协议
-  - 新加坡2-hy2 协议
-  - 新加坡3-hy2 协议
-  - 新加坡4-hy2 协议
-  - 新加坡5-hy2 协议
-  - 新加坡6-hy2 协议
-  - 韩国1-hy2  协议
-  - 日本1-hy2  协议
-  - 澳大利亚1-hy2 协议
-  - 德国1-hy2  协议
-  - 英国1-hy2  协议
-  - 香港1-hy2  协议
-  - 台湾1-hy2   协议
-  - 美国1-hy2  协议
-  - 印度1-hy2  协议
-  - 法国1-hy2  协议
-  - 西班牙1-hy2 协议
-  - 墨西哥1-hy2 协议
-  - 巴西1-hy2 协议
-  - 新加坡1-ChatGPT
-  - 新加坡2-ChatGPT
-  - 新加坡3-ChatGPT
-  - 新加坡4-ChatGPT
-  - 新加坡5-三网优化
-  - 新加坡6-三网优化
-  - 韩国1-ChatGPT
-  - 日本1-三网优化
-  - 澳大利亚1-ChatGPT
-  - 德国1-ChatGPT
-  - 英国1-ChatGPT
-  - 香港1-ChatGPT
-  - 台湾1-ChatGPT
-  - 美国1-三网优化
-  - 印度1-三网优化
-  - 法国1-ChatGPT
-  - 西班牙1-ChatGPT
-  - 墨西哥1-ChatGPT
-  - 巴西1-ChatGPT
   type: select
 - interval: 300
   name: ♻️ 自动选择
@@ -1353,10 +849,10 @@ proxy-groups:
   - 🇺🇸美国 06 | 专线
   - 🇺🇸美国 07 | 专线
   - 🇺🇸美国 08 | 专线
-  - 剩余流量：199.79 GB
-  - 距离下次重置剩余：18 天
+  - 剩余流量：199.91 GB
+  - 距离下次重置剩余：8 天
   - 套餐到期：2024-04-09
-  - shop.sanfen.co 站内返利65%
+  - uk.sanfen.me 站内返利65%
   - 🇺🇸美国高速接入点-01
   - 🇺🇸美国高速接入点-02
   - 🇺🇸美国高速接入点-03
@@ -1376,538 +872,56 @@ proxy-groups:
   - 🇯🇵日本高速接入点-04
   - 🇯🇵日本高速接入点-05
   - 🇯🇵日本高速接入点-06
-  - 新加坡1-hy2 协议
-  - 新加坡2-hy2 协议
-  - 新加坡3-hy2 协议
-  - 新加坡4-hy2 协议
-  - 新加坡5-hy2 协议
-  - 新加坡6-hy2 协议
-  - 韩国1-hy2  协议
-  - 日本1-hy2  协议
-  - 澳大利亚1-hy2 协议
-  - 德国1-hy2  协议
-  - 英国1-hy2  协议
-  - 香港1-hy2  协议
-  - 台湾1-hy2   协议
-  - 美国1-hy2  协议
-  - 印度1-hy2  协议
-  - 法国1-hy2  协议
-  - 西班牙1-hy2 协议
-  - 墨西哥1-hy2 协议
-  - 巴西1-hy2 协议
-  - 新加坡1-ChatGPT
-  - 新加坡2-ChatGPT
-  - 新加坡3-ChatGPT
-  - 新加坡4-ChatGPT
-  - 新加坡5-三网优化
-  - 新加坡6-三网优化
-  - 韩国1-ChatGPT
-  - 日本1-三网优化
-  - 澳大利亚1-ChatGPT
-  - 德国1-ChatGPT
-  - 英国1-ChatGPT
-  - 香港1-ChatGPT
-  - 台湾1-ChatGPT
-  - 美国1-三网优化
-  - 印度1-三网优化
-  - 法国1-ChatGPT
-  - 西班牙1-ChatGPT
-  - 墨西哥1-ChatGPT
-  - 巴西1-ChatGPT
   tolerance: 40
   type: url-test
   url: http://www.gstatic.com/generate_204
+- name: 声田声田
+  proxies:
+  - 🇸🇬 新加坡节点
+  - ♻️ 自动选择
+  - DIRECT
+  - 🇭🇰 香港节点
+  - 🇨🇳 台湾节点
+  - 🇯🇵 日本节点
+  - 🇰🇷 韩国节点
+  - 🇺🇲 美国节点
+  type: select
+- name: 油管油管
+  proxies:
+  - 🇸🇬 新加坡节点
+  - ♻️ 自动选择
+  - 🇭🇰 香港节点
+  - 🇨🇳 台湾节点
+  - 🇯🇵 日本节点
+  - 🇰🇷 韩国节点
+  - 🇺🇲 美国节点
+  type: select
 - name: 🌍 国外媒体
   proxies:
   - 🚀 节点选择
   - ♻️ 自动选择
   - 🎯 全球直连
-  - （看这里）每月刷新订阅获取新节点
-  - 一元机场.com
-  - 🇭🇰香港 01 | 专线
-  - 🇭🇰香港 02 | 专线
-  - 🇭🇰香港 03 | 专线
-  - 🇭🇰香港 04 | 专线
-  - 🇭🇰香港 05 | 专线
-  - 🇭🇰香港 06 | 专线
-  - 🇭🇰香港 07 | 专线
-  - 🇭🇰香港 08 | 专线
-  - 🇯🇵日本 01 | 专线
-  - 🇯🇵日本 02 | 专线
-  - 🇯🇵日本 03 | 专线
-  - 🇯🇵日本 04 | 专线
-  - 🇸🇬新加坡 01 | 专线
-  - 🇸🇬新加坡 02 | 专线
-  - 🇸🇬新加坡 03 | 专线
-  - 🇸🇬新加坡 04 | 专线
-  - 🇸🇬新加坡 05 | 专线
-  - 🇸🇬新加坡 06 | 专线
-  - 🇸🇬新加坡 07 | 专线
-  - 🇸🇬新加坡 08 | 专线
-  - 美国01| 专线
-  - 美国02| 专线
-  - 🇺🇸美国 01 | 专线
-  - 🇺🇸美国 02 | 专线
-  - 🇺🇸美国 03 | 专线
-  - 🇺🇸美国 04 | 专线
-  - 🇺🇸美国 05 | 专线
-  - 🇺🇸美国 06 | 专线
-  - 🇺🇸美国 07 | 专线
-  - 🇺🇸美国 08 | 专线
-  - 剩余流量：199.79 GB
-  - 距离下次重置剩余：18 天
-  - 套餐到期：2024-04-09
-  - shop.sanfen.co 站内返利65%
-  - 🇺🇸美国高速接入点-01
-  - 🇺🇸美国高速接入点-02
-  - 🇺🇸美国高速接入点-03
-  - 🇺🇸美国高速接入点-04
-  - 🇺🇸美国高速接入点-05
-  - 🇺🇸美国高速接入点-06
-  - 🇺🇸美国高速接入点-07
-  - 🇺🇸美国高速接入点-08
-  - 🇸🇬新加坡高速接入点-01
-  - 🇸🇬新加坡高速接入点-02
-  - 🇸🇬新加坡高速接入点-03
-  - 🇭🇰香港高速接入点-01
-  - 台湾高速接入点-01
-  - 🇯🇵日本高速接入点-01
-  - 🇯🇵日本高速接入点-02
-  - 🇯🇵日本高速接入点-03
-  - 🇯🇵日本高速接入点-04
-  - 🇯🇵日本高速接入点-05
-  - 🇯🇵日本高速接入点-06
-  - 新加坡1-hy2 协议
-  - 新加坡2-hy2 协议
-  - 新加坡3-hy2 协议
-  - 新加坡4-hy2 协议
-  - 新加坡5-hy2 协议
-  - 新加坡6-hy2 协议
-  - 韩国1-hy2  协议
-  - 日本1-hy2  协议
-  - 澳大利亚1-hy2 协议
-  - 德国1-hy2  协议
-  - 英国1-hy2  协议
-  - 香港1-hy2  协议
-  - 台湾1-hy2   协议
-  - 美国1-hy2  协议
-  - 印度1-hy2  协议
-  - 法国1-hy2  协议
-  - 西班牙1-hy2 协议
-  - 墨西哥1-hy2 协议
-  - 巴西1-hy2 协议
-  - 新加坡1-ChatGPT
-  - 新加坡2-ChatGPT
-  - 新加坡3-ChatGPT
-  - 新加坡4-ChatGPT
-  - 新加坡5-三网优化
-  - 新加坡6-三网优化
-  - 韩国1-ChatGPT
-  - 日本1-三网优化
-  - 澳大利亚1-ChatGPT
-  - 德国1-ChatGPT
-  - 英国1-ChatGPT
-  - 香港1-ChatGPT
-  - 台湾1-ChatGPT
-  - 美国1-三网优化
-  - 印度1-三网优化
-  - 法国1-ChatGPT
-  - 西班牙1-ChatGPT
-  - 墨西哥1-ChatGPT
-  - 巴西1-ChatGPT
   type: select
 - name: 📲 电报信息
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
-  - （看这里）每月刷新订阅获取新节点
-  - 一元机场.com
-  - 🇭🇰香港 01 | 专线
-  - 🇭🇰香港 02 | 专线
-  - 🇭🇰香港 03 | 专线
-  - 🇭🇰香港 04 | 专线
-  - 🇭🇰香港 05 | 专线
-  - 🇭🇰香港 06 | 专线
-  - 🇭🇰香港 07 | 专线
-  - 🇭🇰香港 08 | 专线
-  - 🇯🇵日本 01 | 专线
-  - 🇯🇵日本 02 | 专线
-  - 🇯🇵日本 03 | 专线
-  - 🇯🇵日本 04 | 专线
-  - 🇸🇬新加坡 01 | 专线
-  - 🇸🇬新加坡 02 | 专线
-  - 🇸🇬新加坡 03 | 专线
-  - 🇸🇬新加坡 04 | 专线
-  - 🇸🇬新加坡 05 | 专线
-  - 🇸🇬新加坡 06 | 专线
-  - 🇸🇬新加坡 07 | 专线
-  - 🇸🇬新加坡 08 | 专线
-  - 美国01| 专线
-  - 美国02| 专线
-  - 🇺🇸美国 01 | 专线
-  - 🇺🇸美国 02 | 专线
-  - 🇺🇸美国 03 | 专线
-  - 🇺🇸美国 04 | 专线
-  - 🇺🇸美国 05 | 专线
-  - 🇺🇸美国 06 | 专线
-  - 🇺🇸美国 07 | 专线
-  - 🇺🇸美国 08 | 专线
-  - 剩余流量：199.79 GB
-  - 距离下次重置剩余：18 天
-  - 套餐到期：2024-04-09
-  - shop.sanfen.co 站内返利65%
-  - 🇺🇸美国高速接入点-01
-  - 🇺🇸美国高速接入点-02
-  - 🇺🇸美国高速接入点-03
-  - 🇺🇸美国高速接入点-04
-  - 🇺🇸美国高速接入点-05
-  - 🇺🇸美国高速接入点-06
-  - 🇺🇸美国高速接入点-07
-  - 🇺🇸美国高速接入点-08
-  - 🇸🇬新加坡高速接入点-01
-  - 🇸🇬新加坡高速接入点-02
-  - 🇸🇬新加坡高速接入点-03
-  - 🇭🇰香港高速接入点-01
-  - 台湾高速接入点-01
-  - 🇯🇵日本高速接入点-01
-  - 🇯🇵日本高速接入点-02
-  - 🇯🇵日本高速接入点-03
-  - 🇯🇵日本高速接入点-04
-  - 🇯🇵日本高速接入点-05
-  - 🇯🇵日本高速接入点-06
-  - 新加坡1-hy2 协议
-  - 新加坡2-hy2 协议
-  - 新加坡3-hy2 协议
-  - 新加坡4-hy2 协议
-  - 新加坡5-hy2 协议
-  - 新加坡6-hy2 协议
-  - 韩国1-hy2  协议
-  - 日本1-hy2  协议
-  - 澳大利亚1-hy2 协议
-  - 德国1-hy2  协议
-  - 英国1-hy2  协议
-  - 香港1-hy2  协议
-  - 台湾1-hy2   协议
-  - 美国1-hy2  协议
-  - 印度1-hy2  协议
-  - 法国1-hy2  协议
-  - 西班牙1-hy2 协议
-  - 墨西哥1-hy2 协议
-  - 巴西1-hy2 协议
-  - 新加坡1-ChatGPT
-  - 新加坡2-ChatGPT
-  - 新加坡3-ChatGPT
-  - 新加坡4-ChatGPT
-  - 新加坡5-三网优化
-  - 新加坡6-三网优化
-  - 韩国1-ChatGPT
-  - 日本1-三网优化
-  - 澳大利亚1-ChatGPT
-  - 德国1-ChatGPT
-  - 英国1-ChatGPT
-  - 香港1-ChatGPT
-  - 台湾1-ChatGPT
-  - 美国1-三网优化
-  - 印度1-三网优化
-  - 法国1-ChatGPT
-  - 西班牙1-ChatGPT
-  - 墨西哥1-ChatGPT
-  - 巴西1-ChatGPT
   type: select
 - name: Ⓜ️ 微软服务
   proxies:
   - 🎯 全球直连
   - 🚀 节点选择
-  - （看这里）每月刷新订阅获取新节点
-  - 一元机场.com
-  - 🇭🇰香港 01 | 专线
-  - 🇭🇰香港 02 | 专线
-  - 🇭🇰香港 03 | 专线
-  - 🇭🇰香港 04 | 专线
-  - 🇭🇰香港 05 | 专线
-  - 🇭🇰香港 06 | 专线
-  - 🇭🇰香港 07 | 专线
-  - 🇭🇰香港 08 | 专线
-  - 🇯🇵日本 01 | 专线
-  - 🇯🇵日本 02 | 专线
-  - 🇯🇵日本 03 | 专线
-  - 🇯🇵日本 04 | 专线
-  - 🇸🇬新加坡 01 | 专线
-  - 🇸🇬新加坡 02 | 专线
-  - 🇸🇬新加坡 03 | 专线
-  - 🇸🇬新加坡 04 | 专线
-  - 🇸🇬新加坡 05 | 专线
-  - 🇸🇬新加坡 06 | 专线
-  - 🇸🇬新加坡 07 | 专线
-  - 🇸🇬新加坡 08 | 专线
-  - 美国01| 专线
-  - 美国02| 专线
-  - 🇺🇸美国 01 | 专线
-  - 🇺🇸美国 02 | 专线
-  - 🇺🇸美国 03 | 专线
-  - 🇺🇸美国 04 | 专线
-  - 🇺🇸美国 05 | 专线
-  - 🇺🇸美国 06 | 专线
-  - 🇺🇸美国 07 | 专线
-  - 🇺🇸美国 08 | 专线
-  - 剩余流量：199.79 GB
-  - 距离下次重置剩余：18 天
-  - 套餐到期：2024-04-09
-  - shop.sanfen.co 站内返利65%
-  - 🇺🇸美国高速接入点-01
-  - 🇺🇸美国高速接入点-02
-  - 🇺🇸美国高速接入点-03
-  - 🇺🇸美国高速接入点-04
-  - 🇺🇸美国高速接入点-05
-  - 🇺🇸美国高速接入点-06
-  - 🇺🇸美国高速接入点-07
-  - 🇺🇸美国高速接入点-08
-  - 🇸🇬新加坡高速接入点-01
-  - 🇸🇬新加坡高速接入点-02
-  - 🇸🇬新加坡高速接入点-03
-  - 🇭🇰香港高速接入点-01
-  - 台湾高速接入点-01
-  - 🇯🇵日本高速接入点-01
-  - 🇯🇵日本高速接入点-02
-  - 🇯🇵日本高速接入点-03
-  - 🇯🇵日本高速接入点-04
-  - 🇯🇵日本高速接入点-05
-  - 🇯🇵日本高速接入点-06
-  - 新加坡1-hy2 协议
-  - 新加坡2-hy2 协议
-  - 新加坡3-hy2 协议
-  - 新加坡4-hy2 协议
-  - 新加坡5-hy2 协议
-  - 新加坡6-hy2 协议
-  - 韩国1-hy2  协议
-  - 日本1-hy2  协议
-  - 澳大利亚1-hy2 协议
-  - 德国1-hy2  协议
-  - 英国1-hy2  协议
-  - 香港1-hy2  协议
-  - 台湾1-hy2   协议
-  - 美国1-hy2  协议
-  - 印度1-hy2  协议
-  - 法国1-hy2  协议
-  - 西班牙1-hy2 协议
-  - 墨西哥1-hy2 协议
-  - 巴西1-hy2 协议
-  - 新加坡1-ChatGPT
-  - 新加坡2-ChatGPT
-  - 新加坡3-ChatGPT
-  - 新加坡4-ChatGPT
-  - 新加坡5-三网优化
-  - 新加坡6-三网优化
-  - 韩国1-ChatGPT
-  - 日本1-三网优化
-  - 澳大利亚1-ChatGPT
-  - 德国1-ChatGPT
-  - 英国1-ChatGPT
-  - 香港1-ChatGPT
-  - 台湾1-ChatGPT
-  - 美国1-三网优化
-  - 印度1-三网优化
-  - 法国1-ChatGPT
-  - 西班牙1-ChatGPT
-  - 墨西哥1-ChatGPT
-  - 巴西1-ChatGPT
   type: select
 - name: 🍎 苹果服务
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
-  - （看这里）每月刷新订阅获取新节点
-  - 一元机场.com
-  - 🇭🇰香港 01 | 专线
-  - 🇭🇰香港 02 | 专线
-  - 🇭🇰香港 03 | 专线
-  - 🇭🇰香港 04 | 专线
-  - 🇭🇰香港 05 | 专线
-  - 🇭🇰香港 06 | 专线
-  - 🇭🇰香港 07 | 专线
-  - 🇭🇰香港 08 | 专线
-  - 🇯🇵日本 01 | 专线
-  - 🇯🇵日本 02 | 专线
-  - 🇯🇵日本 03 | 专线
-  - 🇯🇵日本 04 | 专线
-  - 🇸🇬新加坡 01 | 专线
-  - 🇸🇬新加坡 02 | 专线
-  - 🇸🇬新加坡 03 | 专线
-  - 🇸🇬新加坡 04 | 专线
-  - 🇸🇬新加坡 05 | 专线
-  - 🇸🇬新加坡 06 | 专线
-  - 🇸🇬新加坡 07 | 专线
-  - 🇸🇬新加坡 08 | 专线
-  - 美国01| 专线
-  - 美国02| 专线
-  - 🇺🇸美国 01 | 专线
-  - 🇺🇸美国 02 | 专线
-  - 🇺🇸美国 03 | 专线
-  - 🇺🇸美国 04 | 专线
-  - 🇺🇸美国 05 | 专线
-  - 🇺🇸美国 06 | 专线
-  - 🇺🇸美国 07 | 专线
-  - 🇺🇸美国 08 | 专线
-  - 剩余流量：199.79 GB
-  - 距离下次重置剩余：18 天
-  - 套餐到期：2024-04-09
-  - shop.sanfen.co 站内返利65%
-  - 🇺🇸美国高速接入点-01
-  - 🇺🇸美国高速接入点-02
-  - 🇺🇸美国高速接入点-03
-  - 🇺🇸美国高速接入点-04
-  - 🇺🇸美国高速接入点-05
-  - 🇺🇸美国高速接入点-06
-  - 🇺🇸美国高速接入点-07
-  - 🇺🇸美国高速接入点-08
-  - 🇸🇬新加坡高速接入点-01
-  - 🇸🇬新加坡高速接入点-02
-  - 🇸🇬新加坡高速接入点-03
-  - 🇭🇰香港高速接入点-01
-  - 台湾高速接入点-01
-  - 🇯🇵日本高速接入点-01
-  - 🇯🇵日本高速接入点-02
-  - 🇯🇵日本高速接入点-03
-  - 🇯🇵日本高速接入点-04
-  - 🇯🇵日本高速接入点-05
-  - 🇯🇵日本高速接入点-06
-  - 新加坡1-hy2 协议
-  - 新加坡2-hy2 协议
-  - 新加坡3-hy2 协议
-  - 新加坡4-hy2 协议
-  - 新加坡5-hy2 协议
-  - 新加坡6-hy2 协议
-  - 韩国1-hy2  协议
-  - 日本1-hy2  协议
-  - 澳大利亚1-hy2 协议
-  - 德国1-hy2  协议
-  - 英国1-hy2  协议
-  - 香港1-hy2  协议
-  - 台湾1-hy2   协议
-  - 美国1-hy2  协议
-  - 印度1-hy2  协议
-  - 法国1-hy2  协议
-  - 西班牙1-hy2 协议
-  - 墨西哥1-hy2 协议
-  - 巴西1-hy2 协议
-  - 新加坡1-ChatGPT
-  - 新加坡2-ChatGPT
-  - 新加坡3-ChatGPT
-  - 新加坡4-ChatGPT
-  - 新加坡5-三网优化
-  - 新加坡6-三网优化
-  - 韩国1-ChatGPT
-  - 日本1-三网优化
-  - 澳大利亚1-ChatGPT
-  - 德国1-ChatGPT
-  - 英国1-ChatGPT
-  - 香港1-ChatGPT
-  - 台湾1-ChatGPT
-  - 美国1-三网优化
-  - 印度1-三网优化
-  - 法国1-ChatGPT
-  - 西班牙1-ChatGPT
-  - 墨西哥1-ChatGPT
-  - 巴西1-ChatGPT
   type: select
 - name: 📢 谷歌FCM
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
   - ♻️ 自动选择
-  - （看这里）每月刷新订阅获取新节点
-  - 一元机场.com
-  - 🇭🇰香港 01 | 专线
-  - 🇭🇰香港 02 | 专线
-  - 🇭🇰香港 03 | 专线
-  - 🇭🇰香港 04 | 专线
-  - 🇭🇰香港 05 | 专线
-  - 🇭🇰香港 06 | 专线
-  - 🇭🇰香港 07 | 专线
-  - 🇭🇰香港 08 | 专线
-  - 🇯🇵日本 01 | 专线
-  - 🇯🇵日本 02 | 专线
-  - 🇯🇵日本 03 | 专线
-  - 🇯🇵日本 04 | 专线
-  - 🇸🇬新加坡 01 | 专线
-  - 🇸🇬新加坡 02 | 专线
-  - 🇸🇬新加坡 03 | 专线
-  - 🇸🇬新加坡 04 | 专线
-  - 🇸🇬新加坡 05 | 专线
-  - 🇸🇬新加坡 06 | 专线
-  - 🇸🇬新加坡 07 | 专线
-  - 🇸🇬新加坡 08 | 专线
-  - 美国01| 专线
-  - 美国02| 专线
-  - 🇺🇸美国 01 | 专线
-  - 🇺🇸美国 02 | 专线
-  - 🇺🇸美国 03 | 专线
-  - 🇺🇸美国 04 | 专线
-  - 🇺🇸美国 05 | 专线
-  - 🇺🇸美国 06 | 专线
-  - 🇺🇸美国 07 | 专线
-  - 🇺🇸美国 08 | 专线
-  - 剩余流量：199.79 GB
-  - 距离下次重置剩余：18 天
-  - 套餐到期：2024-04-09
-  - shop.sanfen.co 站内返利65%
-  - 🇺🇸美国高速接入点-01
-  - 🇺🇸美国高速接入点-02
-  - 🇺🇸美国高速接入点-03
-  - 🇺🇸美国高速接入点-04
-  - 🇺🇸美国高速接入点-05
-  - 🇺🇸美国高速接入点-06
-  - 🇺🇸美国高速接入点-07
-  - 🇺🇸美国高速接入点-08
-  - 🇸🇬新加坡高速接入点-01
-  - 🇸🇬新加坡高速接入点-02
-  - 🇸🇬新加坡高速接入点-03
-  - 🇭🇰香港高速接入点-01
-  - 台湾高速接入点-01
-  - 🇯🇵日本高速接入点-01
-  - 🇯🇵日本高速接入点-02
-  - 🇯🇵日本高速接入点-03
-  - 🇯🇵日本高速接入点-04
-  - 🇯🇵日本高速接入点-05
-  - 🇯🇵日本高速接入点-06
-  - 新加坡1-hy2 协议
-  - 新加坡2-hy2 协议
-  - 新加坡3-hy2 协议
-  - 新加坡4-hy2 协议
-  - 新加坡5-hy2 协议
-  - 新加坡6-hy2 协议
-  - 韩国1-hy2  协议
-  - 日本1-hy2  协议
-  - 澳大利亚1-hy2 协议
-  - 德国1-hy2  协议
-  - 英国1-hy2  协议
-  - 香港1-hy2  协议
-  - 台湾1-hy2   协议
-  - 美国1-hy2  协议
-  - 印度1-hy2  协议
-  - 法国1-hy2  协议
-  - 西班牙1-hy2 协议
-  - 墨西哥1-hy2 协议
-  - 巴西1-hy2 协议
-  - 新加坡1-ChatGPT
-  - 新加坡2-ChatGPT
-  - 新加坡3-ChatGPT
-  - 新加坡4-ChatGPT
-  - 新加坡5-三网优化
-  - 新加坡6-三网优化
-  - 韩国1-ChatGPT
-  - 日本1-三网优化
-  - 澳大利亚1-ChatGPT
-  - 德国1-ChatGPT
-  - 英国1-ChatGPT
-  - 香港1-ChatGPT
-  - 台湾1-ChatGPT
-  - 美国1-三网优化
-  - 印度1-三网优化
-  - 法国1-ChatGPT
-  - 西班牙1-ChatGPT
-  - 墨西哥1-ChatGPT
-  - 巴西1-ChatGPT
   type: select
 - name: 🎯 全球直连
   proxies:
@@ -1930,99 +944,6 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ♻️ 自动选择
-  - （看这里）每月刷新订阅获取新节点
-  - 一元机场.com
-  - 🇭🇰香港 01 | 专线
-  - 🇭🇰香港 02 | 专线
-  - 🇭🇰香港 03 | 专线
-  - 🇭🇰香港 04 | 专线
-  - 🇭🇰香港 05 | 专线
-  - 🇭🇰香港 06 | 专线
-  - 🇭🇰香港 07 | 专线
-  - 🇭🇰香港 08 | 专线
-  - 🇯🇵日本 01 | 专线
-  - 🇯🇵日本 02 | 专线
-  - 🇯🇵日本 03 | 专线
-  - 🇯🇵日本 04 | 专线
-  - 🇸🇬新加坡 01 | 专线
-  - 🇸🇬新加坡 02 | 专线
-  - 🇸🇬新加坡 03 | 专线
-  - 🇸🇬新加坡 04 | 专线
-  - 🇸🇬新加坡 05 | 专线
-  - 🇸🇬新加坡 06 | 专线
-  - 🇸🇬新加坡 07 | 专线
-  - 🇸🇬新加坡 08 | 专线
-  - 美国01| 专线
-  - 美国02| 专线
-  - 🇺🇸美国 01 | 专线
-  - 🇺🇸美国 02 | 专线
-  - 🇺🇸美国 03 | 专线
-  - 🇺🇸美国 04 | 专线
-  - 🇺🇸美国 05 | 专线
-  - 🇺🇸美国 06 | 专线
-  - 🇺🇸美国 07 | 专线
-  - 🇺🇸美国 08 | 专线
-  - 剩余流量：199.79 GB
-  - 距离下次重置剩余：18 天
-  - 套餐到期：2024-04-09
-  - shop.sanfen.co 站内返利65%
-  - 🇺🇸美国高速接入点-01
-  - 🇺🇸美国高速接入点-02
-  - 🇺🇸美国高速接入点-03
-  - 🇺🇸美国高速接入点-04
-  - 🇺🇸美国高速接入点-05
-  - 🇺🇸美国高速接入点-06
-  - 🇺🇸美国高速接入点-07
-  - 🇺🇸美国高速接入点-08
-  - 🇸🇬新加坡高速接入点-01
-  - 🇸🇬新加坡高速接入点-02
-  - 🇸🇬新加坡高速接入点-03
-  - 🇭🇰香港高速接入点-01
-  - 台湾高速接入点-01
-  - 🇯🇵日本高速接入点-01
-  - 🇯🇵日本高速接入点-02
-  - 🇯🇵日本高速接入点-03
-  - 🇯🇵日本高速接入点-04
-  - 🇯🇵日本高速接入点-05
-  - 🇯🇵日本高速接入点-06
-  - 新加坡1-hy2 协议
-  - 新加坡2-hy2 协议
-  - 新加坡3-hy2 协议
-  - 新加坡4-hy2 协议
-  - 新加坡5-hy2 协议
-  - 新加坡6-hy2 协议
-  - 韩国1-hy2  协议
-  - 日本1-hy2  协议
-  - 澳大利亚1-hy2 协议
-  - 德国1-hy2  协议
-  - 英国1-hy2  协议
-  - 香港1-hy2  协议
-  - 台湾1-hy2   协议
-  - 美国1-hy2  协议
-  - 印度1-hy2  协议
-  - 法国1-hy2  协议
-  - 西班牙1-hy2 协议
-  - 墨西哥1-hy2 协议
-  - 巴西1-hy2 协议
-  - 新加坡1-ChatGPT
-  - 新加坡2-ChatGPT
-  - 新加坡3-ChatGPT
-  - 新加坡4-ChatGPT
-  - 新加坡5-三网优化
-  - 新加坡6-三网优化
-  - 韩国1-ChatGPT
-  - 日本1-三网优化
-  - 澳大利亚1-ChatGPT
-  - 德国1-ChatGPT
-  - 英国1-ChatGPT
-  - 香港1-ChatGPT
-  - 台湾1-ChatGPT
-  - 美国1-三网优化
-  - 印度1-三网优化
-  - 法国1-ChatGPT
-  - 西班牙1-ChatGPT
-  - 墨西哥1-ChatGPT
-  - 巴西1-ChatGPT
   type: select
 - interval: 300
   name: 🇭🇰 香港节点
@@ -2036,8 +957,6 @@ proxy-groups:
   - 🇭🇰香港 07 | 专线
   - 🇭🇰香港 08 | 专线
   - 🇭🇰香港高速接入点-01
-  - 香港1-hy2  协议
-  - 香港1-ChatGPT
   tolerance: 40
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -2045,8 +964,6 @@ proxy-groups:
   name: 🇨🇳 台湾节点
   proxies:
   - 台湾高速接入点-01
-  - 台湾1-hy2   协议
-  - 台湾1-ChatGPT
   tolerance: 40
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -2063,16 +980,13 @@ proxy-groups:
   - 🇯🇵日本高速接入点-04
   - 🇯🇵日本高速接入点-05
   - 🇯🇵日本高速接入点-06
-  - 日本1-hy2  协议
-  - 日本1-三网优化
   tolerance: 40
   type: url-test
   url: http://www.gstatic.com/generate_204
 - interval: 300
   name: 🇰🇷 韩国节点
   proxies:
-  - 韩国1-hy2  协议
-  - 韩国1-ChatGPT
+  - DIRECT
   tolerance: 40
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -2090,18 +1004,6 @@ proxy-groups:
   - 🇸🇬新加坡高速接入点-01
   - 🇸🇬新加坡高速接入点-02
   - 🇸🇬新加坡高速接入点-03
-  - 新加坡1-hy2 协议
-  - 新加坡2-hy2 协议
-  - 新加坡3-hy2 协议
-  - 新加坡4-hy2 协议
-  - 新加坡5-hy2 协议
-  - 新加坡6-hy2 协议
-  - 新加坡1-ChatGPT
-  - 新加坡2-ChatGPT
-  - 新加坡3-ChatGPT
-  - 新加坡4-ChatGPT
-  - 新加坡5-三网优化
-  - 新加坡6-三网优化
   tolerance: 40
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -2126,8 +1028,6 @@ proxy-groups:
   - 🇺🇸美国高速接入点-06
   - 🇺🇸美国高速接入点-07
   - 🇺🇸美国高速接入点-08
-  - 美国1-hy2  协议
-  - 美国1-三网优化
   tolerance: 40
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -3784,6 +2684,190 @@ rules:
 - DOMAIN-KEYWORD,skydrive,Ⓜ️ 微软服务
 - PROCESS-NAME,OneDrive,Ⓜ️ 微软服务
 - PROCESS-NAME,OneDriveUpdater,Ⓜ️ 微软服务
+- DOMAIN-SUFFIX,ggpht.cn,油管油管
+- DOMAIN-SUFFIX,ggpht.com,油管油管
+- DOMAIN-SUFFIX,googlevideo.com,油管油管
+- DOMAIN-SUFFIX,gvt1.com,油管油管
+- DOMAIN-SUFFIX,gvt2.com,油管油管
+- DOMAIN-SUFFIX,video.google.com,油管油管
+- DOMAIN-SUFFIX,wide-youtube.l.google.com,油管油管
+- DOMAIN-SUFFIX,withyoutube.com,油管油管
+- DOMAIN-SUFFIX,youtu.be,油管油管
+- DOMAIN-SUFFIX,youtube,油管油管
+- DOMAIN-SUFFIX,youtube-nocookie.com,油管油管
+- DOMAIN-SUFFIX,youtube-ui.l.google.com,油管油管
+- DOMAIN-SUFFIX,youtube.ae,油管油管
+- DOMAIN-SUFFIX,youtube.al,油管油管
+- DOMAIN-SUFFIX,youtube.am,油管油管
+- DOMAIN-SUFFIX,youtube.at,油管油管
+- DOMAIN-SUFFIX,youtube.az,油管油管
+- DOMAIN-SUFFIX,youtube.ba,油管油管
+- DOMAIN-SUFFIX,youtube.be,油管油管
+- DOMAIN-SUFFIX,youtube.bg,油管油管
+- DOMAIN-SUFFIX,youtube.bh,油管油管
+- DOMAIN-SUFFIX,youtube.bo,油管油管
+- DOMAIN-SUFFIX,youtube.by,油管油管
+- DOMAIN-SUFFIX,youtube.ca,油管油管
+- DOMAIN-SUFFIX,youtube.cat,油管油管
+- DOMAIN-SUFFIX,youtube.ch,油管油管
+- DOMAIN-SUFFIX,youtube.cl,油管油管
+- DOMAIN-SUFFIX,youtube.co,油管油管
+- DOMAIN-SUFFIX,youtube.co.ae,油管油管
+- DOMAIN-SUFFIX,youtube.co.at,油管油管
+- DOMAIN-SUFFIX,youtube.co.cr,油管油管
+- DOMAIN-SUFFIX,youtube.co.hu,油管油管
+- DOMAIN-SUFFIX,youtube.co.id,油管油管
+- DOMAIN-SUFFIX,youtube.co.il,油管油管
+- DOMAIN-SUFFIX,youtube.co.in,油管油管
+- DOMAIN-SUFFIX,youtube.co.jp,油管油管
+- DOMAIN-SUFFIX,youtube.co.ke,油管油管
+- DOMAIN-SUFFIX,youtube.co.kr,油管油管
+- DOMAIN-SUFFIX,youtube.co.ma,油管油管
+- DOMAIN-SUFFIX,youtube.co.nz,油管油管
+- DOMAIN-SUFFIX,youtube.co.th,油管油管
+- DOMAIN-SUFFIX,youtube.co.tz,油管油管
+- DOMAIN-SUFFIX,youtube.co.ug,油管油管
+- DOMAIN-SUFFIX,youtube.co.uk,油管油管
+- DOMAIN-SUFFIX,youtube.co.ve,油管油管
+- DOMAIN-SUFFIX,youtube.co.za,油管油管
+- DOMAIN-SUFFIX,youtube.co.zw,油管油管
+- DOMAIN-SUFFIX,youtube.com,油管油管
+- DOMAIN-SUFFIX,youtube.com.ar,油管油管
+- DOMAIN-SUFFIX,youtube.com.au,油管油管
+- DOMAIN-SUFFIX,youtube.com.az,油管油管
+- DOMAIN-SUFFIX,youtube.com.bd,油管油管
+- DOMAIN-SUFFIX,youtube.com.bh,油管油管
+- DOMAIN-SUFFIX,youtube.com.bo,油管油管
+- DOMAIN-SUFFIX,youtube.com.br,油管油管
+- DOMAIN-SUFFIX,youtube.com.by,油管油管
+- DOMAIN-SUFFIX,youtube.com.co,油管油管
+- DOMAIN-SUFFIX,youtube.com.do,油管油管
+- DOMAIN-SUFFIX,youtube.com.ec,油管油管
+- DOMAIN-SUFFIX,youtube.com.ee,油管油管
+- DOMAIN-SUFFIX,youtube.com.eg,油管油管
+- DOMAIN-SUFFIX,youtube.com.es,油管油管
+- DOMAIN-SUFFIX,youtube.com.gh,油管油管
+- DOMAIN-SUFFIX,youtube.com.gr,油管油管
+- DOMAIN-SUFFIX,youtube.com.gt,油管油管
+- DOMAIN-SUFFIX,youtube.com.hk,油管油管
+- DOMAIN-SUFFIX,youtube.com.hn,油管油管
+- DOMAIN-SUFFIX,youtube.com.hr,油管油管
+- DOMAIN-SUFFIX,youtube.com.jm,油管油管
+- DOMAIN-SUFFIX,youtube.com.jo,油管油管
+- DOMAIN-SUFFIX,youtube.com.kw,油管油管
+- DOMAIN-SUFFIX,youtube.com.lb,油管油管
+- DOMAIN-SUFFIX,youtube.com.lv,油管油管
+- DOMAIN-SUFFIX,youtube.com.ly,油管油管
+- DOMAIN-SUFFIX,youtube.com.mk,油管油管
+- DOMAIN-SUFFIX,youtube.com.mt,油管油管
+- DOMAIN-SUFFIX,youtube.com.mx,油管油管
+- DOMAIN-SUFFIX,youtube.com.my,油管油管
+- DOMAIN-SUFFIX,youtube.com.ng,油管油管
+- DOMAIN-SUFFIX,youtube.com.ni,油管油管
+- DOMAIN-SUFFIX,youtube.com.om,油管油管
+- DOMAIN-SUFFIX,youtube.com.pa,油管油管
+- DOMAIN-SUFFIX,youtube.com.pe,油管油管
+- DOMAIN-SUFFIX,youtube.com.ph,油管油管
+- DOMAIN-SUFFIX,youtube.com.pk,油管油管
+- DOMAIN-SUFFIX,youtube.com.pt,油管油管
+- DOMAIN-SUFFIX,youtube.com.py,油管油管
+- DOMAIN-SUFFIX,youtube.com.qa,油管油管
+- DOMAIN-SUFFIX,youtube.com.ro,油管油管
+- DOMAIN-SUFFIX,youtube.com.sa,油管油管
+- DOMAIN-SUFFIX,youtube.com.sg,油管油管
+- DOMAIN-SUFFIX,youtube.com.sv,油管油管
+- DOMAIN-SUFFIX,youtube.com.tn,油管油管
+- DOMAIN-SUFFIX,youtube.com.tr,油管油管
+- DOMAIN-SUFFIX,youtube.com.tw,油管油管
+- DOMAIN-SUFFIX,youtube.com.ua,油管油管
+- DOMAIN-SUFFIX,youtube.com.uy,油管油管
+- DOMAIN-SUFFIX,youtube.com.ve,油管油管
+- DOMAIN-SUFFIX,youtube.cr,油管油管
+- DOMAIN-SUFFIX,youtube.cz,油管油管
+- DOMAIN-SUFFIX,youtube.de,油管油管
+- DOMAIN-SUFFIX,youtube.dk,油管油管
+- DOMAIN-SUFFIX,youtube.ee,油管油管
+- DOMAIN-SUFFIX,youtube.es,油管油管
+- DOMAIN-SUFFIX,youtube.fi,油管油管
+- DOMAIN-SUFFIX,youtube.fr,油管油管
+- DOMAIN-SUFFIX,youtube.ge,油管油管
+- DOMAIN-SUFFIX,youtube.googleapis.com,油管油管
+- DOMAIN-SUFFIX,youtube.gr,油管油管
+- DOMAIN-SUFFIX,youtube.gt,油管油管
+- DOMAIN-SUFFIX,youtube.hk,油管油管
+- DOMAIN-SUFFIX,youtube.hr,油管油管
+- DOMAIN-SUFFIX,youtube.hu,油管油管
+- DOMAIN-SUFFIX,youtube.ie,油管油管
+- DOMAIN-SUFFIX,youtube.in,油管油管
+- DOMAIN-SUFFIX,youtube.iq,油管油管
+- DOMAIN-SUFFIX,youtube.is,油管油管
+- DOMAIN-SUFFIX,youtube.it,油管油管
+- DOMAIN-SUFFIX,youtube.jo,油管油管
+- DOMAIN-SUFFIX,youtube.jp,油管油管
+- DOMAIN-SUFFIX,youtube.kr,油管油管
+- DOMAIN-SUFFIX,youtube.kz,油管油管
+- DOMAIN-SUFFIX,youtube.la,油管油管
+- DOMAIN-SUFFIX,youtube.lk,油管油管
+- DOMAIN-SUFFIX,youtube.lt,油管油管
+- DOMAIN-SUFFIX,youtube.lu,油管油管
+- DOMAIN-SUFFIX,youtube.lv,油管油管
+- DOMAIN-SUFFIX,youtube.ly,油管油管
+- DOMAIN-SUFFIX,youtube.ma,油管油管
+- DOMAIN-SUFFIX,youtube.md,油管油管
+- DOMAIN-SUFFIX,youtube.me,油管油管
+- DOMAIN-SUFFIX,youtube.mk,油管油管
+- DOMAIN-SUFFIX,youtube.mn,油管油管
+- DOMAIN-SUFFIX,youtube.mx,油管油管
+- DOMAIN-SUFFIX,youtube.my,油管油管
+- DOMAIN-SUFFIX,youtube.ng,油管油管
+- DOMAIN-SUFFIX,youtube.ni,油管油管
+- DOMAIN-SUFFIX,youtube.nl,油管油管
+- DOMAIN-SUFFIX,youtube.no,油管油管
+- DOMAIN-SUFFIX,youtube.pa,油管油管
+- DOMAIN-SUFFIX,youtube.pe,油管油管
+- DOMAIN-SUFFIX,youtube.ph,油管油管
+- DOMAIN-SUFFIX,youtube.pk,油管油管
+- DOMAIN-SUFFIX,youtube.pl,油管油管
+- DOMAIN-SUFFIX,youtube.pr,油管油管
+- DOMAIN-SUFFIX,youtube.pt,油管油管
+- DOMAIN-SUFFIX,youtube.qa,油管油管
+- DOMAIN-SUFFIX,youtube.ro,油管油管
+- DOMAIN-SUFFIX,youtube.rs,油管油管
+- DOMAIN-SUFFIX,youtube.ru,油管油管
+- DOMAIN-SUFFIX,youtube.sa,油管油管
+- DOMAIN-SUFFIX,youtube.se,油管油管
+- DOMAIN-SUFFIX,youtube.sg,油管油管
+- DOMAIN-SUFFIX,youtube.si,油管油管
+- DOMAIN-SUFFIX,youtube.sk,油管油管
+- DOMAIN-SUFFIX,youtube.sn,油管油管
+- DOMAIN-SUFFIX,youtube.soy,油管油管
+- DOMAIN-SUFFIX,youtube.sv,油管油管
+- DOMAIN-SUFFIX,youtube.tn,油管油管
+- DOMAIN-SUFFIX,youtube.tv,油管油管
+- DOMAIN-SUFFIX,youtube.ua,油管油管
+- DOMAIN-SUFFIX,youtube.ug,油管油管
+- DOMAIN-SUFFIX,youtube.uy,油管油管
+- DOMAIN-SUFFIX,youtube.vn,油管油管
+- DOMAIN-SUFFIX,youtubeeducation.com,油管油管
+- DOMAIN-SUFFIX,youtubeembeddedplayer.googleapis.com,油管油管
+- DOMAIN-SUFFIX,youtubefanfest.com,油管油管
+- DOMAIN-SUFFIX,youtubegaming.com,油管油管
+- DOMAIN-SUFFIX,youtubego.co.id,油管油管
+- DOMAIN-SUFFIX,youtubego.co.in,油管油管
+- DOMAIN-SUFFIX,youtubego.com,油管油管
+- DOMAIN-SUFFIX,youtubego.com.br,油管油管
+- DOMAIN-SUFFIX,youtubego.id,油管油管
+- DOMAIN-SUFFIX,youtubego.in,油管油管
+- DOMAIN-SUFFIX,youtubei.googleapis.com,油管油管
+- DOMAIN-SUFFIX,youtubekids.com,油管油管
+- DOMAIN-SUFFIX,youtubemobilesupport.com,油管油管
+- DOMAIN-SUFFIX,yt.be,油管油管
+- DOMAIN-SUFFIX,ytimg.com,油管油管
+- DOMAIN-KEYWORD,youtube,油管油管
+- IP-CIDR,172.110.32.0/21,油管油管,no-resolve
+- IP-CIDR,216.73.80.0/20,油管油管,no-resolve
+- IP-CIDR6,2620:120:e000::/40,油管油管,no-resolve
+- DOMAIN,music.youtube.com,油管油管
 - DOMAIN,audio4-ak-spotify-com.akamaized.net,声田声田
 - DOMAIN,cdn-spotify-experiments.conductrics.com,声田声田
 - DOMAIN,heads-ak-spotify-com.akamaized.net,声田声田
@@ -4124,6 +3208,9 @@ rules:
 - DOMAIN,gamer2-cds.cdn.hinet.net,🌍 国外媒体
 - DOMAIN-SUFFIX,bahamut.com.tw,🌍 国外媒体
 - DOMAIN-SUFFIX,gamer.com.tw,🌍 国外媒体
+- DOMAIN-SUFFIX,bilibili.tv,🌍 国外媒体
+- DOMAIN-SUFFIX,bstarstatic.com,🌍 国外媒体
+- DOMAIN,pic-bstarstatic.akamaized.net,🌍 国外媒体
 - DOMAIN-KEYWORD,voddazn,🌍 国外媒体
 - DOMAIN,d151l6v8er5bdm.cloudfront.net,🌍 国外媒体
 - DOMAIN-SUFFIX,d151l6v8er5bdm.cloudfront.net,🌍 国外媒体
@@ -4173,7 +3260,6 @@ rules:
 - DOMAIN-SUFFIX,hbomax.com,🌍 国外媒体
 - DOMAIN-SUFFIX,hbomaxcdn.com,🌍 国外媒体
 - DOMAIN-SUFFIX,hbonow.com,🌍 国外媒体
-- DOMAIN-KEYWORD,.hbogoasia.,🌍 国外媒体
 - DOMAIN-KEYWORD,hbogoasia,🌍 国外媒体
 - DOMAIN,44wilhpljf.execute-api.ap-southeast-1.amazonaws.com,🌍 国外媒体
 - DOMAIN,bcbolthboa-a.akamaihd.net,🌍 国外媒体
@@ -4918,6 +4004,8 @@ rules:
 - DOMAIN-SUFFIX,biliapi.com,🎯 全球直连
 - DOMAIN-SUFFIX,biliapi.net,🎯 全球直连
 - DOMAIN-SUFFIX,bilibili.com,🎯 全球直连
+- DOMAIN-SUFFIX,bilibili.co,🎯 全球直连
+- DOMAIN-SUFFIX,biliintl.co,🎯 全球直连
 - DOMAIN-SUFFIX,biligame.com,🎯 全球直连
 - DOMAIN-SUFFIX,biligame.net,🎯 全球直连
 - DOMAIN-SUFFIX,bilivideo.com,🎯 全球直连

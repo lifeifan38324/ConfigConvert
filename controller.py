@@ -39,6 +39,11 @@ class Controller:
         date = self.__get_all_file()
         cur_path = os.path.dirname(os.path.abspath(__file__))
         template_file_path = os.path.join(cur_path, "output", "output.yaml")
+        # 提取目录路径
+        output_dir = os.path.dirname(template_file_path)
+        # 检查并创建目录（多层目录也能创建，exist_ok=True 避免重复创建报错）
+        os.makedirs(output_dir, exist_ok=True)
+
         with open(template_file_path, 'w', encoding="utf-8") as f:
             yaml.safe_dump(date, f, allow_unicode=True)
 

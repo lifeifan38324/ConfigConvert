@@ -169,7 +169,7 @@ class ProxyGroupCls:
         # 遍历config所有的行
         for res_line in self.__get_file_from_config():
             if res_line.startswith("ruleset="):  # 处理ruleset的行
-                print("正在处理：{}".format(res_line))
+                # print("正在处理：{}".format(res_line))
                 res_line = res_line.removeprefix("ruleset=")
                 ruleset_list = [i.strip() for i in res_line.split(",")]  # 按照","分割行
 

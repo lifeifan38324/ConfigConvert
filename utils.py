@@ -80,6 +80,7 @@ class ProxyGroupCls:
 
     def __get_file_from_url(self, url):
         """ 下载url中的文件，并删除空行和注释，返回行列表 """
+        print("url: ", url)
         config_content = requests.get(url=url).text
         config_content_rows = []
         for i in config_content.split('\n'):

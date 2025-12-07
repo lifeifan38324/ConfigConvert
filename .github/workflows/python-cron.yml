@@ -20,7 +20,7 @@ jobs:
 
     - name: Install dependencies
       run: |
-        pip install controller PyYAML regex configparser requests copy urllib json5 json
+        pip install controller regex requests copy json5
 
     - name: Run my script
       run: |

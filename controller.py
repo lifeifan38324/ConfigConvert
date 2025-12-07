@@ -3,11 +3,10 @@ import yaml
 import os
 from upload_to_gist import upload_to_gist
 import utils
-import warp_generate
 
 
 class Controller:
-    def __init__(self, subscribe_config_path=""):
+    def __init__(self):
         pass
 
     def __load_template(self):
@@ -44,8 +43,6 @@ class Controller:
             yaml.safe_dump(date, f, allow_unicode=True)
 
     def run(self):
-        # 定制warp
-        warp_generate.WarpGenerate().run()
         # 输出文件到output.yaml
         self.__output_file()
         # 上传输出文件到gist

@@ -1,8 +1,9 @@
+# coding:utf-8
 import requests
 from urllib import parse
 import yaml
-import json5
 import regex
+import os
 
 
 class ProxiesCls:
@@ -18,7 +19,7 @@ class ProxiesCls:
         :param subscribe:给定的可以直接访问的订阅地址url，或者包括请求头信息
         """
         # 下载配置文件
-        headers = {"user-agent": "clash-verge/v1.3.8"}
+        headers = {"user-agent": "clash-verge/v1.6.0"}
         cfg = requests.get(url=subscribe, headers=headers).text
         # 解析配置文件
         yaml_class = yaml.load(cfg, Loader=yaml.FullLoader)
@@ -43,25 +44,22 @@ class ProxiesCls:
             parad = parse.parse_qs(url.query)
             # print(type(parad))
             # print(parad)
-            flag = False
-            ks = ["flag", "types"]
-            for s in ks:
-                if s in parad.keys():
-                    flag = True
-            if "gist.githubusercontent.com" in subscribe:
-                flag = True
-            if not flag:
-                subscribe_list[i] = subscribe + "&flag=clash"
+            # flag = False
+            # ks = ["flag", "types"]
+            # for s in ks:
+            #     if s in parad.keys():
+            #         flag = True
+            # if "gist.githubusercontent.com" in subscribe:
+            #     flag = True
+            # if not flag:
+            #     subscribe_list[i] = subscribe + "&flag=clash"
 
         return subscribe_list
 
     def __parse_subscribe_list_from_config(self):
         """ 处理配置文件中的订阅节点列表 """
-        # 读取订阅配置文件
-        subscribe_config_path = "./config/subscribe_config.json5"
-        with open(subscribe_config_path, "r", encoding="utf-8") as f:
-            config = json5.load(f)
-        subscribe_list = config["subscribe_list"]
+        # 从环境变量 读取订阅链接
+        subscribe_list = os.getenv("SUBSCRIB_LIST").split(",")
         # 提取其中的节点信息
         subscribe_list = self.__pre_process_subscribe_list(subscribe_list)
         self.__get_all_nodes(subscribe_list)
@@ -94,11 +92,8 @@ class ProxyGroupCls:
     """ 下载并预处理配置转换文件 """
     def __get_file_from_config(self):
         """ 下载配置文件中config_url中的文件，并删除空行和注释，返回行列表 """
-        # 读取订阅配置文件中的 config_url
-        subscribe_config_path = "./config/subscribe_config.json5"
-        with open(subscribe_config_path, "r", encoding="utf-8") as f:
-            config = json5.load(f)
-        config_url = config["config_url"]
+        # 从环境变量获取 config_url
+        config_url = os.getenv("CONFIG_URL")
         # 下载 config_url 到 config_content
         config_content_rows = self.__get_file_from_url(config_url)
         return config_content_rows
@@ -137,7 +132,7 @@ class ProxyGroupCls:
                 if proxy_group_type == "url-test":  # 处理"url-test"类型的策略组
                     test_url = ruleset_list[3]
                     regex_str = ruleset_list[2]
-                    proxy_group_interval, lff, proxy_group_tolerance = ruleset_list[-1].split(',')
+                    proxy_group_interval, proxy_group_timeout, proxy_group_tolerance = ruleset_list[-1].split(',')
                     for i in proxies_name_list:
                         res = regex.search(regex_str, i)
                         if res:
@@ -147,6 +142,21 @@ class ProxyGroupCls:
                     proxy_group_item = {"name": proxy_group_name, "type": proxy_group_type, "url": test_url,
                                         "interval": int(proxy_group_interval), "tolerance": int(proxy_group_tolerance),
                                         "proxies": proxy_group_proxies}
+                if proxy_group_type == "load-balance":  # 处理"load-balance"类型的策略组
+                    test_url = ruleset_list[3]
+                    regex_str = ruleset_list[2]
+                    proxy_group_interval, proxy_group_timeout, proxy_group_tolerance = ruleset_list[-1].split(',')
+                    for i in proxies_name_list:
+                        res = regex.search(regex_str, i)
+                        if res:
+                            proxy_group_proxies.append(i)
+                    if not proxy_group_proxies:
+                        proxy_group_proxies = ["DIRECT"]
+                    proxy_group_item = {"name": proxy_group_name, "type": proxy_group_type, "url": test_url,
+                                        "interval": int(proxy_group_interval), "timeout": int(proxy_group_timeout),
+                                        "tolerance": int(proxy_group_tolerance),
+                                        "proxies": proxy_group_proxies}
+                    pass
                 proxy_group_item_list.append(proxy_group_item)
         return proxy_group_item_list
 
@@ -188,8 +198,8 @@ if __name__ == '__main__':
     # p = ProxyGroupCls()
     # for i in p.get_rules():
     #     print(i)
-    subscribe = ""
-    headers = {"user-agent": "clash-verge/v1.3.8"}
+    subscribe = "https://yfjc.xyz/api/v1/client/subscribe?token=9c35571ea9c3667799d28b76714c2aba"
+    headers = {"user-agent": "clash.meta"}  # "clash-verge/v1.6.0"}
     cfg = requests.get(url=subscribe, headers=headers).text
     print(cfg)
     # yaml_class = yaml.load(cfg, Loader=yaml.FullLoader)

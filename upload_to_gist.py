@@ -1,20 +1,14 @@
 import requests
-import configparser
-import json
+import os
 
 
 def upload_to_gist():
-    # 创建配置解析器对象
-    config = configparser.ConfigParser(comment_prefixes='/', allow_no_value=True)
-    # 读取配置文件
-    config.read('./config/gist_config.ini', encoding='utf-8')
-
     # 获取字段值
-    token = config['custom']['token']
-    gist_id = config['custom']['gist_id']
-    file_path = config['custom']['file_path']
+    token = os.getenv("GIST_TOKEN")
+    gist_id = os.getenv("GIST_ID")
+    file_path = "./output/output.yaml"
     # 设置文件名
-    file_name = config['custom']['upload_file_name']
+    file_name = os.getenv("GIST_FILENAME")
 
     # 读取本地文件内容
     with open(file_path, "r", encoding="utf-8") as file:
@@ -40,36 +34,30 @@ def upload_to_gist():
         else:     # 处理更新失败的情况
             print(f"Failed to update Gist. Status code: {response.status_code}, Response: {response.text}")
 
-    else:    # 不存在，发送 POST 请求创建新的 Gist
-        url = "https://api.github.com/gists"
-        data = {"description": "A description of Gist", "public": False, "files": {file_name: {"content": file_content}}}
-        response = requests.post(url, json=data, headers=headers)
-
-        if response.status_code == 201:     # 检查是否创建成功
-
-            # 提取新创建的 Gist ID 并赋值
-            gist_id = response.json()["id"]
-            config.set('custom', 'gist_id', gist_id)
-
-            print("Successfully obtained the new gist ID!")
-
-            # 将更改写回配置文件
-            with open('config.ini', 'w', encoding='utf-8') as config_file:
-                config.write(config_file)
-
-            print("Config file updated!")
-
-        else:     # 处理创建失败的情况
-            print(f"Failed to create Gist. Status code: {response.status_code}, Response: {response.text}")
+    else:    # 不存在
+        raise ValueError(f"No gist_id !!!")
+        # 发送 POST 请求创建新的 Gist
+        # url = "https://api.github.com/gists"
+        # data = {"description": "A description of Gist", "public": False, "files": {file_name: {"content": file_content}}}
+        # response = requests.post(url, json=data, headers=headers)
+        #
+        # if response.status_code == 201:     # 检查是否创建成功
+        #
+        #     # 提取新创建的 Gist ID 并赋值
+        #     gist_id = response.json()["id"]
+        #     config.set('custom', 'gist_id', gist_id)
+        #
+        #     print("Successfully obtained the new gist ID!")
+        #
+        #     # 将更改写回配置文件
+        #     with open('config.ini', 'w', encoding='utf-8') as config_file:
+        #         config.write(config_file)
+        #
+        #     print("Config file updated!")
+        #
+        # else:     # 处理创建失败的情况
+        #     print(f"Failed to create Gist. Status code: {response.status_code}, Response: {response.text}")
 
 
 if __name__ == "__main__":
-    subscribe_config_path = "config/subscribe_config.json5"
-    # 创建配置解析器对象
-    config = configparser.ConfigParser(comment_prefixes='/', allow_no_value=True)
-    # 读取配置文件
-    config.read(subscribe_config_path, encoding='utf-8')
-    # 获取字段值
-    custom = json.loads(config['custom']["subscribe_url_list"])
-    print(custom)
-    print(type(custom))
+    pass

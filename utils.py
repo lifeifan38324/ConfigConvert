@@ -23,7 +23,7 @@ class ProxiesCls:
         cfg = requests.get(url=subscribe, headers=headers).text
         # 解析配置文件
         yaml_class = yaml.load(cfg, Loader=yaml.FullLoader)
-        print(yaml_class)
+        # print(yaml_class)
         # 提取其中的节点信息
         nodes = yaml_class["proxies"]
         return nodes

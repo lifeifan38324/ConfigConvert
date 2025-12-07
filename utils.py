@@ -59,7 +59,7 @@ class ProxiesCls:
     def __parse_subscribe_list_from_config(self):
         """ 处理配置文件中的订阅节点列表 """
         # 从环境变量 读取订阅链接
-        subscribe_list = os.getenv("SUBSCRIB_LIST").split(",")
+        subscribe_list = os.getenv("SUBSCRIBE_LIST").split(",")
         # 提取其中的节点信息
         subscribe_list = self.__pre_process_subscribe_list(subscribe_list)
         self.__get_all_nodes(subscribe_list)

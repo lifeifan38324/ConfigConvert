@@ -26,6 +26,11 @@ jobs:
       run: |
         python main.py
       env:
+        Write-Host "GIST_TOKEN: $env:GIST_TOKEN"
+        Write-Host "GIST_ID: $env:GIST_ID"
+        Write-Host "GIST_FILENAME: $env:GIST_FILENAME"
+        Write-Host "CONFIG_URL: $env:CONFIG_URL"
+        Write-Host "SUBSCRIBE_LIST: $env:SUBSCRIBE_LIST"
         GIST_TOKEN: ${{ secrets.GIST_TOKEN }}
         GIST_ID: ${{ secrets.GIST_ID }}
         GIST_FILENAME: ${{ secrets.GIST_FILENAME }}

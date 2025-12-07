@@ -25,10 +25,9 @@ jobs:
 
     - name: Run my script
       run: |
-        Write-Host "CONFIG_URL=$env:CONFIG_URL"
-        Write-Host "SUBSCRIBE_LIST=$env:SUBSCRIBE_LIST"
         python main.py
       env:
+        PYTHONIOENCODING: utf-8
         ACTIONS_STEP_DEBUG: true
         ACTIONS_RUNNER_DEBUG: true
         GIST_TOKEN: ${{ secrets.GIST_TOKEN }}

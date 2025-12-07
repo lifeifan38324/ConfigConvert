@@ -7,7 +7,7 @@ on:
 
 jobs:
   run-script:
-    runs-on: ubuntu-latest  # 分配的虚拟机环境
+    runs-on: windows-latest  # 分配的虚拟机环境
 
     steps:
     - name: Checkout code
@@ -20,7 +20,7 @@ jobs:
 
     - name: Install dependencies
       run: |
-        pip install controller yaml regex configparser requests copy urllib json5 json
+        pip install controller PyYAML regex configparser requests copy urllib json5 json
 
     - name: Run my script
       run: |

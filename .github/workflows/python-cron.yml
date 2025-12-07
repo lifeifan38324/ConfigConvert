@@ -8,24 +8,9 @@ on:
 jobs:
   run-script:
     runs-on: windows-latest  # 分配的虚拟机环境
+    environment: ConfigConvert  # 关键：指定使用的环境，才能访问对应的环境级Secret
 
     steps:
-    - name: Set environment variables from secrets # 配置环境变量
-      run: |
-        echo "CONFIG_URL=${{ secrets.CONFIG_URL }}" >> $GITHUB_ENV
-        echo "GIST_FILENAME=${{ secrets.GIST_FILENAME }}" >> $GITHUB_ENV
-        echo "GIST_ID=${{ secrets.GIST_ID }}" >> $GITHUB_ENV
-        echo "GIST_TOKEN=${{ secrets.GIST_TOKEN }}" >> $GITHUB_ENV
-        echo "SUBSCRIBE_LIST=${{ secrets.SUBSCRIBE_LIST }}" >> $GITHUB_ENV
-
-    - name: Check environment variables # 检查环境变量
-      run: |
-        Write-Host "CONFIG_URL=$env:CONFIG_URL"
-        Write-Host "GIST_FILENAME=$env:GIST_FILENAME"
-        Write-Host "GIST_ID=$env:GIST_ID"
-        Write-Host "GIST_TOKEN=$env:GIST_TOKEN"
-        Write-Host "SUBSCRIBE_LIST=$env:SUBSCRIBE_LIST"
-
     - name: Checkout code
       uses: actions/checkout@v4  # 使用别人写好的运行脚本
 
@@ -40,14 +25,14 @@ jobs:
 
     - name: Run my script
       run: |
+        Write-Host "CONFIG_URL=$env:CONFIG_URL"
+        Write-Host "SUBSCRIBE_LIST=$env:SUBSCRIBE_LIST"
         python main.py
       env:
-        GIST_TOKEN: "secrets.GIST_TOKEN"
-        GIST_ID: "secrets.GIST_ID"
-        GIST_FILENAME: "secrets.GIST_FILENAME"
+        ACTIONS_STEP_DEBUG: true
+        ACTIONS_RUNNER_DEBUG: true
+        GIST_TOKEN: ${{ secrets.GIST_TOKEN }}
+        GIST_ID: ${{ secrets.GIST_ID }}
+        GIST_FILENAME: ${{ secrets.GIST_FILENAME }}
         CONFIG_URL: ${{ secrets.CONFIG_URL }}
         SUBSCRIBE_LIST: ${{ secrets.SUBSCRIBE_LIST }}
-#        GIST_TOKEN: ${{ secrets.GIST_TOKEN }}
-#        GIST_ID: ${{ secrets.GIST_ID }}
-#        GIST_FILENAME: ${{ secrets.GIST_FILENAME }}
-#        CONFIG_URL: ${{ secrets.CONFIG_URL }}

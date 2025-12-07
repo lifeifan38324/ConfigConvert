@@ -60,6 +60,7 @@ class ProxiesCls:
         """ 处理配置文件中的订阅节点列表 """
         # 从环境变量 读取订阅链接
         subscribe_list = os.getenv("SUBSCRIBE_LIST").split(",")
+        print("subscribe_list", subscribe_list)
         # 提取其中的节点信息
         subscribe_list = self.__pre_process_subscribe_list(subscribe_list)
         self.__get_all_nodes(subscribe_list)
@@ -95,6 +96,7 @@ class ProxyGroupCls:
         """ 下载配置文件中config_url中的文件，并删除空行和注释，返回行列表 """
         # 从环境变量获取 config_url
         config_url = os.getenv("CONFIG_URL")
+        print("config_url", config_url)
         # 下载 config_url 到 config_content
         config_content_rows = self.__get_file_from_url(config_url)
         return config_content_rows
@@ -199,9 +201,6 @@ if __name__ == '__main__':
     # p = ProxyGroupCls()
     # for i in p.get_rules():
     #     print(i)
-    subscribe = "https://yfjc.xyz/api/v1/client/subscribe?token=9c35571ea9c3667799d28b76714c2aba"
-    headers = {"user-agent": "clash.meta"}  # "clash-verge/v1.6.0"}
-    cfg = requests.get(url=subscribe, headers=headers).text
-    print(cfg)
+    pass
     # yaml_class = yaml.load(cfg, Loader=yaml.FullLoader)
     # print(yaml_class["proxies"])

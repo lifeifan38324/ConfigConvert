@@ -45,7 +45,7 @@ jobs:
         GIST_TOKEN: "secrets.GIST_TOKEN"
         GIST_ID: "secrets.GIST_ID"
         GIST_FILENAME: "secrets.GIST_FILENAME"
-        CONFIG_URL: "secrets.CONFIG_URL"
+        CONFIG_URL: ${{ secrets.CONFIG_URL }}
         SUBSCRIBE_LIST: ${{ secrets.SUBSCRIBE_LIST }}
 #        GIST_TOKEN: ${{ secrets.GIST_TOKEN }}
 #        GIST_ID: ${{ secrets.GIST_ID }}

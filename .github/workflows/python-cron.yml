@@ -2,7 +2,7 @@ name: Run Python Script on Schedule
 
 on:
   schedule:
-    - cron: "0 4 * * *"   # 每天 UTC 时间 4 点执行（需要调整到你的时区）
+    - cron: "0 20 * * *"   # 每天 UTC 时间 4 点执行（需要调整到你的时区）
   workflow_dispatch:      # 可手动触发
 
 jobs:

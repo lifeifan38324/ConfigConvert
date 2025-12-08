@@ -23,7 +23,7 @@ class ProxiesCls:
         cfg = requests.get(url=subscribe, headers=headers).text
         # 解析配置文件
         yaml_class = yaml.load(cfg, Loader=yaml.FullLoader)
-        # print(yaml_class)
+        print(yaml_class)
         # 提取其中的节点信息
         nodes = yaml_class["proxies"]
         return nodes
@@ -60,7 +60,7 @@ class ProxiesCls:
         """ 处理配置文件中的订阅节点列表 """
         # 从环境变量 读取订阅链接
         subscribe_list = os.getenv("SUBSCRIBE_LIST").split(",")
-        print("subscribe_list", subscribe_list)
+        # print("subscribe_list", subscribe_list)
         # 提取其中的节点信息
         subscribe_list = self.__pre_process_subscribe_list(subscribe_list)
         self.__get_all_nodes(subscribe_list)
@@ -81,7 +81,7 @@ class ProxyGroupCls:
 
     def __get_file_from_url(self, url):
         """ 下载url中的文件，并删除空行和注释，返回行列表 """
-        print("url: ", url)
+        # print("url: ", url)
         config_content = requests.get(url=url).text
         config_content_rows = []
         for i in config_content.split('\n'):
@@ -169,7 +169,7 @@ class ProxyGroupCls:
         # 遍历config所有的行
         for res_line in self.__get_file_from_config():
             if res_line.startswith("ruleset="):  # 处理ruleset的行
-                # print("正在处理：{}".format(res_line))
+                print("正在处理：{}".format(res_line))
                 res_line = res_line.removeprefix("ruleset=")
                 ruleset_list = [i.strip() for i in res_line.split(",")]  # 按照","分割行
 

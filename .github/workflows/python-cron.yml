@@ -1,28 +1,51 @@
+# 主工作流名称：Python定时脚本 + 仓库活跃保持
 name: Run Python Script on Schedule
 
+# ====================== 触发规则区（统一管理） ======================
 on:
   schedule:
-    - cron: "0 20 * * *"   # 每天 UTC 时间 4 点执行（需要调整到你的时区）
+    - cron: "55 20 * * *"   # Python脚本定时，每天 UTC 时间 4 点执行（需要调整到你的时区）
+    - cron: "55 19 1 * *"   # 每周一UTC 0点（北京时间8点）保持活跃
   workflow_dispatch:      # 可手动触发
+    inputs:
+      run_task:
+        description: '选择要运行的任务'
+        required: false
+        default: 'python_script'
+        type: choice
+        options:
+          - python_script  # 仅运行Python脚本
+          - keep_alive     # 仅保持仓库活跃
 
+# ====================== 任务区（完全拆分为两个独立Job） ======================
 jobs:
+  # ---------------------- 第一部分：Python脚本运行逻辑 ----------------------
   run-script:
+    if: >
+      (github.event_name == 'schedule' && github.event.schedule == '55 20 * * *') ||
+      (github.event_name == 'workflow_dispatch' && github.event.inputs.run_task == 'python_script') ||
+      (github.event_name == 'workflow_dispatch' && !github.event.inputs.run_task)
     runs-on: windows-latest  # 分配的虚拟机环境
     environment: ConfigConvert  # 关键：指定使用的环境，才能访问对应的环境级Secret
+    name: Run Python Scheduled Script  # 给Job起清晰的名字
 
     steps:
+    # 步骤1：拉取代码
     - name: Checkout code
       uses: actions/checkout@v4  # 使用别人写好的运行脚本
 
+    # 步骤2：配置Python环境
     - name: Set up Python
       uses: actions/setup-python@v4  # 使用别人写好的运行脚本
       with:
         python-version: "3.10"  # 传入脚本的参数
 
+    # 步骤3：安装依赖
     - name: Install dependencies
       run: |
         pip install controller regex requests json5 PyYAML
 
+    # 步骤4：运行脚本
     - name: Run my script
       run: |
         python main.py
@@ -35,3 +58,42 @@ jobs:
         GIST_FILENAME: ${{ secrets.GIST_FILENAME }}
         CONFIG_URL: ${{ secrets.CONFIG_URL }}
         SUBSCRIBE_LIST: ${{ secrets.SUBSCRIBE_LIST }}
+  # ---------------------- 第二部分：仓库活跃保持逻辑 ----------------------
+  keep-repo-active:
+    # 触发条件：定时（每周一0点）/手动选择keep_alive
+    if: >
+      (github.event_name == 'schedule' && github.event.schedule == '55 19 1 * *') ||
+      (github.event_name == 'workflow_dispatch' && github.event.inputs.run_task == 'keep_alive')
+    runs-on: ubuntu-latest  # 轻量环境，不影响Python脚本
+    name: Keep Repository Active  # 给Job起清晰的名字
+
+    steps:
+      # 步骤1：拉取代码
+      - name: Checkout repository code
+        uses: actions/checkout@v4
+
+      # 步骤2：生成/更新活跃标记文件
+      - name: Update keep-alive marker file
+        run: |
+          # 创建隐藏目录，不污染仓库根目录
+          mkdir -p .github/keep-alive-dir
+          # 写入UTC时间戳，确保提交内容唯一
+          echo "Last active timestamp (UTC): $(date -u +%Y-%m-%d_%H:%M:%S)" > .github/keep-alive-dir/last-active.txt
+          # 检查git状态
+          git status
+
+      # 步骤3：提交并推送变更
+      - name: Commit and push active marker
+        run: |
+          # 配置GitHub机器人提交信息
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          # 添加文件
+          git add .github/keep-alive-dir/last-active.txt
+          # 仅当有变更时提交（避免空提交）
+          if git commit -m "chore: update repository active marker [skip ci]"; then
+            git push origin HEAD:${{ github.ref }}
+            echo "✅ Repository active marker updated successfully"
+          else
+            echo "ℹ️ No changes to commit, repository is already active"
+          fi

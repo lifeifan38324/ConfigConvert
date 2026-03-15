@@ -1,5 +1,9 @@
 # 主工作流名称：Python定时脚本 + 仓库活跃保持
-name: Run Python Script on Schedule
+name: Run Python Script on Schedule (No Commit)
+
+# ====================== 全局配置 ======================
+permissions:
+  actions: write  # 保活任务需要的最小权限（Python脚本无需额外权限）
 
 # ====================== 触发规则区（统一管理） ======================
 on:
@@ -58,42 +62,25 @@ jobs:
         GIST_FILENAME: ${{ secrets.GIST_FILENAME }}
         CONFIG_URL: ${{ secrets.CONFIG_URL }}
         SUBSCRIBE_LIST: ${{ secrets.SUBSCRIBE_LIST }}
-  # ---------------------- 第二部分：仓库活跃保持逻辑 ----------------------
+  # ---------------------- 第二部分：无提交式仓库保活逻辑（核心优化） ----------------------
   keep-repo-active:
     # 触发条件：定时（每周一0点）/手动选择keep_alive
     if: >
       (github.event_name == 'schedule' && github.event.schedule == '55 19 1 * *') ||
       (github.event_name == 'workflow_dispatch' && github.event.inputs.run_task == 'keep_alive')
-    runs-on: ubuntu-latest  # 轻量环境，不影响Python脚本
-    name: Keep Repository Active  # 给Job起清晰的名字
-
+    runs-on: ubuntu-latest
+    name: Keep Repository Active (No Commit)
+    # 保活任务独立权限（最小化）
+    permissions:
+      actions: write  # 仅需要触发workflow的权限，无需代码写权限
     steps:
-      # 步骤1：拉取代码
-      - name: Checkout repository code
-        uses: actions/checkout@v4
-
-      # 步骤2：生成/更新活跃标记文件
-      - name: Update keep-alive marker file
+      # 核心：调用GitHub API触发空运行，无提交、无推送
+      - name: Trigger dummy workflow to keep repo active
         run: |
-          # 创建隐藏目录，不污染仓库根目录
-          mkdir -p .github/keep-alive-dir
-          # 写入UTC时间戳，确保提交内容唯一
-          echo "Last active timestamp (UTC): $(date -u +%Y-%m-%d_%H:%M:%S)" > .github/keep-alive-dir/last-active.txt
-          # 检查git状态
-          git status
-
-      # 步骤3：提交并推送变更
-      - name: Commit and push active marker
-        run: |
-          # 配置GitHub机器人提交信息
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          # 添加文件
-          git add .github/keep-alive-dir/last-active.txt
-          # 仅当有变更时提交（避免空提交）
-          if git commit -m "chore: update repository active marker [skip ci]"; then
-            git push origin HEAD:${{ github.ref }}
-            echo "✅ Repository active marker updated successfully"
-          else
-            echo "ℹ️ No changes to commit, repository is already active"
-          fi
+          # 构造API请求，触发当前workflow手动运行（仅生成活动记录，无代码变更）
+          curl -X POST \
+            -H "Accept: application/vnd.github.v3+json" \
+            -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \  # 使用内置token，无需手动创建PAT
+            https://api.github.com/repos/${{ github.repository }}/actions/workflows/${{ github.workflow_id }}/dispatches \
+            -d '{"ref":"${{ github.ref_name }}"}'
+        continue-on-error: true  # 容错：重复触发报错不影响任务

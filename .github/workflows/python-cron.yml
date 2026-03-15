@@ -77,10 +77,11 @@ jobs:
       # 核心：调用GitHub API触发空运行，无提交、无推送
       - name: Trigger dummy workflow to keep repo active
         run: |
+          WORKFLOW_NAME="python-cron.yml"
           # 构造API请求，触发当前workflow手动运行（仅生成活动记录，无代码变更）
           curl -X POST \
             -H "Accept: application/vnd.github.v3+json" \
-            -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \  # 使用内置token，无需手动创建PAT
-            https://api.github.com/repos/${{ github.repository }}/actions/workflows/${{ github.workflow_id }}/dispatches \
+            -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+            https://api.github.com/repos/${{ github.repository }}/actions/workflows/${WORKFLOW_NAME}/dispatches \
             -d '{"ref":"${{ github.ref_name }}"}'
         continue-on-error: true  # 容错：重复触发报错不影响任务

@@ -164,6 +164,5 @@ cython_debug/
 .idea/
 
 # lff
-config/
+delete/
 output/
-

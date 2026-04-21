@@ -4,6 +4,11 @@ on:
     - cron: '01 20 * * *' # 每天 北京时间(UTC+8)  04:01 执行（需根据您的时区换算）
   workflow_dispatch:      # 允许手动触发
 
+# --- 关键部分：添加以下三行 ---
+permissions:
+  actions: write
+# ---------------------------
+
 jobs:
   delete-runs:
     runs-on: ubuntu-latest

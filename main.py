@@ -4,10 +4,10 @@ from config import config
 
 # 引入各个解耦模块
 from fetchers.local_reader import load_yaml_template
-from fetchers.network_fetcher import fetch_text_from_url, fetch_config_lines
+from fetchers.network_fetcher import NetWorkFetcher
 from core.parser import preprocess_subscribe_url, extract_nodes_from_yaml
 from core.builder import build_proxy_groups, build_rules, assemble_final_config
-from publishers.file_writer import save_yaml_to_file
+# from publishers.file_writer import save_yaml_to_file
 from publishers.gist_uploader import upload_to_github_gist
 
 
@@ -22,7 +22,7 @@ def main():
     for sub_url in config.subscribe_list:
         processed_url = preprocess_subscribe_url(sub_url)
         # 伪装成客户端获取订阅 YAML
-        yaml_text = fetch_text_from_url(processed_url, is_clash_client=True)
+        yaml_text = NetWorkFetcher.fetch_text_from_url(processed_url, is_clash_client=True)
         nodes = extract_nodes_from_yaml(yaml_text)
         all_proxies.extend(nodes)
 
@@ -31,12 +31,12 @@ def main():
 
     # 3. 拉取分流规则配置文件
     logging.info(f"正在拉取配置文件: {config.config_url}")
-    config_lines = fetch_config_lines(config.config_url)
+    config_lines = NetWorkFetcher.fetch_config_lines(config.config_url)
 
     # 4. 核心构建：生成策略组与路由规则
     proxy_groups = build_proxy_groups(config_lines, node_names)
     # 将拉取外部规则的函数依赖注入给 build_rules
-    rules = build_rules(config_lines, fetch_external_rules_func=fetch_config_lines)
+    rules = build_rules(config_lines, fetch_external_rules_func=NetWorkFetcher.fetch_config_lines)
 
     # 5. 组装最终配置字典
     final_data = assemble_final_config(template_data, all_proxies, proxy_groups, rules)
@@ -52,6 +52,10 @@ def main():
             gist_id=config.gist_id,
             filename=config.gist_filename
         )
+
+    # 统计信息
+    logging.info("= 统计信息 =")
+    logging.info(f"共计{NetWorkFetcher.fail_request_count}个请求失败")
 
     logging.info("=== 流程执行完毕 ===")
 

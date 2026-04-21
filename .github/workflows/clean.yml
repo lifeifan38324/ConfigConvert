@@ -1,0 +1,17 @@
+name: Delete old runs
+on:
+  schedule:
+    - cron: '01 20 * * *' # 每天 北京时间(UTC+8)  04:01 执行（需根据您的时区换算）
+  workflow_dispatch:      # 允许手动触发
+
+jobs:
+  delete-runs:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Delete workflow runs
+        uses: Mattraiano/delete-workflow-runs@v2
+        with:
+          token: ${{ github.token }}
+          repository: ${{ github.repository }}
+          retain_days: 3      # 保留天数
+          keep_minimum_runs: 3 # 至少保留最近的3次记录

@@ -55,6 +55,7 @@ def main():
 
     # 统计信息
     logging.info("= 统计信息 =")
+    logging.info(f"共计{len(config.subscribe_list)}个订阅链接")
     logging.info(f"共计{NetWorkFetcher.fail_request_count}个请求失败")
 
     logging.info("=== 流程执行完毕 ===")

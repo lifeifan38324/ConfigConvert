@@ -16,7 +16,7 @@ def extract_nodes_from_yaml(yaml_text: str) -> list:
         yaml_data = yaml.safe_load(yaml_text)
         if yaml_data and "proxies" in yaml_data:
             # 给节点加前缀
-            airport_name = yaml_data["proxy-groups"][0]["name"][:2]
+            airport_name = yaml_data["proxy-groups"][0]["name"].replace("机场", "")
             for i in range(len(yaml_data["proxies"])):
                 yaml_data["proxies"][i]["name"] = airport_name + "_" + yaml_data["proxies"][i]["name"]
             return yaml_data["proxies"]

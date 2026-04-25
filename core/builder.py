@@ -105,7 +105,7 @@ def build_rules(config_lines: list, fetch_external_rules_func) -> list:
                 if item.startswith("IP-CIDR") and item.endswith("no-resolve"):
                     insert_index = item.find("no-resolve")
                     rule_item_list.append(f"{item[:insert_index]}{ruleset_name},{item[insert_index:]}")
-                elif item.startswith("USER-AGENT") or item.startswith("URL-REGEX"):
+                elif item.startswith(("USER-AGENT", "URL-REGEX", "IP-ASN")):  # 手机版clash不支持的规则
                     continue
                 else:
                     rule_item_list.append(f"{item},{ruleset_name}")

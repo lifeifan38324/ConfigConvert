@@ -1,19 +1,21 @@
 # 主工作流名称：Python定时脚本 + 仓库活跃保持
-name: Run Python Script on Schedule (No Commit)
+name: Run Python Script on Schedule
 
 # ====================== 全局配置 ======================
-# 强制底层 Action 使用 Node.js 24，解决 Node 20 弃用警告
+# 第一方 action 已升级到原生 node24（checkout@v6 / setup-python@v6）。
+# 该变量保留给仍声明 node20 的第三方 action，GitHub 自 2026-06-02 起已默认使用 node24，
+# 故此处声明属于兜底、不再产生弃用告警。
 env:
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
-permissions:
-  actions: write  # 保活任务需要的最小权限（Python脚本无需额外权限）
+# 权限按 Job 单独声明：一旦在此处声明，未列出的权限会被置为 none，
+# 因此不在全局声明，避免误伤需要 contents: read 的 checkout。
 
 # ====================== 触发规则区（统一管理） ======================
 on:
   schedule:
     - cron: "55 20 * * *"   # Python脚本定时，每天 北京时间(UTC+8)  04:55 执行（需根据您的时区换算）
-    - cron: "55 19 1 * *"   # 每周一 北京时间(UTC+8) 03:55 保持活跃
+    - cron: "55 19 1 * *"   # 每月1日 北京时间(UTC+8) 03:55 执行保活提交
   workflow_dispatch:        # 可手动触发
     inputs:
       run_task:
@@ -36,23 +38,26 @@ jobs:
     runs-on: windows-latest       # 分配的虚拟机环境
     environment: ConfigConvert    # 关键：指定使用的环境，才能访问对应的环境级Secret
     name: Run Python Scheduled Script
+    permissions:
+      contents: read             # 仅需拉取代码，不需要写权限
 
     steps:
     # 步骤1：拉取代码
     - name: Checkout code
-      uses: actions/checkout@v4
+      uses: actions/checkout@v6
 
     # 步骤2：配置Python环境
     - name: Set up Python
-      uses: actions/setup-python@v4
+      uses: actions/setup-python@v6
       with:
-        python-version: "3.10"
+        python-version: "3.12"   # 3.10 已于 2026-10 结束安全支持，升级到 3.12
+        cache: 'pip'             # 按 requirements.txt 的哈希缓存 wheel，减少重复下载
 
-    # 步骤3：安装依赖 (已根据重构后的架构优化)
+    # 步骤3：安装依赖
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install requests PyYAML regex
+        pip install -r requirements.txt
 
     # 步骤4：运行重构后的入口脚本
     - name: Run main script
@@ -69,24 +74,25 @@ jobs:
         CONFIG_URL: ${{ secrets.CONFIG_URL }}
         SUBSCRIBE_LIST: ${{ secrets.SUBSCRIBE_LIST }}
 
-  # ---------------------- 第二部分：无提交式仓库保活逻辑 ----------------------
+  # ---------------------- 第二部分：仓库保活逻辑 ----------------------
+  # 公开仓库连续 60 天没有提交，GitHub 会自动停用所有定时工作流。
+  # 调用 dispatches API 只产生运行记录、不算仓库活动，因此改为推送一次空提交。
   keep-repo-active:
     # 触发条件：定时/手动选择keep_alive
     if: >
       (github.event_name == 'schedule' && github.event.schedule == '55 19 1 * *') ||
       (github.event_name == 'workflow_dispatch' && github.event.inputs.run_task == 'keep_alive')
     runs-on: ubuntu-latest
-    name: Keep Repository Active (No Commit)
+    name: Keep Scheduled Workflows Active
     permissions:
-      actions: write  # 仅需要触发workflow的权限
+      contents: write  # 需要写权限才能推送空提交
     steps:
-      # 核心：调用GitHub API触发空运行，无提交、无推送
-      - name: Trigger dummy workflow to keep repo active
+      - name: Checkout code
+        uses: actions/checkout@v6
+
+      - name: Push empty commit
         run: |
-          WORKFLOW_NAME="python-cron.yml"
-          curl -X POST \
-            -H "Accept: application/vnd.github.v3+json" \
-            -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
-            https://api.github.com/repos/${{ github.repository }}/actions/workflows/${WORKFLOW_NAME}/dispatches \
-            -d '{"ref":"${{ github.ref_name }}"}'
-        continue-on-error: true  # 容错：重复触发报错不影响任务
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit --allow-empty -m "chore: keep scheduled workflows active"
+          git push

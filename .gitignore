@@ -166,3 +166,4 @@ cython_debug/
 # lff
 delete/
 output/
+.workbuddy/

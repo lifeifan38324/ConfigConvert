@@ -1,6 +1,9 @@
 import regex
 import logging
 
+# Clash 内建策略，允许被策略组直接引用
+BUILTIN_POLICIES = {"DIRECT", "REJECT", "REJECT-DROP", "PASS", "COMPATIBLE", "GLOBAL"}
+
 
 def build_proxy_groups(config_lines: list, node_names: list) -> list:
     """
@@ -64,6 +67,42 @@ def build_proxy_groups(config_lines: list, node_names: list) -> list:
 
             proxy_groups.append(item)
 
+    return sanitize_proxy_groups(proxy_groups, node_names)
+
+
+def sanitize_proxy_groups(proxy_groups: list, node_names: list) -> list:
+    """
+    清理策略组内的无效引用。
+
+    远端配置可能引用已被改名/删除的策略组，或引用已下线的具体节点；
+    Clash 遇到不存在的引用会拒绝加载整份配置，因此这里主动剔除并告警，
+    剔除后为空的组回落 DIRECT。
+
+    :param proxy_groups: (list[dict]) 构建好的策略组列表
+    :param node_names: (list[str]) 当前可用的节点名
+    :return: (list[dict]) 清理后的策略组列表（原地修改并返回）
+    """
+    group_names = {group["name"] for group in proxy_groups}
+    valid_targets = group_names | BUILTIN_POLICIES | set(node_names)
+
+    for group in proxy_groups:
+        members = []
+        dropped = []
+
+        for name in group.get("proxies") or []:
+            # 自引用同样会导致 Clash 校验失败
+            if name == group["name"] or name not in valid_targets:
+                dropped.append(name)
+            elif name not in members:
+                members.append(name)
+
+        if dropped:
+            preview = dropped[:5]
+            more = f" 等 {len(dropped)} 个" if len(dropped) > 5 else ""
+            logging.warning(f"策略组「{group['name']}」剔除了无效引用：{preview}{more}")
+
+        group["proxies"] = members or ["DIRECT"]
+
     return proxy_groups
 
 
@@ -110,7 +149,42 @@ def build_rules(config_lines: list, fetch_external_rules_func) -> list:
                 else:
                     rule_item_list.append(f"{item},{ruleset_name}")
 
-    return rule_item_list
+    return normalize_match_rules(rule_item_list)
+
+
+def normalize_match_rules(rule_item_list: list) -> list:
+    """
+    将 MATCH 兜底规则归位到末尾。
+
+    MATCH 之后的所有规则永远不会命中，若远端配置把 FINAL 放在中间，
+    后续规则会全部失效。此处保留最后一条 MATCH 并移到末尾；多余的 MATCH 丢弃。
+
+    :param rule_item_list: (list[str]) 构建好的规则列表
+    :return: (list[str]) 归位后的规则列表
+    """
+    if not rule_item_list:
+        return rule_item_list
+
+    match_indexes = [
+        i for i, rule in enumerate(rule_item_list)
+        if rule.split(",")[0].strip().upper() == "MATCH"
+    ]
+    if not match_indexes:
+        logging.warning("未找到 MATCH 兜底规则，未匹配流量将按默认策略处理")
+        return rule_item_list
+
+    if len(match_indexes) > 1:
+        logging.warning(f"存在 {len(match_indexes)} 条 MATCH 规则，仅保留最后一条")
+
+    match_rule = rule_item_list[match_indexes[-1]]
+    drop_set = set(match_indexes)
+    rest = [rule for i, rule in enumerate(rule_item_list) if i not in drop_set]
+
+    if len(match_indexes) == 1 and match_indexes[0] == len(rule_item_list) - 1:
+        return rule_item_list
+
+    logging.warning("MATCH 规则不在末尾，已移动到末尾以保证其余规则可达")
+    return rest + [match_rule]
 
 
 def assemble_final_config(template: dict, proxies: list, proxy_groups: list, rules: list) -> dict:

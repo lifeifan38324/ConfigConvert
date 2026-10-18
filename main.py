@@ -1,12 +1,14 @@
 import logging
+import sys
 import yaml
 from config import config
 
 # 引入各个解耦模块
 from fetchers.local_reader import load_yaml_template
 from fetchers.network_fetcher import NetWorkFetcher
-from core.parser import preprocess_subscribe_url, extract_nodes_from_yaml
+from core.parser import preprocess_subscribe_url, extract_nodes_from_yaml, ensure_unique_names
 from core.builder import build_proxy_groups, build_rules, assemble_final_config
+from core.validator import ConfigValidationError, validate_before_publish, verify_serialized
 # from publishers.file_writer import save_yaml_to_file
 from publishers.gist_uploader import upload_to_github_gist
 
@@ -19,14 +21,36 @@ def main():
 
     # 2. 拉取并解析所有的代理节点 (proxies)
     all_proxies = []
-    for sub_url in config.subscribe_list:
-        processed_url = preprocess_subscribe_url(sub_url)
-        # 伪装成客户端获取订阅 YAML
-        yaml_text = NetWorkFetcher.fetch_text_from_url(processed_url, is_clash_client=True)
-        nodes = extract_nodes_from_yaml(yaml_text)
+    build_stats = {"total": len(config.subscribe_list), "success": 0, "failed": []}
+    used_prefixes = set()
+    for idx, sub_url in enumerate(config.subscribe_list, start=1):
+        # 隔离边界：单个订阅的任何异常都不允许击穿整轮任务
+        try:
+            processed_url = preprocess_subscribe_url(sub_url)
+            # 伪装成客户端获取订阅 YAML
+            yaml_text = NetWorkFetcher.fetch_text_from_url(processed_url, is_clash_client=True)
+            nodes = extract_nodes_from_yaml(yaml_text, fallback_prefix=f"订阅{idx}",
+                                            taken_prefixes=used_prefixes)
+        except Exception:
+            logging.exception(f"订阅 #{idx} 处理异常，已跳过，不影响其它订阅")
+            build_stats["failed"].append(idx)
+            continue
+
+        if nodes:
+            build_stats["success"] += 1
+        else:
+            build_stats["failed"].append(idx)
         all_proxies.extend(nodes)
 
+    # 兜底去重：重名节点会导致 Clash 拒绝加载整份配置
+    all_proxies = ensure_unique_names(all_proxies)
+
     logging.info(f"共获取到 {len(all_proxies)} 个代理节点。")
+    if build_stats["failed"]:
+        logging.warning(
+            f"订阅失败 {len(build_stats['failed'])}/{build_stats['total']}："
+            f"序号 {build_stats['failed']}"
+        )
     node_names = [node["name"] for node in all_proxies if "name" in node]
 
     # 3. 拉取分流规则配置文件
@@ -41,22 +65,34 @@ def main():
     # 5. 组装最终配置字典
     final_data = assemble_final_config(template_data, all_proxies, proxy_groups, rules)
 
-    # # 6. 转换格式与上传
+    # # 6. 转换格式、校验与上传
     # save_yaml_to_file(final_data, config.output_path)  # 保存到文件中，用于本地查看
     yaml_string = yaml.safe_dump(final_data, allow_unicode=True, sort_keys=False)
 
-    if yaml_string:
-        upload_to_github_gist(
-            content=yaml_string,
-            token=config.gist_token,
-            gist_id=config.gist_id,
-            filename=config.gist_filename
-        )
+    # 守门：校验不通过则中止，绝不覆盖 Gist 上的上一版可用配置
+    try:
+        validate_before_publish(final_data, build_stats,
+                                config.min_nodes, config.min_success_ratio)
+        verify_serialized(yaml_string, len(all_proxies))
+    except ConfigValidationError as e:
+        logging.error(f"校验未通过，已中止发布，Gist 保持上一版：{e}")
+        sys.exit(1)
+
+    if not upload_to_github_gist(
+        content=yaml_string,
+        token=config.gist_token,
+        gist_id=config.gist_id,
+        filename=config.gist_filename
+    ):
+        logging.error("Gist 更新失败，线上仍为上一版")
+        sys.exit(1)
 
     # 统计信息
     logging.info("= 统计信息 =")
     logging.info(f"共计{len(config.subscribe_list)}个订阅链接")
     logging.info(f"共计{NetWorkFetcher.fail_request_count}个请求失败")
+    if NetWorkFetcher.retry_count:
+        logging.info(f"共计{NetWorkFetcher.retry_count}次重试")
 
     logging.info("=== 流程执行完毕 ===")
 

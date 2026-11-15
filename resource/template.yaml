@@ -13,6 +13,7 @@ bind-address: "*"
 # 允许所有常见 RFC1918 私有 IPv4 网段，适应 DHCP 动态分配 IP。
 # 不包含公网 IPv4 和 IPv6 地址；局域网远程连接仍需下面的账号密码。
 lan-allowed-ips:
+  - 127.0.0.0/8
   - 10.0.0.0/8
   - 172.16.0.0/12
   - 192.168.0.0/16
@@ -48,9 +49,9 @@ external-controller: 127.0.0.1:9090
 secret: "_0_8Dg5lPkPWc_M7nGl6rV46eLmWZ50ubkE4KOarhKc"
 
 # ==================== 配置持久化 ====================
-profile:
-  store-selected: true
-  store-fake-ip: true
+# profile:
+#   store-selected: true
+#   store-fake-ip: true
 
 # ==================== DNS 设置 ====================
 dns:
@@ -91,9 +92,10 @@ dns:
     - https://dns.google/dns-query
     - tls://8.8.4.4
     - tls://1.0.0.1:853
+    - https://dns.google/dns-query#♻️ 自动选择
 
   # 先检查主 DNS 结果，符合 fallback-filter 条件时再查询 fallback。
-  fallback-lazy-query: true
+  fallback-lazy-query: false
 
   fallback-filter:
     geoip: true

@@ -1,129 +1,164 @@
-## 一元
-#port: 7890
-#socks-port: 7891
-#allow-lan: true
-#mode: Rule
-#log-level: info
-#external-controller: 127.0.0.1:9090
+# Mihomo 跨平台通用配置模板
+# 适用于 Windows / Android / iOS / OpenWrt
+# 说明：节点、代理组、规则由使用者自行补充；当前 MATCH,DIRECT 表示未补规则前全部直连。
 
-# 小鲤鱼
-allow-lan: true
-dns:
-  default-nameserver:
-  - 192.168.1.1
-  - 223.5.5.5
-  - 221.130.33.60
-  - 211.136.17.107
-  - 114.114.114.114
-  enable: true
-  fake-ip-filter:
-  - "*.lan"
-  - stun.*.*.*
-  - stun.*.*
-  - time.windows.com
-  - time.nist.gov
-  - time.apple.com
-  - time.asia.apple.com
-  - "*.ntp.org.cn"
-  - "*.openwrt.pool.ntp.org"
-  - time1.cloud.tencent.com
-  - time.ustc.edu.cn
-  - pool.ntp.org
-  - ntp.ubuntu.com
-  - ntp.aliyun.com
-  - ntp1.aliyun.com
-  - ntp2.aliyun.com
-  - ntp3.aliyun.com
-  - ntp4.aliyun.com
-  - ntp5.aliyun.com
-  - ntp6.aliyun.com
-  - ntp7.aliyun.com
-  - time1.aliyun.com
-  - time2.aliyun.com
-  - time3.aliyun.com
-  - time4.aliyun.com
-  - time5.aliyun.com
-  - time6.aliyun.com
-  - time7.aliyun.com
-  - "*.time.edu.cn"
-  - time1.apple.com
-  - time2.apple.com
-  - time3.apple.com
-  - time4.apple.com
-  - time5.apple.com
-  - time6.apple.com
-  - time7.apple.com
-  - time1.google.com
-  - time2.google.com
-  - time3.google.com
-  - time4.google.com
-  - music.163.com
-  - "*.music.163.com"
-  - "*.126.net"
-  - musicapi.taihe.com
-  - music.taihe.com
-  - songsearch.kugou.com
-  - trackercdn.kugou.com
-  - "*.kuwo.cn"
-  - api-jooxtt.sanook.com
-  - api.joox.com
-  - joox.com
-  - y.qq.com
-  - "*.y.qq.com"
-  - streamoc.music.tc.qq.com
-  - mobileoc.music.tc.qq.com
-  - isure.stream.qqmusic.qq.com
-  - dl.stream.qqmusic.qq.com
-  - aqqmusic.tc.qq.com
-  - amobile.music.tc.qq.com
-  - "*.xiami.com"
-  - "*.music.migu.cn"
-  - music.migu.cn
-  - "*.msftconnecttest.com"
-  - "*.msftncsi.com"
-  - localhost.ptlogin2.qq.com
-  - "*.*.*.srv.nintendo.net"
-  - "*.*.stun.playstation.net"
-  - xbox.*.*.microsoft.com
-  - "*.ipv6.microsoft.com"
-  - "*.*.xboxlive.com"
-  - speedtest.cros.wr.pvp.net
-  fake-ip-range: 198.18.0.1/16
-  fallback:
-  - 119.29.29.29
-  - 114.114.115.115
-  - https://dns.rubyfish.cn/dns-query
-  - tls://8.8.4.4
-  - tls://1.0.0.1:853
-  - https://cloudflare-dns.com/dns-query
-  - https://dns.google/dns-query
-  fallback-filter:
-    domain:
-    - "+.google.com"
-    - "+.facebook.com"
-    - "+.twitter.com"
-    - "+.youtube.com"
-    - "+.xn--ngstr-lra8j.com"
-    - "+.google.cn"
-    - "+.googleapis.cn"
-    - "+.googleapis.com"
-    - "+.gvt1.com"
-    geoip: true
-    ipcidr:
-    - 240.0.0.0/4
-    - 0.0.0.0/32
-    - 127.0.0.1/32
-  ipv6: false
-  listen: 0.0.0.0:7874
-  nameserver:
-  - 223.6.6.6
-  - 180.76.76.76
-  - https://223.6.6.6/dns-query
-  - https://dns.rubyfish.cn/dns-query
-  - https://doh.pub/dns-query
-  - https://dns.alidns.com/dns-query
-  enhanced-mode: fake-ip
-external-controller: 0.0.0.0:9090
-log-level: info
+# ==================== 基础设置 ====================
 mixed-port: 7893
+
+# 允许局域网设备连接本机代理。
+# 在手机/笔记本连接公共 Wi-Fi 时，建议临时改为 false。
+allow-lan: true
+bind-address: "*"
+
+# 允许所有常见 RFC1918 私有 IPv4 网段，适应 DHCP 动态分配 IP。
+# 不包含公网 IPv4 和 IPv6 地址；局域网远程连接仍需下面的账号密码。
+lan-allowed-ips:
+  - 10.0.0.0/8
+  - 172.16.0.0/12
+  - 192.168.0.0/16
+
+# 局域网代理认证。请妥善保管此密码，并在需要时自行更换。
+authentication:
+  - "mihomo:M7PcKwvw0s2uV3-pGIbVihEDcIohRbFe"
+
+# 本机回环访问免认证，避免操作系统/本机应用设置系统代理时遇到认证兼容问题。
+# 不要把整个局域网网段加入 skip-auth-prefixes。
+skip-auth-prefixes:
+  - 127.0.0.0/8
+  - ::1/128
+
 mode: rule
+log-level: info
+
+# 保留 IPv4-only DNS 行为，避免设备端 IPv6 DNS 绕过预期的解析策略。
+ipv6: false
+
+# TCP 并发连接：对有多个解析 IP 的目标可更快建立连接。
+tcp-concurrent: true
+
+# 统一延迟计算方式。
+unified-delay: true
+
+# 移动设备适当缩短 TCP Keep Alive 间隔；单位为秒。
+keep-alive-interval: 15
+
+# ==================== 管理接口 ====================
+# 管理 API 只监听本机，不对局域网开放。
+external-controller: 127.0.0.1:9090
+secret: "_0_8Dg5lPkPWc_M7nGl6rV46eLmWZ50ubkE4KOarhKc"
+
+# ==================== 配置持久化 ====================
+profile:
+  store-selected: true
+  store-fake-ip: true
+
+# ==================== DNS 设置 ====================
+dns:
+  enable: true
+
+  # DNS 仅供本机 Mihomo 使用。
+  # 如果要让其他设备把本机作为 DNS 服务器，可改成 0.0.0.0:7874，
+  # 并在操作系统/路由器防火墙中仅允许可信 LAN 网段访问 UDP/TCP 7874。
+  # listen: 127.0.0.1:7874
+  listen: 0.0.0.0:7874
+
+  ipv6: false
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  fake-ip-filter-mode: blacklist
+  cache-algorithm: arc
+  use-hosts: true
+  use-system-hosts: true
+
+  # 只用于解析 DNS 上游服务器自身的域名，使用 IP 地址避免循环依赖。
+  default-nameserver:
+    - 223.5.5.5
+    - 119.29.29.29
+
+  # 专门解析代理节点域名，避免节点域名解析依赖代理自身。
+  proxy-server-nameserver:
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
+
+  # 常规主 DNS：国内 DoH。
+  nameserver:
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
+
+  # 海外备用 DNS。
+  fallback:
+    - https://cloudflare-dns.com/dns-query
+    - https://dns.google/dns-query
+    - tls://8.8.4.4
+    - tls://1.0.0.1:853
+
+  # 先检查主 DNS 结果，符合 fallback-filter 条件时再查询 fallback。
+  fallback-lazy-query: true
+
+  fallback-filter:
+    geoip: true
+    geoip-code: CN
+    ipcidr:
+      - 240.0.0.0/4
+      - 0.0.0.0/8
+      - 127.0.0.0/8
+      - 100.64.0.0/10
+    domain:
+      - "+.google.com"
+      - "+.facebook.com"
+      - "+.twitter.com"
+      - "+.youtube.com"
+      - "+.xn--ngstr-lra8j.com"
+      - "+.google.cn"
+      - "+.googleapis.cn"
+      - "+.googleapis.com"
+      - "+.gvt1.com"
+
+  # 这些域名不分配 Fake-IP，直接返回真实 DNS 结果。
+  fake-ip-filter:
+    - "+.lan"
+    - "+.local"
+    - "+.home.arpa"
+    - "stun.*.*.*"
+    - "stun.*.*"
+    - "time.windows.com"
+    - "time.nist.gov"
+    - "time.apple.com"
+    - "time.asia.apple.com"
+    - "*.ntp.org.cn"
+    - "*.openwrt.pool.ntp.org"
+    - "pool.ntp.org"
+    - "ntp.ubuntu.com"
+    - "*.aliyun.com"
+    - "time1.cloud.tencent.com"
+    - "time.ustc.edu.cn"
+    - "*.time.edu.cn"
+    - "time1.google.com"
+    - "time2.google.com"
+    - "time3.google.com"
+    - "time4.google.com"
+    - "music.163.com"
+    - "*.music.163.com"
+    - "*.126.net"
+    - "musicapi.taihe.com"
+    - "music.taihe.com"
+    - "songsearch.kugou.com"
+    - "trackercdn.kugou.com"
+    - "*.kuwo.cn"
+    - "y.qq.com"
+    - "*.y.qq.com"
+    - "*.music.tc.qq.com"
+    - "*.qqmusic.qq.com"
+    - "*.music.migu.cn"
+    - "music.migu.cn"
+    - "*.msftconnecttest.com"
+    - "*.msftncsi.com"
+    - "localhost.ptlogin2.qq.com"
+    - "*.*.*.srv.nintendo.net"
+    - "*.*.stun.playstation.net"
+    - "xbox.*.*.microsoft.com"
+    - "*.ipv6.microsoft.com"
+    - "*.*.xboxlive.com"
+    - "speedtest.cros.wr.pvp.net"
+
+# ==================== 节点与规则：由你自行补充 ====================

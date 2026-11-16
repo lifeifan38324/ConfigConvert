@@ -3,33 +3,24 @@
 # 说明：节点、代理组、规则由使用者自行补充；当前 MATCH,DIRECT 表示未补规则前全部直连。
 
 # ==================== 基础设置 ====================
-mixed-port: 7893
-
-# 允许局域网设备连接本机代理。
-# 在手机/笔记本连接公共 Wi-Fi 时，建议临时改为 false。
-allow-lan: true
-bind-address: "*"
-
-# 允许所有常见 RFC1918 私有 IPv4 网段，适应 DHCP 动态分配 IP。
-# 不包含公网 IPv4 和 IPv6 地址；局域网远程连接仍需下面的账号密码。
-lan-allowed-ips:
-  - 127.0.0.0/8
-  - 10.0.0.0/8
-  - 172.16.0.0/12
-  - 192.168.0.0/16
+# 代理端口
+mixed-port: 7890
 
 # 局域网代理认证。请妥善保管此密码，并在需要时自行更换。
 authentication:
-  - "mihomo:M7PcKwvw0s2uV3-pGIbVihEDcIohRbFe"
+  - "user:passwd"
 
 # 本机回环访问免认证，避免操作系统/本机应用设置系统代理时遇到认证兼容问题。
 # 不要把整个局域网网段加入 skip-auth-prefixes。
 skip-auth-prefixes:
   - 127.0.0.0/8
   - ::1/128
+  - 192.168.0.0/16
 
-mode: rule
-log-level: info
+# 允许局域网设备连接本机代理。
+# 在手机/笔记本连接公共 Wi-Fi 时，建议临时改为 false。
+allow-lan: true
+bind-address: "*"
 
 # 保留 IPv4-only DNS 行为，避免设备端 IPv6 DNS 绕过预期的解析策略。
 ipv6: false
@@ -40,23 +31,80 @@ tcp-concurrent: true
 # 统一延迟计算方式。
 unified-delay: true
 
+log-level: info
+
 # 移动设备适当缩短 TCP Keep Alive 间隔；单位为秒。
+keep-alive-idle: 600
 keep-alive-interval: 15
+
+# ==================== 配置持久化 ====================
+profile:
+  store-selected: true
+  store-fake-ip: true
 
 # ==================== 管理接口 ====================
 # 管理 API 只监听本机，不对局域网开放。
-external-controller: 127.0.0.1:9090
-secret: "_0_8Dg5lPkPWc_M7nGl6rV46eLmWZ50ubkE4KOarhKc"
+external-controller: 0.0.0.0:9090
+secret: ""
+external-ui: ui
+external-ui-name: zashboard
+external-ui-url: "https://github.com/Zephyruso/zashboard/archive/refs/heads/gh-pages.zip"
 
-# ==================== 配置持久化 ====================
-# profile:
-#   store-selected: true
-#   store-fake-ip: true
+geox-url:
+  mmdb: "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/country.mmdb"
+
+ntp:
+  enable: true
+  write-to-system: true
+
+tun:
+  enable: true
+  stack: mixed   ##如果内核版本大于v1.19.31，此处可以改为自研协议栈 mips ，理论上性能更好。
+  dns-hijack: ["any:53", "tcp://any:53"]
+  auto-route: true
+  # 仅 linux 内核
+  # auto-redirect: true
+  auto-detect-interface: true
+  # 仅 linux 内核
+  # oute-exclude-address-set:
+  #   - cn_ip
+
+sniffer:
+  enable: true
+  override-destination: false
+  force-dns-mapping: false
+  parse-pure-ip: true
+  sniff:
+    HTTP:
+      ports: [80, 8080-8880]
+    TLS:
+      ports: [443, 8443]
+    QUIC:
+      ports: [443, 8443]
+  skip-domain:
+    - "Mijia Cloud"
+    - "+.push.apple.com"
+
+# 允许所有常见 RFC1918 私有 IPv4 网段，适应 DHCP 动态分配 IP。
+# 不包含公网 IPv4 和 IPv6 地址；局域网远程连接仍需下面的账号密码。
+lan-allowed-ips:
+  - 127.0.0.0/8
+  - 10.0.0.0/8
+  - 172.16.0.0/12
+  - 192.168.0.0/16
+
+mode: rule
 
 # ==================== DNS 设置 ====================
 dns:
   enable: true
   # respect-rules: true
+  cache-algorithm: arc
+  ipv6: false
+  enhanced-mode: fake-ip
+  fake-ip-ttl: 1
+  fake-ip-range: 198.18.0.0/16
+  fake-ip-filter-mode: blacklist
 
   # DNS 仅供本机 Mihomo 使用。
   # 如果要让其他设备把本机作为 DNS 服务器，可改成 0.0.0.0:7874，
@@ -64,11 +112,7 @@ dns:
   # listen: 127.0.0.1:7874
   listen: 0.0.0.0:7874
 
-  ipv6: false
-  enhanced-mode: fake-ip
-  fake-ip-range: 198.18.0.1/16
-  fake-ip-filter-mode: blacklist
-  cache-algorithm: arc
+  # 暂时不清楚
   use-hosts: true
   use-system-hosts: true
 
@@ -76,23 +120,26 @@ dns:
   default-nameserver:
     - 223.5.5.5
     - 119.29.29.29
-
   # 专门解析代理节点域名，避免节点域名解析依赖代理自身。
   proxy-server-nameserver:
     - https://dns.alidns.com/dns-query
     - https://doh.pub/dns-query
-
-  # 常规主 DNS：国内 DoH。
-  nameserver:
+  # 负责国内直连流量的解析
+  direct-nameserver:
     - https://dns.alidns.com/dns-query
     - https://doh.pub/dns-query
-
+  # 常规主 DNS：国内 DoH。
+  nameserver:
+    # - https://dns.alidns.com/dns-query
+    # - https://doh.pub/dns-query
+    - https://8.8.8.8/dns-query#♻️ 自动选择&ecs=223.5.5.0/24
   # 海外备用 DNS。
   fallback:
-    - https://cloudflare-dns.com/dns-query#♻️ 自动选择
-    - https://dns.google/dns-query#♻️ 自动选择
-    - tls://8.8.4.4#♻️ 自动选择
-    - tls://1.0.0.1:853#♻️ 自动选择
+    - https://8.8.8.8/dns-query#♻️ 自动选择
+    # - https://cloudflare-dns.com/dns-query#♻️ 自动选择
+    # - https://dns.google/dns-query#♻️ 自动选择
+    # - tls://8.8.4.4#♻️ 自动选择
+    # - tls://1.0.0.1:853#♻️ 自动选择
 
   fallback-filter:
     geoip: true

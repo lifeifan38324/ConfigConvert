@@ -56,6 +56,7 @@ secret: "_0_8Dg5lPkPWc_M7nGl6rV46eLmWZ50ubkE4KOarhKc"
 # ==================== DNS 设置 ====================
 dns:
   enable: true
+  # respect-rules: true
 
   # DNS 仅供本机 Mihomo 使用。
   # 如果要让其他设备把本机作为 DNS 服务器，可改成 0.0.0.0:7874，
@@ -88,14 +89,10 @@ dns:
 
   # 海外备用 DNS。
   fallback:
-    - https://cloudflare-dns.com/dns-query
-    - https://dns.google/dns-query
-    - tls://8.8.4.4
-    - tls://1.0.0.1:853
+    - https://cloudflare-dns.com/dns-query#♻️ 自动选择
     - https://dns.google/dns-query#♻️ 自动选择
-
-  # 先检查主 DNS 结果，符合 fallback-filter 条件时再查询 fallback。
-  fallback-lazy-query: false
+    - tls://8.8.4.4#♻️ 自动选择
+    - tls://1.0.0.1:853#♻️ 自动选择
 
   fallback-filter:
     geoip: true

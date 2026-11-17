@@ -44,22 +44,24 @@ profile:
 
 # ==================== 管理接口 ====================
 # 管理 API 只监听本机，不对局域网开放。
-external-controller: 0.0.0.0:9090
+external-controller: 127.0.0.1:9090
 secret: ""
 external-ui: ui
-external-ui-name: zashboard
-external-ui-url: "https://github.com/Zephyruso/zashboard/archive/refs/heads/gh-pages.zip"
+# external-ui-name: zashboard
+# external-ui-url: "https://github.com/Zephyruso/zashboard/archive/refs/heads/gh-pages.zip"
 
 geox-url:
   mmdb: "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/country.mmdb"
 
 ntp:
   enable: true
-  write-to-system: true
+  # 安卓需要关闭写入系统这一项
+  # write-to-system: true
 
 tun:
   enable: true
-  stack: mixed   ##如果内核版本大于v1.19.31，此处可以改为自研协议栈 mips ，理论上性能更好。
+  # 安卓对mixed适配不好，需要改为gvisor
+  stack: gvisor   ##如果内核版本大于v1.19.31，此处可以改为自研协议栈 mips ，理论上性能更好。
   dns-hijack: ["any:53", "tcp://any:53"]
   auto-route: true
   # 仅 linux 内核
